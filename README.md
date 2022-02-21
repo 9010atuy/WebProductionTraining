@@ -1,2 +1,2 @@
 # WebProductionTraining
-web production trainingu repo
+web production training repo
