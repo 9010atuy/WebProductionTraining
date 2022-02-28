@@ -1,0 +1,16 @@
+body {
+  background-color: #00a0dc;
+}
+#background-variable {
+  /* background-image: url(./images/snowmountain.jpeg);
+  background-color: #00a0dc;
+  background-repeat: no-repeat;
+  background-size: contain; */
+
+  /* background-sizeはbackground-positionのあとに/をつけて指定する */
+  background: #00a0dc url(./images/snowmountain.jpeg) no-repeat center top/cover;
+  /* ディスプレイの縦幅最大 */
+  height: 100vh;
+  width: 100vw;
+  /* position: absolute; */
+}

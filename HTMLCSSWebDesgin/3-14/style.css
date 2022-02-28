@@ -1,0 +1,28 @@
+body {
+  background-color: #05cc7f;
+}
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  background: #199364;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+.grid-container {
+  display: grid;
+  /* 縦に並べたいアイテム数を指定してそれぞれのアイテム幅を指定できる */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: 200px 200px;
+}
+.grid-item {
+  background-color: #199364;
+  margin: 10px;
+  padding: 10px;
+}
