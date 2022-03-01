@@ -1,0 +1,48 @@
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/LocalSite/pacificmall/app/public/wp-admin/
+/LocalSite/pacificmall/app/public/wp-content/index.php
+/LocalSite/pacificmall/app/public/wp-content/languages
+/LocalSite/pacificmall/app/public/wp-content/plugins/index.php
+/LocalSite/pacificmall/app/public/wp-content/themes/index.php
+/LocalSite/pacificmall/app/public/wp-includes/
+/LocalSite/pacificmall/app/public/index.php
+/LocalSite/pacificmall/app/public/license.txt
+/LocalSite/pacificmall/app/public/readme.html
+/LocalSite/pacificmall/app/public/wp-*.php
+/LocalSite/pacificmall/app/public/xmlrpc.php
+
+# Configuration
+wp-config.php
+
+# Example themes
+/LocalSite/pacificmall/app/public/wp-content/themes/twenty*/
+
+# Example plugin
+/LocalSite/pacificmall/app/public/wp-content/plugins/hello.php
+
+# Uploads
+/LocalSite/pacificmall/app/public/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/LocalSite/pacificmall/app/public/.htaccess
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes
