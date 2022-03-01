@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>title</title>
+  <title><?php bloginfo('name'); ?></title>
   <link rel="apple-touch-icon" href="<?php bloginfo('template_url') ?>/images/touch-icon.png" />
   <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico" />
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
@@ -11,17 +11,18 @@
   <meta http-equiv="Imagetoolbar" content="no" />
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+  <?php wp_head(); ?>
 </head>
 
 <body class="home">
   <div id="wrap">
     <section id="description">
-      <h1>description</h1>
+      <h1><?php bloginfo('description') ?></h1>
     </section><!-- #description end -->
     <div id="container">
       <header id="header">
         <h1 id="site-id">
-          <a href="#"><img src="<?php bloginfo('template_url') ?>/images/header/site_id.png" alt="サイトID" /></a>
+          <a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_url') ?>/images/header/site_id.png" alt="<?php bloginfo('name'); ?>" /></a>
         </h1><!-- #site-id end -->
         <div id="utility-group">
           <nav id="utility-nav">
