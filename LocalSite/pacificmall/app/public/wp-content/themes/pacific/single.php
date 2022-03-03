@@ -1,3 +1,4 @@
+<!-- 投稿のテンプレート -->
 <?php get_header(); ?>
 <section id="contents">
   <?php
