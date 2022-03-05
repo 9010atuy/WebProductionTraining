@@ -101,26 +101,26 @@ li:first-of-type {
 }
 
 .item {
-  width: 100%;
+  width: 10rem;
   height: 5rem;
   background: #fff;
 }
 
 .item1 {
   background: #ff0000;
-  -ms-flex-negative: 3;
-      flex-shrink: 3;
+  -ms-flex-preferred-size: 15rem;
+      flex-basis: 15rem;
 }
 
 .item2 {
   background: #00ff00;
-  -ms-flex-negative: 4;
-      flex-shrink: 4;
+  -ms-flex-preferred-size: 15rem;
+      flex-basis: 15rem;
 }
 
 .item3 {
   background: #0000ff;
-  -ms-flex-negative: 5;
-      flex-shrink: 5;
+  -ms-flex-preferred-size: 15rem;
+      flex-basis: 15rem;
 }
 /*# sourceMappingURL=style.css.map */

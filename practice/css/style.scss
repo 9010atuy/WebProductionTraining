@@ -98,19 +98,19 @@ li:first-of-type {
 }
 
 .item {
-  width: 100%;
+  width: 10rem;
   height: 5rem;
   background: #fff;
 }
 .item1 {
   background: #ff0000;
-  flex-shrink: 3;
+  flex-basis: 15rem;
 }
 .item2 {
   background: #00ff00;
-  flex-shrink: 4;
+  flex-basis: 15rem;
 }
 .item3 {
   background: #0000ff;
-  flex-shrink: 5;
+  flex-basis: 15rem;
 }
