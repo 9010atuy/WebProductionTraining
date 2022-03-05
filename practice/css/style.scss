@@ -95,24 +95,22 @@ li:first-of-type {
 
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .item {
-  width: 10rem;
+  width: 5rem;
+  height: 5rem;
   background: #fff;
 }
 .item1 {
   background: #ff0000;
-  order: 2;
+  flex-grow: 1;
 }
 .item2 {
   background: #00ff00;
-  order: 3;
+  flex-grow: 2;
 }
 .item3 {
   background: #0000ff;
-  order: 1;
+  flex-grow: 3;
 }
