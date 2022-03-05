@@ -1,0 +1,118 @@
+h1 {
+  color: red;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+#text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+li:first-of-type {
+  color: #ff0000;
+}
+
+.div-border {
+  border: solid 3px #000;
+}
+
+.padding-no {
+  background-color: green;
+}
+
+.padding-yes {
+  background-color: #bbbbbb;
+  padding-top: 40px;
+  padding-bottom: 90px;
+  padding-left: 60px;
+}
+
+.margin-no {
+  background-color: green;
+}
+
+.margin-yes {
+  background-color: #bbbbbb;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.block1 {
+  background-color: yellow;
+}
+
+.block2 {
+  background-color: green;
+}
+
+.block3 {
+  background-color: orange;
+}
+
+.block4 {
+  background-color: black;
+}
+
+.inline1 {
+  background-color: yellow;
+}
+
+.inline2 {
+  background-color: green;
+}
+
+.inline3 {
+  background-color: orange;
+}
+
+.inline4 {
+  background-color: black;
+}
+
+.disp {
+  background-color: yellow;
+}
+.disp-none {
+  background-color: green;
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  width: 10rem;
+  background: #fff;
+}
+.item1 {
+  background: #ff0000;
+  order: 2;
+}
+.item2 {
+  background: #00ff00;
+  order: 3;
+}
+.item3 {
+  background: #0000ff;
+  order: 1;
+}
