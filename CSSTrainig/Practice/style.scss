@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+body {
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  .grid-item {
+    height: 5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  border: solid #000 2px;
+  text-align: center;
+  padding: 1.25rem 2.5rem;
+  margin: 1rem 2rem;
+  font-weight: 600;
+  background-color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.8s;
+  }
+}
+
+.orange {
+  background-color: orange;
+  color: #fff;
+  border: 0px;
+  &:hover {
+    background-color: orangered;
+  }
+
+  .round {
+    border-radius: 50%;
+  }
+}
