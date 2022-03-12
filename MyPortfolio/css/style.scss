@@ -2,6 +2,7 @@
 // font-family: 'Kiwi Maru', serif;
 // font-family: 'Roboto', sans-serif;
 
+// common
 html {
   font-size: 18px;
   font-family: 'Kiwi Maru', serif;
@@ -13,6 +14,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 h1,
@@ -30,11 +32,6 @@ h6 {
   max-width: 1200px;
   margin: auto;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  height: 3rem;
-}
 .full-img {
   position: relative;
   width: 100%;
@@ -50,70 +47,32 @@ header {
 .bg-primary {
   background-color: #e8ebee;
 }
-// top
-#top {
-  background-image: url('../images/top-full.jpg');
-  h1 {
+.contents {
+  text-align: center;
+  div {
+    position: relative;
+  }
+  #spring {
+    background-image: url(../images/spring.jpg);
+  }
+  #summer {
+    background-image: url(../images/summer.jpg);
+  }
+  #automn {
+    background-image: url(../images/automn.jpg);
+  }
+  #winter {
+    background-image: url(../images/winter.jpg);
+  }
+  p {
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
   }
-  h2 {
-    position: absolute;
-    top: 60%;
-    left: 70%;
-    font-size: 2rem;
-    word-wrap: normal;
-  }
-}
-#logo {
-  width: 100%;
-}
-nav {
-  position: fixed;
-  right: 0;
-  z-index: 999;
-  .nav-list {
-    display: flex;
-    height: 3rem;
-    align-items: center;
-    li {
-      &:not(:first-of-type) {
-        border-left: solid 1px #628a46;
-      }
-      a {
-        padding: 1rem 1rem;
-        background-color: #fff;
-        opacity: 0.4;
-        display: block;
-        height: 100%;
-        width: 100%;
-        color: #36740b;
-        &:hover {
-          color: green;
-          opacity: 1;
-          transition: 0.5s;
-        }
-      }
-    }
-  }
-}
-
-#skills {
-  min-height: 100vh;
-  padding: 5rem 0;
-  h1 {
-    text-align: center;
-  }
-}
-
-#works {
-  min-height: 100vh;
-}
-
-#contact {
-  min-height: 100vh;
 }
 .grid-content {
   display: grid;
@@ -133,6 +92,9 @@ nav {
 }
 .grid-3 {
   grid-template-columns: 1fr 1fr 1fr;
+}
+.flex-reverse {
+  flex-direction: row-reverse;
 }
 
 .circle {
@@ -174,4 +136,138 @@ nav {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
+}
+
+#header-logo {
+  width: 5rem;
+  height: 4rem;
+  margin-left: 3rem;
+}
+
+// top
+#top {
+  background-image: url('../images/top-full.jpg');
+  h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  h2 {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    font-size: 2rem;
+    word-wrap: normal;
+  }
+}
+// header
+header {
+  display: flex;
+  height: 3.2rem;
+}
+#logo {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  .nav-list {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    li {
+      &:not(:first-of-type) {
+        border-left: solid 1px #628a46;
+      }
+      a {
+        padding: 1rem 1rem;
+        background-color: #fff;
+        opacity: 0.4;
+        display: block;
+        height: 100%;
+        width: 100px;
+        color: #36740b;
+        text-align: center;
+        &:hover {
+          color: green;
+          opacity: 1;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+#skills {
+  min-height: 100vh;
+  padding: 5rem 0;
+  h1 {
+    text-align: center;
+  }
+}
+
+#works {
+  min-height: 100vh;
+  padding: 5rem 0;
+  h1 {
+    text-align: center;
+  }
+  .work-contents {
+    padding: 5rem 0;
+  }
+  .item {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    label {
+      width: 40%;
+      background-color: #c1d1d6;
+      height: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      border-radius: 45%;
+    }
+    img {
+      width: 500px;
+    }
+  }
+}
+
+#contact {
+  min-height: 100vh;
+  padding: 5rem 0;
+  h1 {
+    text-align: center;
+  }
+  input,
+  textarea {
+    background-color: rgba(237, 234, 230, 0.8);
+    border: none;
+    width: 100%;
+    height: 2rem;
+    padding: 1.8rem 1.5rem;
+  }
+  textarea {
+    height: 20rem;
+    resize: none;
+  }
+}
+
+#about {
+  padding-top: 1.85rem;
+}
+
+// footer
+footer {
+  background-color: #8c96a1;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
 }
