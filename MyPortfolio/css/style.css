@@ -185,9 +185,6 @@ h6 {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 3.2rem;
 }
 
@@ -315,5 +312,40 @@ footer {
   height: 5rem;
   line-height: 5rem;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  header nav {
+    left: 0;
+    width: 100%;
+  }
+  header nav .nav-list {
+    width: 100%;
+  }
+  header nav .nav-list li {
+    width: 100%;
+  }
+  header nav .nav-list li a {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  #logo {
+    width: 350px;
+  }
+  #top h2 {
+    top: 70%;
+  }
+  #works .item {
+    display: block;
+  }
+  #works .item img {
+    width: 100%;
+  }
+  #works .item label {
+    padding: 0 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

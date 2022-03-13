@@ -163,7 +163,6 @@ h6 {
 }
 // header
 header {
-  display: flex;
   height: 3.2rem;
 }
 #logo {
@@ -270,4 +269,47 @@ footer {
   height: 5rem;
   line-height: 5rem;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    nav {
+      left: 0;
+      width: 100%;
+      .nav-list {
+        width: 100%;
+        li {
+          width: 100%;
+          a {
+            width: 100%;
+            padding: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+  #logo {
+    width: 350px;
+  }
+  // top
+  #top {
+    h2 {
+      top: 70%;
+    }
+  }
+  // works
+  #works {
+    .item {
+      display: block;
+      img {
+        width: 100%;
+      }
+      label {
+        padding: 0 2rem;
+      }
+    }
+  }
 }
