@@ -348,4 +348,16 @@ footer {
     padding: 0 2rem;
   }
 }
+
+@media screen and (max-width: 656px) {
+  #works .item {
+    display: block;
+  }
+  #works .item img {
+    width: 100%;
+  }
+  #works .item label {
+    padding: 0 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
