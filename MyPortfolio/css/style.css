@@ -137,6 +137,19 @@ h6 {
   margin: 0 auto;
 }
 
+.btn {
+  padding: 1rem 2rem;
+  background-color: #e1fcea;
+  width: 50%;
+  margin-top: 3rem;
+  color: #000;
+}
+
+.btn:hover {
+  background-color: #d8f2d9;
+  cursor: pointer;
+}
+
 .html {
   background-color: #fa6b6b;
   color: #fff;
@@ -289,8 +302,9 @@ nav .nav-list li a:hover {
   text-align: center;
 }
 
-#contact input,
-#contact textarea {
+#contact form input[type='text'],
+#contact form input[type='email'],
+#contact form textarea {
   background-color: rgba(237, 234, 230, 0.8);
   border: none;
   width: 100%;
@@ -298,9 +312,13 @@ nav .nav-list li a:hover {
   padding: 1.8rem 1.5rem;
 }
 
-#contact textarea {
+#contact form textarea {
   height: 20rem;
   resize: none;
+}
+
+#contact form div {
+  text-align: center;
 }
 
 #about {
