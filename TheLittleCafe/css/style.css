@@ -149,6 +149,8 @@ header nav ul li:not(:last-of-type) {
 
 #top {
   background: url(../images/PC/FV.png) no-repeat center/cover;
+  background: -webkit-image-set(url(../images/PC/FV.png) 1x, url(../images//PC/FV@2x.png) 2x) no-repeat center/cover;
+  background: image-set(url(../images/PC/FV.png) 1x, url(../images//PC/FV@2x.png) 2x) no-repeat center/cover;
   height: 500px;
   text-align: center;
   position: relative;
@@ -356,7 +358,7 @@ footer p {
     display: none;
   }
   #top {
-    background: url(../images/SP/FV-sp.png);
+    background: imageset(url(../images/SP/FV-sp.png) 1x, url(../images/SP/FV-sp@2x.png));
   }
   #top p {
     top: 40px;
