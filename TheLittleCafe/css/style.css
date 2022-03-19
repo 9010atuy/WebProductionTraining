@@ -33,6 +33,10 @@ h3 {
   display: block;
 }
 
+.tb {
+  display: none;
+}
+
 .sp {
   display: none;
 }
@@ -144,7 +148,7 @@ header nav ul li:not(:last-of-type) {
 }
 
 #top {
-  background: url(../images/PC/FV.png) no-repeat center/contain;
+  background: url(../images/PC/FV.png) no-repeat center/cover;
   height: 500px;
   text-align: center;
   position: relative;
@@ -177,6 +181,11 @@ header nav ul li:not(:last-of-type) {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
 #menu .menu-contents .menu-item {
@@ -201,6 +210,7 @@ header nav ul li:not(:last-of-type) {
 #about {
   text-align: center;
   background-color: #0000000d;
+  margin: 0 auto;
   padding-bottom: 48px;
 }
 
@@ -216,6 +226,19 @@ header nav ul li:not(:last-of-type) {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+#about .about-contents .about-item {
+  width: 50%;
+}
+
+#about .about-contents .about-item img {
+  width: 100%;
 }
 
 #about .about-contents .about-item h2 {
@@ -231,7 +254,6 @@ header nav ul li:not(:last-of-type) {
   font-size: 18px;
   font-weight: 200;
   color: #505050;
-  width: 95%;
 }
 
 #about .about-contents .about-item p span {
@@ -249,9 +271,19 @@ footer p {
   text-align: center;
   font-weight: 200;
   line-height: 92px;
+  font-size: 20px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 920px) {
+  #about .about-contents .about-item h2 span {
+    display: inline;
+  }
+  #about .about-contents .about-item p span {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 670px) {
   html {
     min-width: 375px;
   }
@@ -261,53 +293,84 @@ footer p {
   .sp {
     display: block;
   }
+  .tb {
+    display: block;
+  }
   .wrapper {
-    padding: 0;
-    width: 100%;
-    margin: 0;
+    padding: 0 4%;
+    margin: 0 auto;
   }
   .contents-wrapper {
     padding: 0 60px;
   }
-  header {
-    display: block;
-    padding-left: 20px;
+  .flex-column {
+    row-gap: 1rem;
   }
-  #top {
-    background-image: url(../images/SP/FV-sp.png);
+  .btn {
+    margin: 0 auto;
   }
   #top p {
     white-space: normal;
-    width: 312px;
-    height: 95px;
+    width: 313px;
     font-size: 35px;
     line-height: 1.7;
-    margin: 0 auto;
   }
-  #menu .contents-wrapper {
-    padding: 0 30px;
-  }
-  #menu .contents-wrapper .menu-item {
+  #menu .menu-contents .menu-item {
     width: 315px;
   }
-  #menu .contents-wrapper .menu-item h2 {
+  #menu .menu-contents .menu-item h2 {
     margin-top: 20px;
   }
-  #menu .contents-wrapper .menu-item p {
+  #menu .menu-contents .menu-item p {
     line-height: 1.6;
+  }
+  #menu .menu-contents .menu-item img {
+    width: 100%;
   }
   #about {
     height: 785px;
-    margin: 0 auto;
   }
   #about .about-contents {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #about .about-contents .about-item {
+    width: 100%;
+    margin: 0 auto;
   }
   #about .about-contents .about-item h2 {
-    width: 315px;
+    width: 100%;
   }
   #about .about-contents .about-item img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tb {
+    display: none;
+  }
+  #top {
+    background: url(../images/SP/FV-sp.png);
+  }
+  #top p {
+    top: 40px;
+  }
+  #menu .menu-contents .menu-item {
     width: 315px;
+  }
+  #about {
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  footer p {
+    font-size: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */
