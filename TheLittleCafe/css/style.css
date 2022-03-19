@@ -11,6 +11,11 @@ ul {
   padding: 0;
 }
 
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 li {
   list-style: none;
 }
@@ -62,14 +67,13 @@ h1::before {
   display: none;
 }
 
-.wrapper {
-  padding: 0 60px;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
 .fs-20 {
   font-size: 20px;
+}
+
+.wrapper {
+  padding: 0 60px;
+  margin: 0 auto;
 }
 
 .contents-wrapper {
@@ -90,6 +94,18 @@ h1::before {
 
 .txt-left {
   text-align: left;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 header {
@@ -128,7 +144,7 @@ header nav ul li:not(:last-of-type) {
 }
 
 #top {
-  background: url("../images/PC/FV.png") center/cover;
+  background: url(../images/PC/FV.png) no-repeat center/contain;
   height: 500px;
   text-align: center;
   position: relative;
@@ -178,7 +194,7 @@ header nav ul li:not(:last-of-type) {
   font-weight: 200;
   font-size: 15px;
   width: 300px;
-  margin: 15px auto;
+  margin: 15px auto 48px;
   text-align: center;
 }
 
@@ -202,6 +218,26 @@ header nav ul li:not(:last-of-type) {
           flex-direction: row-reverse;
 }
 
+#about .about-contents .about-item h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+#about .about-contents .about-item h2 span {
+  display: block;
+}
+
+#about .about-contents .about-item p {
+  font-size: 18px;
+  font-weight: 200;
+  color: #505050;
+  width: 95%;
+}
+
+#about .about-contents .about-item p span {
+  display: block;
+}
+
 footer {
   background-color: #505050;
   height: 92px;
@@ -209,13 +245,13 @@ footer {
 }
 
 footer p {
-  padding: 30px 304px 37px 305px;
+  margin: 0 auto;
   text-align: center;
   font-weight: 200;
-  line-height: 1.65;
+  line-height: 92px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   html {
     min-width: 375px;
   }
