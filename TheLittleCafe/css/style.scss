@@ -245,6 +245,14 @@ footer {
     }
   }
 }
+@media screen and (max-width: 862px) {
+  #about {
+    .about-contents {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
 @media screen and (max-width: 670px) {
   // common
   html {
@@ -300,17 +308,13 @@ footer {
   }
   // about
   #about {
-    height: 785px;
     .about-contents {
-      flex-direction: column;
-      align-items: center;
-      .about-item {
+      .about-item-img {
         width: 100%;
-        margin: 0 auto;
-        h2 {
-          width: 100%;
-        }
-        img {
+      }
+      .about-item-text {
+        width: 100%;
+        .btn {
           width: 100%;
         }
       }
