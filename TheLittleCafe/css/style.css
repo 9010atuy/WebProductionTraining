@@ -376,7 +376,8 @@ footer p {
   }
   #top {
     background: url(../images/SP/FV-sp.png);
-    background: imageset(url(../images/SP/FV-sp.png) 1x, url(../images/SP/FV-sp@2x.png) 2x);
+    background: -webkit-image-set(url(../images/SP/FV-sp.png) 1x, url(../images/SP/FV-sp@2x.png) 2x);
+    background: image-set(url(../images/SP/FV-sp.png) 1x, url(../images/SP/FV-sp@2x.png) 2x);
     height: 550px;
   }
   #top p {
