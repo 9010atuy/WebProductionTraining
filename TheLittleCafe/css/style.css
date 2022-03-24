@@ -6,7 +6,7 @@
 
 html,
 ul {
-  font-family: 'Hiragino Sans', 'メイリオ', sans-serif;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'メイリオ', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -96,7 +96,7 @@ h1::before {
   color: #fff;
   font-size: 25px;
   font-weight: 200;
-  font-family: 'Hiragino Sans', 'メイリオ', sans-serif;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'メイリオ', sans-serif;
   line-height: 1.72;
 }
 
@@ -217,7 +217,7 @@ header nav ul li:not(:last-of-type) {
 
 #about {
   text-align: center;
-  background-color: #0000000d;
+  background-color: rgba(0, 0, 0, 0.05);
   margin: 0 auto;
   padding-bottom: 48px;
 }
