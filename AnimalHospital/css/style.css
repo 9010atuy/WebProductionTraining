@@ -1,0 +1,56 @@
+@charset "UTF-8";
+* {
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: '游ゴシック体', '游ゴシック', 'Yu Gothic', sans-serif;
+}
+
+.wrapper {
+  padding: 0 100px;
+}
+
+.header-wrapper {
+  padding: 0 99px 0 66px;
+}
+
+header {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #site-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 9.5px;
+          column-gap: 9.5px;
+}
+
+header #site-title p {
+  font-weight: bold;
+}
+
+header nav {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li:not(:first-of-type) {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=style.css.map */

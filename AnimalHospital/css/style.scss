@@ -1,0 +1,39 @@
+// common
+* {
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: '游ゴシック体', '游ゴシック', 'Yu Gothic', sans-serif;
+}
+.wrapper {
+  padding: 0 100px;
+}
+.header-wrapper {
+  padding: 0 99px 0 66px;
+}
+// header
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  #site-title {
+    display: flex;
+    column-gap: 9.5px;
+    p {
+      font-weight: bold;
+    }
+  }
+  nav {
+    font-size: 0.7rem;
+    font-weight: bold;
+    ul {
+      display: flex;
+      li {
+        &:not(:first-of-type) {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
