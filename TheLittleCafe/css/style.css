@@ -11,6 +11,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   max-width: 1080px;
   margin: 0 auto;
@@ -39,6 +43,11 @@ h3 {
 
 .sp {
   display: none;
+}
+
+.full-size {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
 }
 
 h1 {
@@ -358,6 +367,12 @@ footer p {
   }
   #about .about-contents .about-item-text .btn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .tb {
+    display: none;
   }
 }
 
