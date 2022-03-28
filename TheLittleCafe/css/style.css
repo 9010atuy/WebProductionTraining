@@ -96,6 +96,8 @@ h1::before {
 
 .contents-wrapper {
   padding: 0 60px;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -231,7 +233,6 @@ header nav ul li:not(:last-of-type) {
 #about {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.05);
-  margin: 0 auto;
   padding-bottom: 48px;
 }
 
