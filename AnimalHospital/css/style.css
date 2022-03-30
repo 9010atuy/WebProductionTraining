@@ -419,6 +419,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
           align-items: center;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  padding: 50px 0;
 }
 
 .icon-heading h1 {
@@ -427,7 +428,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #service {
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -441,7 +442,6 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #service #service-contents .service-content {
-  margin-top: 50px;
   text-align: center;
 }
 
@@ -530,11 +530,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #information {
-  padding-top: 50px;
-}
-
-#information .information-contents {
-  margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 #information .information-contents table {
@@ -597,5 +593,66 @@ header .header-area .nav-column-list li:not(:last-of-type) {
     margin-bottom: 0;
     font-size: 1.7rem;
   }
+}
+
+#access {
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  #access .access-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 46px;
+            column-gap: 46px;
+  }
+}
+
+#access .access-contents .access-map {
+  padding-top: 56.25%;
+  position: relative;
+  height: 222px;
+}
+
+@media screen and (min-width: 1000px) {
+  #access .access-contents .access-map {
+    width: 440px;
+    height: 300px;
+    padding-top: 0;
+  }
+}
+
+#access .access-contents .access-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#access .access-contents .access-text {
+  margin-top: 50px;
+}
+
+#access .access-contents .access-text h2 {
+  font-size: 2.2rem;
+}
+
+#access .access-contents .access-text p {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+#access .access-contents .access-text p span {
+  font-size: 2.5rem;
+  color: #0d96a0;
+}
+
+#access .access-contents .access-text .opening {
+  margin-top: 20px;
+  border-top: 1px #505050 solid;
+  border-bottom: 1px #505050 solid;
+  padding-bottom: 22px;
 }
 /*# sourceMappingURL=style.css.map */

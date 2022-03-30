@@ -328,20 +328,20 @@ header {
   justify-content: center;
   align-items: center;
   column-gap: 20px;
+  padding: 50px 0;
   h1 {
     text-align: center;
     font-size: 2.5rem;
   }
 }
 #service {
-  padding: 50px 0;
+  padding-bottom: 50px;
   #service-contents {
     @include mq(lg) {
       display: flex;
       column-gap: 50px;
     }
     .service-content {
-      margin-top: 50px;
       text-align: center;
       @include mq(lg) {
         width: 260px;
@@ -416,9 +416,8 @@ header {
   }
 }
 #information {
-  padding-top: 50px;
+  padding-bottom: 50px;
   .information-contents {
-    margin-top: 50px;
     table {
       border-collapse: collapse;
       margin: 0 auto;
@@ -463,6 +462,52 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+#access {
+  padding-bottom: 50px;
+  .access-contents {
+    @include mq(lg) {
+      display: flex;
+      column-gap: 46px;
+    }
+    .access-map {
+      padding-top: 56.25%;
+      position: relative;
+      height: 222px;
+      @include mq(lg) {
+        width: 440px;
+        height: 300px;
+        padding-top: 0;
+      }
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .access-text {
+      margin-top: 50px;
+      h2 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        span {
+          font-size: 2.5rem;
+          color: #0d96a0;
+        }
+      }
+      .opening {
+        margin-top: 20px;
+        border-top: 1px #505050 solid;
+        border-bottom: 1px #505050 solid;
+        padding-bottom: 22px;
       }
     }
   }
