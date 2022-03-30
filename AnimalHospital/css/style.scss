@@ -512,3 +512,130 @@ header {
     }
   }
 }
+#inquiry {
+  padding-bottom: 50px;
+  @include mq(lg) {
+    padding-bottom: 80px;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.875;
+    @include mq(lg) {
+      text-align: center;
+      font-size: 1.7rem;
+    }
+  }
+  form {
+    margin-top: 50px;
+    .form-control {
+      @include mq(lg) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &:last-of-type {
+          display: block;
+          text-align: center;
+        }
+      }
+      &:not(:first-of-type) {
+        margin-top: 22px;
+      }
+      label {
+        font-size: 1.8rem;
+        font-weight: bold;
+        display: block;
+      }
+      input {
+        background-color: #ffffff;
+        width: 100%;
+        height: 50px;
+        font-size: 1.8rem;
+        padding: 0.5rem 1rem;
+        &[type='button'] {
+          margin-top: 50px;
+          background-color: #0d96a0;
+          color: white;
+          font-size: 2rem;
+          font-weight: bold;
+          border-radius: 10px;
+        }
+        @include mq(lg) {
+          width: 711px;
+          &[type='button'] {
+            width: 200px;
+          }
+        }
+      }
+      textarea {
+        background-color: #ffffff;
+        width: 100%;
+        height: 300px;
+        font-size: 1.8rem;
+        padding: 0.5rem 1rem;
+        @include mq(lg) {
+          width: 711px;
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: #505050;
+  height: 279px;
+  padding: 50px 0;
+  nav {
+    border-bottom: 1px #ffffff solid;
+    padding-bottom: 31px;
+    .nav-list {
+      display: flex;
+      column-gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+    }
+    @include mq(lg) {
+      padding-bottom: 31px;
+      .nav-list {
+        column-gap: 14px;
+        li {
+          font-size: 2rem;
+          line-height: 1.65;
+        }
+      }
+    }
+  }
+  p {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    @include mq(lg) {
+      font-size: 2rem;
+    }
+  }
+  .sns-icon-list {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      &:nth-child(2) {
+        margin-left: 12px;
+      }
+      &:nth-child(3) {
+        margin-left: 14.2px;
+      }
+      &:nth-child(4) {
+        margin-left: 10.6px;
+      }
+    }
+    @include mq(lg) {
+      margin-top: 19px;
+    }
+  }
+}
