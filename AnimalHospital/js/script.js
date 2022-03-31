@@ -5,4 +5,8 @@ $(function () {
     $('.nav-toggle-menu').stop(true).animate({ height: 'toggle' });
     return false;
   });
+  $('.nav-column-list').on('click', () => {
+    $('.nav-btn').toggleClass('active');
+    $('.nav-toggle-menu').stop(true).animate({ height: 'toggle' });
+  });
 });

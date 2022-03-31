@@ -168,19 +168,24 @@ header .header-area nav {
   }
 }
 
-header .header-area .nav-column-list {
+header .nav-column-list {
   background-color: rgba(6, 184, 146, 0.1);
   z-index: 999;
 }
 
-header .header-area .nav-column-list li {
+header .nav-column-list li:not(:last-of-type) {
+  border-bottom: 3px solid #fff;
+}
+
+header .nav-column-list li a {
+  display: block;
   font-size: 2rem;
   text-align: center;
   color: #0d96a0;
 }
 
-header .header-area .nav-column-list li:not(:last-of-type) {
-  border-bottom: 3px solid #fff;
+header .nav-column-list li a:focus {
+  cursor: pointer;
 }
 
 #top {
@@ -793,10 +798,15 @@ footer nav .nav-list {
           justify-content: center;
 }
 
-footer nav .nav-list li {
+footer nav .nav-list li a {
   color: #fff;
   font-size: 1.8rem;
   font-weight: bold;
+  display: block;
+}
+
+footer nav .nav-list li a:focus {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1000px) {

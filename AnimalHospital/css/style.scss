@@ -123,15 +123,21 @@ header {
         }
       }
     }
-    .nav-column-list {
-      background-color: rgba(6, 184, 146, 0.1);
-      z-index: 999;
-      li {
+  }
+  .nav-column-list {
+    background-color: rgba(6, 184, 146, 0.1);
+    z-index: 999;
+    li {
+      &:not(:last-of-type) {
+        border-bottom: 3px solid #fff;
+      }
+      a {
+        display: block;
         font-size: 2rem;
         text-align: center;
         color: #0d96a0;
-        &:not(:last-of-type) {
-          border-bottom: 3px solid #fff;
+        &:focus {
+          cursor: pointer;
         }
       }
     }
@@ -612,9 +618,15 @@ footer {
       flex-wrap: wrap;
       justify-content: center;
       li {
-        color: #fff;
-        font-size: 1.8rem;
-        font-weight: bold;
+        a {
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: bold;
+          display: block;
+          &:focus {
+            cursor: pointer;
+          }
+        }
       }
     }
     @include mq(lg) {
