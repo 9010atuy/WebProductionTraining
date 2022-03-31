@@ -231,7 +231,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 
 #about #about-heading {
   padding-top: 44px;
-  padding-bottom: 50px;
+  padding-bottom: 42px;
 }
 
 #about #about-heading h1 {
@@ -259,8 +259,8 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 
 #about #about-heading p svg {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 24px;
+  bottom: 11px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -280,11 +280,12 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #about #about-contents {
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 42px;
 }
 
-#about #about-contents .content {
-  margin-top: 50px;
+#about #about-contents .content:not(:first-of-type) {
+  margin-top: 43px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -328,7 +329,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 
 #about #about-contents .content .content-text h2 {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 26px;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -354,8 +355,9 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #about #about-contents .content .content-text p {
-  margin-top: 20px;
+  margin-top: 7px;
   font-size: 1.6rem;
+  line-height: 1.875;
 }
 
 @media screen and (min-width: 1000px) {
@@ -419,16 +421,17 @@ header .header-area .nav-column-list li:not(:last-of-type) {
           align-items: center;
   -webkit-column-gap: 20px;
           column-gap: 20px;
-  padding: 50px 0;
+  padding-top: 45px;
+  padding-bottom: 44px;
 }
 
-.icon-heading h1 {
+.icon-heading span {
   text-align: center;
   font-size: 2.5rem;
 }
 
 #service {
-  padding-bottom: 50px;
+  padding-bottom: 44px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -443,6 +446,10 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 
 #service #service-contents .service-content {
   text-align: center;
+}
+
+#service #service-contents .service-content:not(:first-of-type) {
+  margin-top: 43px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -509,7 +516,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 
 #service #service-contents .service-content h2 {
   font-size: 2rem;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -520,7 +527,8 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 
 #service #service-contents .service-content p {
   font-size: 1.6rem;
-  margin-top: 20px;
+  margin-top: 8px;
+  line-height: 1.875;
 }
 
 @media screen and (min-width: 768px) {
@@ -543,11 +551,14 @@ header .header-area .nav-column-list li:not(:last-of-type) {
   border-color: #707070;
   border-style: solid;
   border-width: 1px 0;
-  padding: 30px 0 30.4px;
+  padding-top: 30px;
+  padding-bottom: 34px;
 }
 
 #information .information-contents table tbody tr td {
   display: block;
+  line-height: 1.47;
+  padding: 0 10px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -560,7 +571,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 #information .information-contents table tbody tr td:nth-child(1) {
   font-weight: bold;
   font-size: 1.7rem;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -573,6 +584,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
   font-weight: bold;
   font-size: 2rem;
   color: #0d96a0;
+  line-height: 1.55;
 }
 
 @media screen and (min-width: 1000px) {
@@ -584,7 +596,8 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 
 #information .information-contents table tbody tr td:nth-child(3) {
   font-size: 1.6rem;
-  margin-bottom: 30.4px;
+  margin-bottom: 24.9px;
+  line-height: 1.775;
 }
 
 @media screen and (min-width: 1000px) {
@@ -596,7 +609,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #access {
-  padding-bottom: 50px;
+  padding-bottom: 48px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -612,7 +625,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 #access .access-contents .access-map {
   padding-top: 56.25%;
   position: relative;
-  height: 222px;
+  height: 221px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -632,7 +645,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #access .access-contents .access-text {
-  margin-top: 50px;
+  margin-top: 23px;
 }
 
 #access .access-contents .access-text h2 {
@@ -641,19 +654,17 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 
 #access .access-contents .access-text p {
   font-size: 1.6rem;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #access .access-contents .access-text p span {
   font-size: 2.5rem;
   color: #0d96a0;
+  letter-spacing: 0.4px;
 }
 
-#access .access-contents .access-text .opening {
-  margin-top: 20px;
-  border-top: 1px #505050 solid;
-  border-bottom: 1px #505050 solid;
-  padding-bottom: 22px;
+#access .access-contents .access-text hr {
+  margin-top: 17px;
 }
 
 #inquiry {
@@ -669,6 +680,8 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 #inquiry p {
   font-size: 1.6rem;
   line-height: 1.875;
+  margin-top: -8px;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -679,7 +692,8 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #inquiry form {
-  margin-top: 50px;
+  margin-top: 39px;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -701,7 +715,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #inquiry form .form-control:not(:first-of-type) {
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 #inquiry form .form-control label {
@@ -711,6 +725,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #inquiry form .form-control input {
+  margin-top: 7px;
   background-color: #ffffff;
   width: 100%;
   height: 50px;
@@ -719,12 +734,13 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #inquiry form .form-control input[type='button'] {
-  margin-top: 50px;
+  margin-top: 29px;
   background-color: #0d96a0;
   color: white;
   font-size: 2rem;
   font-weight: bold;
   border-radius: 10px;
+  height: 40px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -737,6 +753,7 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 }
 
 #inquiry form .form-control textarea {
+  margin-top: 7px;
   background-color: #ffffff;
   width: 100%;
   height: 300px;
@@ -753,12 +770,13 @@ header .header-area .nav-column-list li:not(:last-of-type) {
 footer {
   background-color: #505050;
   height: 279px;
-  padding: 50px 0;
+  padding-top: 45px;
+  padding-bottom: 50px;
 }
 
 footer nav {
   border-bottom: 1px #ffffff solid;
-  padding-bottom: 31px;
+  padding-bottom: 26px;
 }
 
 footer nav .nav-list {
@@ -767,6 +785,7 @@ footer nav .nav-list {
   display: flex;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  row-gap: 6px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -798,7 +817,7 @@ footer p {
   color: #fff;
   font-size: 1.6rem;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 16px;
   font-weight: bold;
 }
 
