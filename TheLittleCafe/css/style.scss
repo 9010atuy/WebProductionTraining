@@ -64,6 +64,9 @@ h1 {
 .wrapper {
   padding: 0 60px;
   margin: 0 auto;
+  @media screen and (max-width: 1000px) {
+    padding: 0 10%;
+  }
 }
 .header-wrapper {
   padding: 0 65px 0 60px;
@@ -158,13 +161,13 @@ header {
     align-items: center;
     margin: 0 auto;
     padding-bottom: 53px;
-    @media screen and (max-width: 1079px) {
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
       align-items: center;
       padding-bottom: 48px;
     }
     .menu-item {
-      @media screen and (max-width: 1079px) {
+      @media screen and (max-width: 1000px) {
         width: 100%;
         &:not(:first-of-type) {
           margin-top: 33px;
@@ -243,7 +246,7 @@ footer {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 1000px) {
   .pc {
     display: block;
   }
@@ -328,9 +331,6 @@ footer {
         p {
           line-height: 1.7;
           margin-bottom: 0;
-        }
-        &:last-of-type {
-          // margin-bottom: 43px;
         }
         &:not(:first-of-type) {
           margin-top: 0px;
