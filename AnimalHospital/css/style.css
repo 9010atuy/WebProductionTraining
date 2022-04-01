@@ -64,7 +64,8 @@
 
 @media screen and (min-width: 1000px) {
   .header-wrapper {
-    padding: 0 99px 0 66px;
+    padding-left: 98px;
+    padding-right: 60px;
   }
 }
 
@@ -146,6 +147,13 @@ header .header-area #site-title p {
   font-size: 2rem;
 }
 
+@media screen and (min-width: 1000px) {
+  header .header-area #site-title p {
+    margin-left: 1px;
+    font-size: 1.8rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   header .header-area #site-title p {
     font-weight: bold;
@@ -165,6 +173,10 @@ header .header-area nav {
   }
   header .header-area nav ul li:not(:first-of-type) {
     margin-left: 10px;
+  }
+  header .header-area nav ul li a {
+    font-size: 1.4rem;
+    font-weight: bold;
   }
 }
 
@@ -194,8 +206,8 @@ header .nav-column-list li a:focus {
   background-image: image-set(url(../images/top_sp.png) 1x, url(../images/top_sp@2x.png) 2x);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   height: 550px;
+  background-size: cover;
   position: relative;
 }
 
@@ -209,7 +221,8 @@ header .nav-column-list li a:focus {
 
 @media screen and (min-width: 768px) {
   #top {
-    background-image: auto;
+    background-size: auto;
+    height: 500px;
   }
 }
 
@@ -269,18 +282,25 @@ header .nav-column-list li a:focus {
 }
 
 @media screen and (min-width: 1000px) {
+  #about #about-heading {
+    padding-top: 59px;
+  }
   #about #about-heading h1 {
     font-size: 3rem;
     line-height: 1.7;
   }
-  #about #about-heading h1 span {
-    display: inline;
-    font-size: 3rem;
-  }
   #about #about-heading p {
+    margin-top: 14px;
     text-align: center;
     font-size: 1.8rem;
+  }
+  #about #about-heading p span {
+    font-size: 1.8rem;
     line-height: 1.83;
+  }
+  #about #about-heading p svg {
+    right: 0px;
+    bottom: 0px;
   }
 }
 

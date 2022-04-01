@@ -44,7 +44,8 @@
 .header-wrapper {
   padding-left: 20px;
   @include mq(lg) {
-    padding: 0 99px 0 66px;
+    padding-left: 98px;
+    padding-right: 60px;
   }
 }
 .nav-btn {
@@ -100,6 +101,10 @@ header {
       }
       p {
         font-size: 2rem;
+        @include mq(lg) {
+          margin-left: 1px;
+          font-size: 1.8rem;
+        }
       }
     }
     @include mq(md) {
@@ -118,6 +123,10 @@ header {
           li {
             &:not(:first-of-type) {
               margin-left: 10px;
+            }
+            a {
+              font-size: 1.4rem;
+              font-weight: bold;
             }
           }
         }
@@ -158,11 +167,12 @@ header {
   }
   background-repeat: no-repeat;
   background-position: center;
+  height: 550px;
   background-size: cover;
   @include mq(md) {
-    background-image: auto;
+    background-size: auto;
+    height: 500px;
   }
-  height: 550px;
   position: relative;
   .top-message {
     position: absolute;
@@ -214,18 +224,23 @@ header {
       }
     }
     @include mq(lg) {
+      padding-top: 59px;
       h1 {
         font-size: 3rem;
         line-height: 1.7;
-        span {
-          display: inline;
-          font-size: 3rem;
-        }
       }
       p {
+        margin-top: 14px;
         text-align: center;
         font-size: 1.8rem;
-        line-height: 1.83;
+        span {
+          font-size: 1.8rem;
+          line-height: 1.83;
+        }
+        svg {
+          right: 0px;
+          bottom: 0px;
+        }
       }
     }
   }
