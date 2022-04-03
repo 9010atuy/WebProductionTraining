@@ -225,6 +225,7 @@ header {
     }
     @include mq(lg) {
       padding-top: 59px;
+      padding-bottom: 60px;
       h1 {
         font-size: 3rem;
         line-height: 1.7;
@@ -233,13 +234,14 @@ header {
         margin-top: 14px;
         text-align: center;
         font-size: 1.8rem;
-        span {
-          font-size: 1.8rem;
-          line-height: 1.83;
-        }
-        svg {
-          right: 0px;
-          bottom: 0px;
+        font-size: 1.8rem;
+        line-height: 1.83;
+        position: relative;
+        img {
+          position: absolute;
+          right: -11px;
+          bottom: -14px;
+          height: 80px;
         }
       }
     }
@@ -247,9 +249,13 @@ header {
   #about-contents {
     padding-top: 50px;
     padding-bottom: 42px;
+    @include mq(lg) {
+      padding-top: 72px;
+      padding-bottom: 67.5px;
+    }
     .content {
       &:not(:first-of-type) {
-        margin-top: 43px;
+        margin-top: 73px;
       }
       @include mq(lg) {
         display: flex;
@@ -267,7 +273,9 @@ header {
         background-position: center;
         height: 200px;
         @include mq(lg) {
-          width: 45%;
+          width: 50%;
+          height: 247px;
+          background-size: contain;
         }
       }
       .content-text {
@@ -282,72 +290,72 @@ header {
           @include mq(lg) {
             font-size: 2.2rem;
             line-height: 1.5;
+            margin-top: 50px;
+            text-align: left;
           }
           span {
             display: block;
             font-size: 2rem;
             font-weight: bold;
-            @include mq(lg) {
-              display: inline;
-              font-size: 2.2rem;
-            }
-          }
-        }
-        p {
-          margin-top: 7px;
-          font-size: 1.6rem;
-          line-height: 1.875;
-          @include mq(lg) {
-            font-size: 1.8rem;
-            line-height: 1.8;
           }
         }
       }
-      #content-image01 {
-        background-image: url(../images/about_01_sp.png);
-        background-image: image-set(
-          url('../images/about_01_sp.png') 1x,
-          url('../images/about_01_sp@2x.png') 2x
-        );
+      p {
+        margin-top: 7px;
+        font-size: 1.6rem;
+        line-height: 1.875;
         @include mq(lg) {
-          background-image: url(../images/about_01.png);
-          background-image: image-set(
-            url('../images/about_01.png') 1x,
-            url('../images/about_01@2x.png') 2x
-          );
+          font-size: 1.8rem;
+          line-height: 1.8;
+          margin-top: 18px;
         }
       }
-      #content-image02 {
-        background-image: url(../images/about_02_sp.png);
+    }
+    #content-image01 {
+      background-image: url(../images/about_01_sp.png);
+      background-image: image-set(
+        url('../images/about_01_sp.png') 1x,
+        url('../images/about_01_sp@2x.png') 2x
+      );
+      @include mq(lg) {
+        background-image: url(../images/about_01.png);
         background-image: image-set(
-          url('../images/about_02_sp.png') 1x,
-          url('../images/about_02_sp@2x.png') 2x
+          url('../images/about_01.png') 1x,
+          url('../images/about_01@2x.png') 2x
         );
-        @include mq(lg) {
-          background-image: url(../images/about_02.png);
-          background-image: image-set(
-            url('../images/about_02.png') 1x,
-            url('../images/about_02@2x.png') 2x
-          );
-        }
       }
-      #content-image03 {
-        background-image: url(../images/about_03_sp.png);
+    }
+    #content-image02 {
+      background-image: url(../images/about_02_sp.png);
+      background-image: image-set(
+        url('../images/about_02_sp.png') 1x,
+        url('../images/about_02_sp@2x.png') 2x
+      );
+      @include mq(lg) {
+        background-image: url(../images/about_02.png);
         background-image: image-set(
-          url('../images/about_03_sp.png') 1x,
-          url('../images/about_03_sp@2x.png') 2x
+          url('../images/about_02.png') 1x,
+          url('../images/about_02@2x.png') 2x
         );
-        @include mq(lg) {
-          background-image: url(../images/about_03.png);
-          background-image: image-set(
-            url('../images/about_03.png') 1x,
-            url('../images/about_03@2x.png') 2x
-          );
-        }
+      }
+    }
+    #content-image03 {
+      background-image: url(../images/about_03_sp.png);
+      background-image: image-set(
+        url('../images/about_03_sp.png') 1x,
+        url('../images/about_03_sp@2x.png') 2x
+      );
+      @include mq(lg) {
+        background-image: url(../images/about_03.png);
+        background-image: image-set(
+          url('../images/about_03.png') 1x,
+          url('../images/about_03@2x.png') 2x
+        );
       }
     }
   }
 }
+
 .icon-heading {
   display: flex;
   justify-content: center;
@@ -362,6 +370,10 @@ header {
 }
 #service {
   padding-bottom: 44px;
+  @include mq(lg) {
+    padding-top: 21px;
+    padding-bottom: 65px;
+  }
   #service-contents {
     @include mq(lg) {
       display: flex;
@@ -369,11 +381,14 @@ header {
     }
     .service-content {
       text-align: center;
-      &:not(:first-of-type) {
-        margin-top: 43px;
-      }
       @include mq(lg) {
         width: 260px;
+      }
+      &:not(:first-of-type) {
+        margin-top: 43px;
+        @include mq(lg) {
+          margin-top: 0px;
+        }
       }
       .service-content-image {
         background-repeat: no-repeat;
@@ -431,22 +446,30 @@ header {
         font-size: 2rem;
         margin-top: 24px;
         @include mq(md) {
-          margin-top: 20px;
-        }
-      }
-      p {
-        font-size: 1.6rem;
-        margin-top: 8px;
-        line-height: 1.875;
-        @include mq(md) {
           margin-top: 15px;
         }
       }
     }
+    p {
+      font-size: 1.6rem;
+      margin-top: 8px;
+      line-height: 1.875;
+      @include mq(md) {
+        font-size: 1.7rem;
+        margin-top: 5.7px;
+        text-align: center;
+        line-height: 1.75;
+      }
+    }
   }
 }
+
 #information {
   padding-bottom: 50px;
+  @include mq(lg) {
+    padding-top: 16px;
+    padding-bottom: 67px;
+  }
   .information-contents {
     table {
       border-collapse: collapse;
@@ -459,13 +482,17 @@ header {
           border-width: 1px 0;
           padding-top: 30px;
           padding-bottom: 34px;
+          @include mq(lg) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
           td {
             display: block;
             line-height: 1.47;
             padding: 0 10px;
             @include mq(lg) {
               display: inline-block;
-              padding: 20px 0;
+              padding: 13.8px 0;
             }
             &:nth-child(1) {
               font-weight: bold;
@@ -473,6 +500,7 @@ header {
               margin-top: 25px;
               @include mq(lg) {
                 margin-top: 0;
+                margin-left: 20px;
               }
             }
             &:nth-child(2) {
@@ -503,6 +531,9 @@ header {
 }
 #access {
   padding-bottom: 48px;
+  @include mq(lg) {
+    padding-top: 22px;
+  }
   .access-contents {
     @include mq(lg) {
       display: flex;
@@ -527,6 +558,9 @@ header {
     }
     .access-text {
       margin-top: 23px;
+      @include mq(lg) {
+        margin-top: 0;
+      }
       h2 {
         font-size: 2.2rem;
       }
@@ -670,7 +704,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    svg {
+    img {
       &:nth-child(2) {
         margin-left: 12px;
       }

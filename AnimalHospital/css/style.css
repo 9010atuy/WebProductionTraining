@@ -284,6 +284,7 @@ header .nav-column-list li a:focus {
 @media screen and (min-width: 1000px) {
   #about #about-heading {
     padding-top: 59px;
+    padding-bottom: 60px;
   }
   #about #about-heading h1 {
     font-size: 3rem;
@@ -293,14 +294,15 @@ header .nav-column-list li a:focus {
     margin-top: 14px;
     text-align: center;
     font-size: 1.8rem;
-  }
-  #about #about-heading p span {
     font-size: 1.8rem;
     line-height: 1.83;
+    position: relative;
   }
-  #about #about-heading p svg {
-    right: 0px;
-    bottom: 0px;
+  #about #about-heading p img {
+    position: absolute;
+    right: -11px;
+    bottom: -14px;
+    height: 80px;
   }
 }
 
@@ -309,8 +311,15 @@ header .nav-column-list li a:focus {
   padding-bottom: 42px;
 }
 
+@media screen and (min-width: 1000px) {
+  #about #about-contents {
+    padding-top: 72px;
+    padding-bottom: 67.5px;
+  }
+}
+
 #about #about-contents .content:not(:first-of-type) {
-  margin-top: 43px;
+  margin-top: 73px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -342,7 +351,9 @@ header .nav-column-list li a:focus {
 
 @media screen and (min-width: 1000px) {
   #about #about-contents .content .content-image {
-    width: 45%;
+    width: 50%;
+    height: 247px;
+    background-size: contain;
   }
 }
 
@@ -363,6 +374,8 @@ header .nav-column-list li a:focus {
   #about #about-contents .content .content-text h2 {
     font-size: 2.2rem;
     line-height: 1.5;
+    margin-top: 50px;
+    text-align: left;
   }
 }
 
@@ -372,62 +385,56 @@ header .nav-column-list li a:focus {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1000px) {
-  #about #about-contents .content .content-text h2 span {
-    display: inline;
-    font-size: 2.2rem;
-  }
-}
-
-#about #about-contents .content .content-text p {
+#about #about-contents .content p {
   margin-top: 7px;
   font-size: 1.6rem;
   line-height: 1.875;
 }
 
 @media screen and (min-width: 1000px) {
-  #about #about-contents .content .content-text p {
+  #about #about-contents .content p {
     font-size: 1.8rem;
     line-height: 1.8;
+    margin-top: 18px;
   }
 }
 
-#about #about-contents .content #content-image01 {
+#about #about-contents #content-image01 {
   background-image: url(../images/about_01_sp.png);
   background-image: -webkit-image-set(url("../images/about_01_sp.png") 1x, url("../images/about_01_sp@2x.png") 2x);
   background-image: image-set(url("../images/about_01_sp.png") 1x, url("../images/about_01_sp@2x.png") 2x);
 }
 
 @media screen and (min-width: 1000px) {
-  #about #about-contents .content #content-image01 {
+  #about #about-contents #content-image01 {
     background-image: url(../images/about_01.png);
     background-image: -webkit-image-set(url("../images/about_01.png") 1x, url("../images/about_01@2x.png") 2x);
     background-image: image-set(url("../images/about_01.png") 1x, url("../images/about_01@2x.png") 2x);
   }
 }
 
-#about #about-contents .content #content-image02 {
+#about #about-contents #content-image02 {
   background-image: url(../images/about_02_sp.png);
   background-image: -webkit-image-set(url("../images/about_02_sp.png") 1x, url("../images/about_02_sp@2x.png") 2x);
   background-image: image-set(url("../images/about_02_sp.png") 1x, url("../images/about_02_sp@2x.png") 2x);
 }
 
 @media screen and (min-width: 1000px) {
-  #about #about-contents .content #content-image02 {
+  #about #about-contents #content-image02 {
     background-image: url(../images/about_02.png);
     background-image: -webkit-image-set(url("../images/about_02.png") 1x, url("../images/about_02@2x.png") 2x);
     background-image: image-set(url("../images/about_02.png") 1x, url("../images/about_02@2x.png") 2x);
   }
 }
 
-#about #about-contents .content #content-image03 {
+#about #about-contents #content-image03 {
   background-image: url(../images/about_03_sp.png);
   background-image: -webkit-image-set(url("../images/about_03_sp.png") 1x, url("../images/about_03_sp@2x.png") 2x);
   background-image: image-set(url("../images/about_03_sp.png") 1x, url("../images/about_03_sp@2x.png") 2x);
 }
 
 @media screen and (min-width: 1000px) {
-  #about #about-contents .content #content-image03 {
+  #about #about-contents #content-image03 {
     background-image: url(../images/about_03.png);
     background-image: -webkit-image-set(url("../images/about_03.png") 1x, url("../images/about_03@2x.png") 2x);
     background-image: image-set(url("../images/about_03.png") 1x, url("../images/about_03@2x.png") 2x);
@@ -460,6 +467,13 @@ header .nav-column-list li a:focus {
 }
 
 @media screen and (min-width: 1000px) {
+  #service {
+    padding-top: 21px;
+    padding-bottom: 65px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   #service #service-contents {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -473,13 +487,19 @@ header .nav-column-list li a:focus {
   text-align: center;
 }
 
+@media screen and (min-width: 1000px) {
+  #service #service-contents .service-content {
+    width: 260px;
+  }
+}
+
 #service #service-contents .service-content:not(:first-of-type) {
   margin-top: 43px;
 }
 
 @media screen and (min-width: 1000px) {
-  #service #service-contents .service-content {
-    width: 260px;
+  #service #service-contents .service-content:not(:first-of-type) {
+    margin-top: 0px;
   }
 }
 
@@ -546,24 +566,34 @@ header .nav-column-list li a:focus {
 
 @media screen and (min-width: 768px) {
   #service #service-contents .service-content h2 {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
-#service #service-contents .service-content p {
+#service #service-contents p {
   font-size: 1.6rem;
   margin-top: 8px;
   line-height: 1.875;
 }
 
 @media screen and (min-width: 768px) {
-  #service #service-contents .service-content p {
-    margin-top: 15px;
+  #service #service-contents p {
+    font-size: 1.7rem;
+    margin-top: 5.7px;
+    text-align: center;
+    line-height: 1.75;
   }
 }
 
 #information {
   padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  #information {
+    padding-top: 16px;
+    padding-bottom: 67px;
+  }
 }
 
 #information .information-contents table {
@@ -580,6 +610,13 @@ header .nav-column-list li a:focus {
   padding-bottom: 34px;
 }
 
+@media screen and (min-width: 1000px) {
+  #information .information-contents table tbody tr {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 #information .information-contents table tbody tr td {
   display: block;
   line-height: 1.47;
@@ -589,7 +626,7 @@ header .nav-column-list li a:focus {
 @media screen and (min-width: 1000px) {
   #information .information-contents table tbody tr td {
     display: inline-block;
-    padding: 20px 0;
+    padding: 13.8px 0;
   }
 }
 
@@ -602,6 +639,7 @@ header .nav-column-list li a:focus {
 @media screen and (min-width: 1000px) {
   #information .information-contents table tbody tr td:nth-child(1) {
     margin-top: 0;
+    margin-left: 20px;
   }
 }
 
@@ -638,6 +676,12 @@ header .nav-column-list li a:focus {
 }
 
 @media screen and (min-width: 1000px) {
+  #access {
+    padding-top: 22px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   #access .access-contents {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -671,6 +715,12 @@ header .nav-column-list li a:focus {
 
 #access .access-contents .access-text {
   margin-top: 23px;
+}
+
+@media screen and (min-width: 1000px) {
+  #access .access-contents .access-text {
+    margin-top: 0;
+  }
 }
 
 #access .access-contents .access-text h2 {
@@ -870,15 +920,15 @@ footer .sns-icon-list {
           justify-content: center;
 }
 
-footer .sns-icon-list svg:nth-child(2) {
+footer .sns-icon-list img:nth-child(2) {
   margin-left: 12px;
 }
 
-footer .sns-icon-list svg:nth-child(3) {
+footer .sns-icon-list img:nth-child(3) {
   margin-left: 14.2px;
 }
 
-footer .sns-icon-list svg:nth-child(4) {
+footer .sns-icon-list img:nth-child(4) {
   margin-left: 10.6px;
 }
 
