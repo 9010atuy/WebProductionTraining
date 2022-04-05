@@ -63,6 +63,7 @@ h1::before {
   bottom: -15px;
   display: inline-block;
   width: 50px;
+  max-width: 100%;
   height: 2px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -114,6 +115,7 @@ h1::before {
 
 .btn {
   width: 250px;
+  max-width: 100%;
   height: 55px;
   background-color: #505050;
   border: solid 1px #000;
@@ -156,6 +158,7 @@ header {
 header #header-title {
   margin: 15px 0;
   width: 174px;
+  max-width: 100%;
   height: 20px;
   line-height: 20px;
 }
@@ -237,12 +240,14 @@ header nav ul li:not(:last-of-type) {
 }
 
 #menu .menu-contents .menu-item {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
 }
 
 @media screen and (max-width: 960px) {
   #menu .menu-contents .menu-item {
     width: 100%;
+    max-width: 400px;
   }
   #menu .menu-contents .menu-item:not(:first-of-type) {
     margin-top: 33px;
@@ -259,7 +264,7 @@ header nav ul li:not(:last-of-type) {
   color: #505050;
   font-weight: 200;
   font-size: 15px;
-  width: 300px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   line-height: 1.6;
@@ -296,6 +301,7 @@ header nav ul li:not(:last-of-type) {
 
 #about .about-contents .about-item-text {
   width: 471px;
+  max-width: 100%;
 }
 
 #about .about-contents .about-item-text h2 {
@@ -407,7 +413,8 @@ footer p {
     row-gap: 33px;
   }
   #menu .menu-contents .menu-item {
-    width: 315px;
+    width: 100%;
+    max-width: 315px;
   }
   #menu .menu-contents .menu-item h2 {
     margin-top: 15px;
