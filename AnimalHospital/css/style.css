@@ -50,9 +50,9 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .wrapper {
-    padding: 0 100px;
+    padding: 0 98px;
     max-width: 1080px;
     margin: 0 auto;
   }
@@ -62,7 +62,7 @@
   padding-left: 20px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .header-wrapper {
     padding-left: 98px;
     padding-right: 60px;
@@ -147,7 +147,7 @@ header .header-area #site-title p {
   font-size: 2rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   header .header-area #site-title p {
     margin-left: 1px;
     font-size: 1.8rem;
@@ -267,21 +267,28 @@ header .nav-column-list li a:focus {
   margin-top: 19px;
   font-weight: normal;
   position: relative;
-}
-
-#about #about-heading p span {
   font-size: 1.6rem;
   display: block;
   line-height: 1.875;
 }
 
-#about #about-heading p svg {
+#about #about-heading p img {
   position: absolute;
   right: 24px;
   bottom: 11px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
+  #about #about-heading p span {
+    font-size: 1.8rem;
+  }
+  #about #about-heading p img {
+    right: 24px;
+    bottom: 11px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
   #about #about-heading {
     padding-top: 59px;
     padding-bottom: 60px;
@@ -311,7 +318,7 @@ header .nav-column-list li a:focus {
   padding-bottom: 42px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #about #about-contents {
     padding-top: 72px;
     padding-bottom: 67.5px;
@@ -319,11 +326,25 @@ header .nav-column-list li a:focus {
 }
 
 #about #about-contents .content:not(:first-of-type) {
-  margin-top: 73px;
+  margin-top: 43px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
+  #about #about-contents .content:not(:first-of-type) {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 475px) {
   #about #about-contents .content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #about #about-contents .content {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -349,7 +370,13 @@ header .nav-column-list li a:focus {
   height: 200px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 475px) {
+  #about #about-contents .content .content-image {
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
   #about #about-contents .content .content-image {
     width: 50%;
     height: 247px;
@@ -357,7 +384,11 @@ header .nav-column-list li a:focus {
   }
 }
 
-@media screen and (min-width: 1000px) {
+#about #about-contents .content .content-text {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
   #about #about-contents .content .content-text {
     width: 45%;
   }
@@ -370,7 +401,7 @@ header .nav-column-list li a:focus {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #about #about-contents .content .content-text h2 {
     font-size: 2.2rem;
     line-height: 1.5;
@@ -379,19 +410,14 @@ header .nav-column-list li a:focus {
   }
 }
 
-#about #about-contents .content .content-text h2 span {
-  display: block;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 #about #about-contents .content p {
   margin-top: 7px;
   font-size: 1.6rem;
   line-height: 1.875;
+  width: 100%;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #about #about-contents .content p {
     font-size: 1.8rem;
     line-height: 1.8;
@@ -405,7 +431,7 @@ header .nav-column-list li a:focus {
   background-image: image-set(url("../images/about_01_sp.png") 1x, url("../images/about_01_sp@2x.png") 2x);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #about #about-contents #content-image01 {
     background-image: url(../images/about_01.png);
     background-image: -webkit-image-set(url("../images/about_01.png") 1x, url("../images/about_01@2x.png") 2x);
@@ -419,7 +445,7 @@ header .nav-column-list li a:focus {
   background-image: image-set(url("../images/about_02_sp.png") 1x, url("../images/about_02_sp@2x.png") 2x);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #about #about-contents #content-image02 {
     background-image: url(../images/about_02.png);
     background-image: -webkit-image-set(url("../images/about_02.png") 1x, url("../images/about_02@2x.png") 2x);
@@ -433,7 +459,7 @@ header .nav-column-list li a:focus {
   background-image: image-set(url("../images/about_03_sp.png") 1x, url("../images/about_03_sp@2x.png") 2x);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #about #about-contents #content-image03 {
     background-image: url(../images/about_03.png);
     background-image: -webkit-image-set(url("../images/about_03.png") 1x, url("../images/about_03@2x.png") 2x);
@@ -466,30 +492,44 @@ header .nav-column-list li a:focus {
   padding-bottom: 44px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #service {
     padding-top: 21px;
     padding-bottom: 65px;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #service #service-contents {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-column-gap: 50px;
-            column-gap: 50px;
+    gap: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 #service #service-contents .service-content {
+  width: 100%;
   text-align: center;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 475px) {
   #service #service-contents .service-content {
-    width: 260px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #service #service-contents .service-content {
+    max-width: 260px;
+    width: 100%;
   }
 }
 
@@ -497,7 +537,7 @@ header .nav-column-list li a:focus {
   margin-top: 43px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #service #service-contents .service-content:not(:first-of-type) {
     margin-top: 0px;
   }
@@ -505,16 +545,10 @@ header .nav-column-list li a:focus {
 
 #service #service-contents .service-content .service-content-image {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   height: 200px;
-}
-
-@media screen and (min-width: 1000px) {
-  #service #service-contents .service-content .service-content-image {
-    background-size: auto;
-    width: 260px;
-  }
+  background-size: cover;
 }
 
 #service #service-contents .service-content #service-content-image01 {
@@ -523,7 +557,7 @@ header .nav-column-list li a:focus {
   background-image: image-set(url("../images/service_01_sp.png") 1x, url("../images/service_01_sp@2x.png") 2x);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #service #service-contents .service-content #service-content-image01 {
     background-image: url(../images/service_01.png);
     background-image: -webkit-image-set(url("../images/service_01.png") 1x, url("../images/service_01@2x.png") 2x);
@@ -537,7 +571,7 @@ header .nav-column-list li a:focus {
   background-image: image-set(url("../images/service_02_sp.png") 1x, url("../images/service_02_sp@2x.png") 2x);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #service #service-contents .service-content #service-content-image02 {
     background-image: url(../images/service_02.png);
     background-image: -webkit-image-set(url("../images/service_02.png") 1x, url("../images/service_02@2x.png") 2x);
@@ -551,7 +585,7 @@ header .nav-column-list li a:focus {
   background-image: image-set(url("../images/service_03_sp.png") 1x, url("../images/service_03_sp@2x.png") 2x);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #service #service-contents .service-content #service-content-image03 {
     background-image: url(../images/service_03.png);
     background-image: -webkit-image-set(url("../images/service_03.png") 1x, url("../images/service_03@2x.png") 2x);
@@ -570,14 +604,15 @@ header .nav-column-list li a:focus {
   }
 }
 
-#service #service-contents p {
+#service #service-contents .service-content p {
+  width: 100%;
   font-size: 1.6rem;
   margin-top: 8px;
   line-height: 1.875;
 }
 
 @media screen and (min-width: 768px) {
-  #service #service-contents p {
+  #service #service-contents .service-content p {
     font-size: 1.7rem;
     margin-top: 5.7px;
     text-align: center;
@@ -589,7 +624,7 @@ header .nav-column-list li a:focus {
   padding-bottom: 50px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #information {
     padding-top: 16px;
     padding-bottom: 67px;
@@ -610,7 +645,7 @@ header .nav-column-list li a:focus {
   padding-bottom: 34px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #information .information-contents table tbody tr {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -623,7 +658,7 @@ header .nav-column-list li a:focus {
   padding: 0 10px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #information .information-contents table tbody tr td {
     display: inline-block;
     padding: 13.8px 0;
@@ -636,7 +671,7 @@ header .nav-column-list li a:focus {
   margin-top: 25px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #information .information-contents table tbody tr td:nth-child(1) {
     margin-top: 0;
     margin-left: 20px;
@@ -650,7 +685,7 @@ header .nav-column-list li a:focus {
   line-height: 1.55;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #information .information-contents table tbody tr td:nth-child(2) {
     margin-left: 29px;
     width: 180px;
@@ -663,7 +698,7 @@ header .nav-column-list li a:focus {
   line-height: 1.775;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #information .information-contents table tbody tr td:nth-child(3) {
     margin-left: 29px;
     margin-bottom: 0;
@@ -675,19 +710,20 @@ header .nav-column-list li a:focus {
   padding-bottom: 48px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #access {
     padding-top: 22px;
+    padding-bottom: 68px;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #access .access-contents {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-column-gap: 46px;
-            column-gap: 46px;
+    -webkit-column-gap: 48px;
+            column-gap: 48px;
   }
 }
 
@@ -697,9 +733,10 @@ header .nav-column-list li a:focus {
   height: 221px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #access .access-contents .access-map {
-    width: 440px;
+    width: 100%;
+    max-width: 440px;
     height: 300px;
     padding-top: 0;
   }
@@ -717,7 +754,7 @@ header .nav-column-list li a:focus {
   margin-top: 23px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #access .access-contents .access-text {
     margin-top: 0;
   }
@@ -727,9 +764,21 @@ header .nav-column-list li a:focus {
   font-size: 2.2rem;
 }
 
+@media screen and (min-width: 768px) {
+  #access .access-contents .access-text h2 {
+    margin-top: -8px;
+  }
+}
+
 #access .access-contents .access-text p {
   font-size: 1.6rem;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-contents .access-text p {
+    margin-top: 15px;
+  }
 }
 
 #access .access-contents .access-text p span {
@@ -738,16 +787,70 @@ header .nav-column-list li a:focus {
   letter-spacing: 0.4px;
 }
 
-#access .access-contents .access-text hr {
-  margin-top: 17px;
+@media screen and (min-width: 768px) {
+  #access .access-contents .access-text p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-contents .access-text #address {
+    margin-top: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-contents .access-text #phone-number {
+    margin-top: 9px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-contents .access-text #hospital-email {
+    margin-top: 7px;
+  }
+}
+
+#access .access-contents .access-text .open-info {
+  border-top: 1px #707070 solid;
+  border-bottom: 1px #707070 solid;
+  width: 100%;
+  margin-top: 16px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-contents .access-text .open-info {
+    margin-top: 35px;
+    margin-left: 4px;
+    width: 390px;
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
+}
+
+#access .access-contents .access-text .open-info p {
+  margin-top: 0;
+}
+
+#access .access-contents .access-text .open-info .closed-date {
+  margin-top: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-contents .access-text .open-info .closed-date {
+    margin-top: 13px;
+  }
 }
 
 #inquiry {
   padding-bottom: 50px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #inquiry {
+    padding-top: 20px;
     padding-bottom: 80px;
   }
 }
@@ -759,10 +862,13 @@ header .nav-column-list li a:focus {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #inquiry p {
     text-align: center;
     font-size: 1.7rem;
+    margin-top: -29px;
+    margin-left: 11px;
+    line-height: 1.85;
   }
 }
 
@@ -771,21 +877,10 @@ header .nav-column-list li a:focus {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 1000px) {
-  #inquiry form .form-control {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #inquiry form .form-control:last-of-type {
-    display: block;
-    text-align: center;
+@media screen and (min-width: 768px) {
+  #inquiry form {
+    margin-top: 42px;
+    margin-right: 0;
   }
 }
 
@@ -793,10 +888,50 @@ header .nav-column-list li a:focus {
   margin-top: 18px;
 }
 
+@media screen and (min-width: 768px) {
+  #inquiry form .form-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #inquiry form .form-control:not(:first-of-type) {
+    margin-top: 30px;
+  }
+  #inquiry form .form-control:nth-child(3) {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 23px;
+  }
+  #inquiry form .form-control:last-of-type {
+    display: block;
+    text-align: center;
+  }
+}
+
 #inquiry form .form-control label {
   font-size: 1.8rem;
   font-weight: bold;
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #inquiry form .form-control label {
+    font-size: 2rem;
+    margin-left: 2px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #inquiry form .form-control #lblDetail {
+    margin-top: 11px;
+  }
 }
 
 #inquiry form .form-control input {
@@ -818,12 +953,17 @@ header .nav-column-list li a:focus {
   height: 40px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   #inquiry form .form-control input {
-    width: 711px;
+    margin-top: 0;
+    height: 40px;
+    max-width: 711px;
   }
   #inquiry form .form-control input[type='button'] {
     width: 200px;
+    font-size: 2.5rem;
+    height: 50px;
+    margin-top: 20px;
   }
 }
 
@@ -836,9 +976,9 @@ header .nav-column-list li a:focus {
   padding: 0.5rem 1rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   #inquiry form .form-control textarea {
-    width: 711px;
+    max-width: 711px;
   }
 }
 
@@ -849,9 +989,40 @@ footer {
   padding-bottom: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 64px;
+  }
+}
+
 footer nav {
-  border-bottom: 1px #ffffff solid;
   padding-bottom: 26px;
+  position: relative;
+}
+
+@media screen and (min-width: 475px) {
+  footer nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+footer nav::after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  left: 49.9%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  footer nav::after {
+    bottom: 8px;
+    max-width: 747px;
+  }
 }
 
 footer nav .nav-list {
@@ -879,7 +1050,7 @@ footer nav .nav-list li a:focus {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   footer nav {
     padding-bottom: 31px;
   }
@@ -887,7 +1058,7 @@ footer nav .nav-list li a:focus {
     -webkit-column-gap: 14px;
             column-gap: 14px;
   }
-  footer nav .nav-list li {
+  footer nav .nav-list li a {
     font-size: 2rem;
     line-height: 1.65;
   }
@@ -901,9 +1072,12 @@ footer p {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   footer p {
     font-size: 2rem;
+    line-height: 1.65;
+    margin-top: 14px;
+    margin-left: 1px;
   }
 }
 
@@ -932,9 +1106,9 @@ footer .sns-icon-list img:nth-child(4) {
   margin-left: 10.6px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   footer .sns-icon-list {
-    margin-top: 19px;
+    margin-top: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */

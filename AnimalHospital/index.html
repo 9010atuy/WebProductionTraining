@@ -180,13 +180,13 @@
             </div>
             <div class="access-text">
                 <h2>滑石きたむら動物病院</h2>
-                <p>〒852-8065　長崎県長崎市横尾1丁目5-36</p>
-                <p>電話：<span>000-0000-0000</span></p>
-                <p>メール：info@kitamura.animalhospital.com</p>
-                <hr>
-                <p>診療時間：24時間365日</p>
-                <p>休診日：なし</p>
-                <hr>
+                <p id="address">〒852-8065　長崎県長崎市横尾1丁目5-36</p>
+                <p id="phone-number">電話：<span>000-0000-0000</span></p>
+                <p id="hospital-email">メール：info@kitamura.animalhospital.com</p>
+                <div class="open-info">
+                    <p class="open-time">診療時間：24時間365日</p>
+                    <p class="closed-date">休診日：なし</p>
+                </div>
             </div>
         </div>
     </section>
@@ -208,7 +208,7 @@
                     <input type="email" name="email" id="email">
                 </div>
                 <div class="form-control">
-                    <label for="detail">内　容</label>
+                    <label for="detail" id="lblDetail">内　容</label>
                     <textarea name="detail" id="detail"></textarea>
                 </div>
                 <div class="form-control">
