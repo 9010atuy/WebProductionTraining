@@ -17,7 +17,6 @@ a {
 }
 
 body {
-  max-width: 1079px;
   margin: 0 auto;
 }
 
@@ -38,13 +37,20 @@ h3 {
   display: block;
 }
 
+@media screen and (max-width: 670px) {
+  .pc {
+    display: none;
+  }
+}
+
 .sp {
   display: none;
 }
 
-.full-size {
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
+@media screen and (max-width: 670px) {
+  .sp {
+    display: block;
+  }
 }
 
 h1 {
@@ -70,6 +76,12 @@ h1::before {
   background-color: #000;
 }
 
+@media screen and (max-width: 375px) {
+  h1::before {
+    bottom: -12.5px;
+  }
+}
+
 .fs-20 {
   font-size: 20px;
 }
@@ -77,6 +89,7 @@ h1::before {
 .wrapper {
   padding: 0 60px;
   margin: 0 auto;
+  max-width: 1080px;
 }
 
 @media screen and (max-width: 960px) {
@@ -97,19 +110,22 @@ h1::before {
   }
 }
 
-.header-wrapper {
-  padding: 0 65px 0 60px;
+@media screen and (max-width: 375px) {
+  .wrapper {
+    padding: 0 30px;
+  }
 }
 
-.contents-wrapper {
-  padding: 0 60px;
-  max-width: 1079px;
+.header-wrapper {
+  padding: 0 65px 0 60px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 960px) {
-  .contents-wrapper {
-    padding: 0 5%;
+@media screen and (max-width: 375px) {
+  .header-wrapper {
+    padding: 0 181px 0 20px;
+    letter-spacing: 0.1px;
   }
 }
 
@@ -128,18 +144,6 @@ h1::before {
 
 .txt-left {
   text-align: left;
-}
-
-.flex-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 header {
@@ -161,6 +165,12 @@ header #header-title {
   max-width: 100%;
   height: 20px;
   line-height: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  header #header-title {
+    margin: 17px 0 13px;
+  }
 }
 
 header nav ul {
@@ -204,6 +214,19 @@ header nav ul li:not(:last-of-type) {
   line-height: 1.7;
 }
 
+@media screen and (max-width: 375px) {
+  #top {
+    background: url(../images/SP/FV-sp.png);
+    background: -webkit-image-set(url(../images/SP/FV-sp.png) 1x, url(../images/SP/FV-sp@2x.png) 2x);
+    background: image-set(url(../images/SP/FV-sp.png) 1x, url(../images/SP/FV-sp@2x.png) 2x);
+    height: 550px;
+  }
+  #top p {
+    top: 36px;
+    font-size: 35px;
+  }
+}
+
 #menu {
   text-align: center;
 }
@@ -223,7 +246,7 @@ header nav ul li:not(:last-of-type) {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  padding-bottom: 53px;
+  padding-bottom: 47px;
 }
 
 @media screen and (max-width: 960px) {
@@ -246,8 +269,8 @@ header nav ul li:not(:last-of-type) {
 
 @media screen and (max-width: 960px) {
   #menu .menu-contents .menu-item {
+    max-width: none;
     width: 100%;
-    max-width: 400px;
   }
   #menu .menu-contents .menu-item:not(:first-of-type) {
     margin-top: 33px;
@@ -265,13 +288,36 @@ header nav ul li:not(:last-of-type) {
   font-weight: 200;
   font-size: 15px;
   width: 100%;
-  margin: 0 auto;
-  text-align: center;
   line-height: 1.6;
+  margin-top: 5px;
 }
 
 #menu .menu-contents .menu-item img {
   width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  #menu h1 {
+    margin: 46.5px 0 40px;
+  }
+  #menu .menu-contents {
+    row-gap: 28px;
+  }
+  #menu .menu-contents .menu-item {
+    width: 100%;
+    max-width: 315px;
+  }
+  #menu .menu-contents .menu-item h2 {
+    margin-top: 16px;
+  }
+  #menu .menu-contents .menu-item p {
+    margin-top: 4px;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+  #menu .menu-contents .menu-item:not(:first-of-type) {
+    margin-top: 0px;
+  }
 }
 
 #about {
@@ -305,6 +351,7 @@ header nav ul li:not(:last-of-type) {
 }
 
 #about .about-contents .about-item-text h2 {
+  margin-top: 15.5px;
   font-size: 22px;
   font-weight: 400;
 }
@@ -314,37 +361,26 @@ header nav ul li:not(:last-of-type) {
 }
 
 #about .about-contents .about-item-text p {
+  margin-top: 23px;
   font-size: 18px;
   font-weight: 200;
   color: #505050;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 #about .about-contents .about-item-text p span {
   display: block;
 }
 
+#about .about-contents .about-item-text button {
+  margin-top: 28px;
+}
+
 #about .about-contents .about-item-img img {
   width: 100%;
 }
 
-footer {
-  background-color: #505050;
-  height: 92px;
-  color: #fff;
-}
-
-footer p {
-  text-align: center;
-  font-weight: 200;
-  line-height: 85px;
-  font-size: 20px;
-}
-
 @media screen and (max-width: 960px) {
-  .pc {
-    display: block;
-  }
   #about .about-contents {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -364,75 +400,22 @@ footer p {
     margin-top: 20px;
   }
   #about .about-contents .about-item-text p {
-    margin-top: 38px;
+    margin-top: 20px;
   }
   #about .about-contents .about-item-text .btn {
-    margin-top: 27px;
+    margin-top: 30px;
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 670px) {
-  html {
-    min-width: 375px;
-  }
-  .pc {
-    display: none;
-  }
-  .sp {
-    display: block;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .header-wrapper {
-    padding: 0 181px 0 20px;
-  }
-  .contents-wrapper {
-    padding: 0 30px;
-  }
-  h1::before {
-    bottom: -12.5px;
-  }
-  header #header-title {
-    margin: 17px 0 13px;
-  }
-  #top {
-    background: url(../images/SP/FV-sp.png);
-    background: -webkit-image-set(url(../images/SP/FV-sp.png) 1x, url(../images/SP/FV-sp@2x.png) 2x);
-    background: image-set(url(../images/SP/FV-sp.png) 1x, url(../images/SP/FV-sp@2x.png) 2x);
-    height: 550px;
-  }
-  #top p {
-    top: 38px;
-  }
-  #menu h1 {
-    margin: 46.5px 0 40px;
-  }
-  #menu .menu-contents {
-    row-gap: 33px;
-  }
-  #menu .menu-contents .menu-item {
-    width: 100%;
-    max-width: 315px;
-  }
-  #menu .menu-contents .menu-item h2 {
-    margin-top: 15px;
-  }
-  #menu .menu-contents .menu-item p {
-    line-height: 1.7;
-    margin-bottom: 0;
-  }
-  #menu .menu-contents .menu-item:not(:first-of-type) {
-    margin-top: 0px;
-  }
   #about {
     height: 100%;
     margin: 0 auto;
     padding-bottom: 50px;
   }
   #about h1 {
-    margin-top: 42.5px;
+    margin-top: 38.5px;
   }
   #about .about-contents .about-item-text {
     width: 100%;
@@ -450,11 +433,30 @@ footer p {
   #about .about-contents .about-item-text .btn {
     width: 100%;
   }
+}
+
+footer {
+  background-color: #505050;
+  height: 92px;
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 200;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 39px;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+}
+
+@media screen and (max-width: 375px) {
   footer p {
     font-size: 17px;
     line-height: 1.9;
-    padding-top: 27px;
-    letter-spacing: 0.5px;
+    padding-top: 26px;
+    letter-spacing: 0.3px;
   }
 }
 /*# sourceMappingURL=style.css.map */
