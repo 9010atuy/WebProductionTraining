@@ -20,18 +20,28 @@
     display: none;
   }
 }
+.nav-pc {
+  display: none;
+  @media screen and (min-width: 840px) {
+    display: block;
+  }
+}
+.nav-no-pc {
+  display: block;
+  @media screen and (min-width: 840px) {
+    display: none;
+  }
+}
 .primary-color {
   color: #0d96a0;
-}
-.full-size {
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
 }
 .bg-primary {
   background-color: rgba(13, 150, 160, 0.1);
 }
 .wrapper {
   padding: 0 20px;
+  width: 100%;
+  max-width: 1080px;
   @include mq(md) {
     padding: 0 60px;
   }
@@ -43,6 +53,9 @@
 }
 .header-wrapper {
   padding-left: 20px;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
   @include mq(lg) {
     padding-left: 98px;
     padding-right: 60px;
@@ -101,6 +114,7 @@ header {
       }
       p {
         font-size: 2rem;
+        font-weight: bold;
         @include mq(lg) {
           margin-left: 1px;
           font-size: 1.8rem;
@@ -173,6 +187,9 @@ header {
     background-size: auto;
     height: 500px;
   }
+  @include mq(lg) {
+    background-size: cover;
+  }
   position: relative;
   .top-message {
     position: absolute;
@@ -232,7 +249,7 @@ header {
         }
       }
     }
-    @include mq(lg) {
+    @media screen and(min-width:959px) {
       padding-top: 59px;
       padding-bottom: 60px;
       h1 {
@@ -392,10 +409,12 @@ header {
     padding-bottom: 65px;
   }
   #service-contents {
-    @include mq(md) {
+    @media screen and(min-width:959px) {
       display: flex;
-      gap: 50px;
-      flex-wrap: wrap;
+      @include mq(lg) {
+        gap: 50px;
+      }
+      // flex-wrap: wrap;
       justify-content: center;
     }
     .service-content {
@@ -406,13 +425,9 @@ header {
         max-width: 500px;
         margin: 0 auto;
       }
-      @include mq(md) {
-        max-width: 260px;
-        width: 100%;
-      }
       &:not(:first-of-type) {
         margin-top: 43px;
-        @include mq(md) {
+        @media screen and(min-width:959px) {
           margin-top: 0px;
         }
       }
@@ -422,6 +437,12 @@ header {
         background-position: center;
         height: 200px;
         background-size: cover;
+        @media screen and(min-width:959px) {
+          min-width: 260px;
+          width: 100%;
+          min-height: 200px;
+          background-size: auto;
+        }
       }
       #service-content-image01 {
         background-image: url(../images/service_01_sp.png);

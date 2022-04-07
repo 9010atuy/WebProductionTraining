@@ -27,13 +27,28 @@
   }
 }
 
-.primary-color {
-  color: #0d96a0;
+.nav-pc {
+  display: none;
 }
 
-.full-size {
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
+@media screen and (min-width: 840px) {
+  .nav-pc {
+    display: block;
+  }
+}
+
+.nav-no-pc {
+  display: block;
+}
+
+@media screen and (min-width: 840px) {
+  .nav-no-pc {
+    display: none;
+  }
+}
+
+.primary-color {
+  color: #0d96a0;
 }
 
 .bg-primary {
@@ -42,6 +57,8 @@
 
 .wrapper {
   padding: 0 20px;
+  width: 100%;
+  max-width: 1080px;
 }
 
 @media screen and (min-width: 768px) {
@@ -60,6 +77,9 @@
 
 .header-wrapper {
   padding-left: 20px;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1080px) {
@@ -145,6 +165,7 @@ header .header-area #site-title svg {
 
 header .header-area #site-title p {
   font-size: 2rem;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1080px) {
@@ -226,6 +247,12 @@ header .nav-column-list li a:focus {
   }
 }
 
+@media screen and (min-width: 1080px) {
+  #top {
+    background-size: cover;
+  }
+}
+
 #top .top-message {
   position: absolute;
   bottom: 0;
@@ -288,7 +315,7 @@ header .nav-column-list li a:focus {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 959px) {
   #about #about-heading {
     padding-top: 59px;
     padding-bottom: 60px;
@@ -499,17 +526,20 @@ header .nav-column-list li a:focus {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   #service #service-contents {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 50px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 959px) and (min-width: 1080px) {
+  #service #service-contents {
+    gap: 50px;
   }
 }
 
@@ -526,18 +556,11 @@ header .nav-column-list li a:focus {
   }
 }
 
-@media screen and (min-width: 768px) {
-  #service #service-contents .service-content {
-    max-width: 260px;
-    width: 100%;
-  }
-}
-
 #service #service-contents .service-content:not(:first-of-type) {
   margin-top: 43px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   #service #service-contents .service-content:not(:first-of-type) {
     margin-top: 0px;
   }
@@ -549,6 +572,15 @@ header .nav-column-list li a:focus {
   background-position: center;
   height: 200px;
   background-size: cover;
+}
+
+@media screen and (min-width: 959px) {
+  #service #service-contents .service-content .service-content-image {
+    min-width: 260px;
+    width: 100%;
+    min-height: 200px;
+    background-size: auto;
+  }
 }
 
 #service #service-contents .service-content #service-content-image01 {
