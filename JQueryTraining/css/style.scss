@@ -1,0 +1,93 @@
+@charset 'utf-8';
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+// header
+header {
+  height: 80px;
+  background-color: #000;
+}
+// ハンバーガーメニュー
+.hamburger {
+  position: fixed;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border: 2px solid #000;
+  z-index: 1;
+}
+// メニューが開いたときのボタン
+.hamburger.active {
+  .hamburger-line {
+    background-color: transparent;
+    &::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+    &::after {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+  }
+}
+// 三本線
+.hamburger-line {
+  position: absolute;
+  left: 16px;
+  width: 44px;
+  height: 4px;
+  background: #000;
+  &::after,
+  &::before {
+    position: absolute;
+    left: 16px;
+    width: 44px;
+    height: 4px;
+    background: #000;
+    transition: 0.3s;
+    content: '';
+    left: 0;
+  }
+  &::before {
+    top: -16px;
+  }
+  &::after {
+    top: 16px;
+  }
+}
+// ナビゲーション（中身）
+.header-menu {
+  position: fixed;
+  width: 320px;
+  top: 78px;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #000;
+  overflow: auto;
+  display: none;
+  background: #fff;
+  z-index: 2;
+  ul {
+    margin: 0;
+    padding: 36px;
+    text-align: center;
+    list-style: none;
+    font-size: 24px;
+    li:not(:first-of-type) {
+      margin-top: 36px;
+    }
+  }
+}
+// メニューが開いたときの背景
+.hamburger-bg {
+  transition: 0.3s;
+}
+.hamburger-bg.active {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  opacity: 0.6;
+}

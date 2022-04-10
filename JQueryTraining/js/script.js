@@ -1,13 +1,5 @@
-const target = $('.target');
-const link = $('.link');
-target.click(() => {
-  target.css('color', 'red');
+$('.hamburger-trigger').on('click', () => {
+  $('.header-menu').toggle(300);
+  $('.hamburger').toggleClass('active');
+  $('#hamburger-bg').toggleClass('active');
 });
-link.hover(
-  () => {
-    link.text('hovered');
-  },
-  () => {
-    link.text('hover released');
-  }
-);
