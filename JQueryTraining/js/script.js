@@ -3,3 +3,11 @@ $('.hamburger-trigger').on('click', () => {
   $('.hamburger').toggleClass('active');
   $('#hamburger-bg').toggleClass('active');
 });
+
+$('.modal-open').on('click', () => {
+  $('.modal-area').show();
+});
+
+$('.modal-close').on('click', () => {
+  $('.modal-area').hide();
+});
