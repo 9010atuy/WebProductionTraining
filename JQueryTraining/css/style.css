@@ -139,4 +139,56 @@ header {
   right: 0;
   cursor: pointer;
 }
+
+.tab-area {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.tab-menu-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tab-menu {
+  width: 100%;
+}
+
+.tab-trigger {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background: #666;
+}
+
+.tab-trigger.active {
+  background: #000;
+}
+
+.tab-content-area {
+  border: 1px solid #000;
+}
+
+.tab-content {
+  display: none;
+  text-align: center;
+}
+
+.tab-content.active {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

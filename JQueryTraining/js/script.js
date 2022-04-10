@@ -11,3 +11,12 @@ $('.modal-open').on('click', () => {
 $('.modal-close').on('click', () => {
   $('.modal-area').hide();
 });
+
+// $('.tab-trigger').on('click', event => {
+//   const tabId = event.attr('id');
+//   console.log('tabId', tabId);
+// });
+$('.tab-trigger').click(function () {
+  const tabId = $(this).attr('id');
+  console.log(tabId);
+});
