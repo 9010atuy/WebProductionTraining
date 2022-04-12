@@ -82,7 +82,7 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .header-wrapper {
     padding-left: 98px;
     padding-right: 60px;
@@ -274,6 +274,25 @@ header .nav-column-list li a:focus {
   padding-top: 9px;
 }
 
+@media screen and (min-width: 768px) {
+  #top .top-message {
+    bottom: 138px;
+    width: 492px;
+    height: 210px;
+    padding-top: 22px;
+    padding-left: 99px;
+  }
+  #top .top-message p {
+    font-size: 2.5rem;
+    line-height: 1.72;
+  }
+  #top .top-message p span {
+    font-size: 4rem;
+    line-height: 1.4;
+    margin-top: -2px;
+  }
+}
+
 #about #about-heading {
   padding-top: 44px;
   padding-bottom: 42px;
@@ -315,7 +334,7 @@ header .nav-column-list li a:focus {
   }
 }
 
-@media screen and (min-width: 959px) {
+@media screen and (min-width: 768px) {
   #about #about-heading {
     padding-top: 59px;
     padding-bottom: 60px;
@@ -526,7 +545,7 @@ header .nav-column-list li a:focus {
   }
 }
 
-@media screen and (min-width: 959px) {
+@media screen and (min-width: 768px) {
   #service #service-contents {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -537,9 +556,9 @@ header .nav-column-list li a:focus {
   }
 }
 
-@media screen and (min-width: 959px) and (min-width: 1080px) {
+@media screen and (min-width: 768px) and (min-width: 768px) {
   #service #service-contents {
-    gap: 50px;
+    gap: 5.5%;
   }
 }
 
@@ -548,80 +567,11 @@ header .nav-column-list li a:focus {
   text-align: center;
 }
 
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 768px) {
   #service #service-contents .service-content {
-    width: 100%;
+    width: calc(33.3%-33px);
     max-width: 500px;
     margin: 0 auto;
-  }
-}
-
-#service #service-contents .service-content:not(:first-of-type) {
-  margin-top: 43px;
-}
-
-@media screen and (min-width: 959px) {
-  #service #service-contents .service-content:not(:first-of-type) {
-    margin-top: 0px;
-  }
-}
-
-#service #service-contents .service-content .service-content-image {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 200px;
-  background-size: cover;
-}
-
-@media screen and (min-width: 959px) {
-  #service #service-contents .service-content .service-content-image {
-    min-width: 260px;
-    width: 100%;
-    min-height: 200px;
-    background-size: auto;
-  }
-}
-
-#service #service-contents .service-content #service-content-image01 {
-  background-image: url(../images/service_01_sp.png);
-  background-image: -webkit-image-set(url("../images/service_01_sp.png") 1x, url("../images/service_01_sp@2x.png") 2x);
-  background-image: image-set(url("../images/service_01_sp.png") 1x, url("../images/service_01_sp@2x.png") 2x);
-}
-
-@media screen and (min-width: 768px) {
-  #service #service-contents .service-content #service-content-image01 {
-    background-image: url(../images/service_01.png);
-    background-image: -webkit-image-set(url("../images/service_01.png") 1x, url("../images/service_01@2x.png") 2x);
-    background-image: image-set(url("../images/service_01.png") 1x, url("../images/service_01@2x.png") 2x);
-  }
-}
-
-#service #service-contents .service-content #service-content-image02 {
-  background-image: url(../images/service_02_sp.png);
-  background-image: -webkit-image-set(url("../images/service_02_sp.png") 1x, url("../images/service_02_sp@2x.png") 2x);
-  background-image: image-set(url("../images/service_02_sp.png") 1x, url("../images/service_02_sp@2x.png") 2x);
-}
-
-@media screen and (min-width: 768px) {
-  #service #service-contents .service-content #service-content-image02 {
-    background-image: url(../images/service_02.png);
-    background-image: -webkit-image-set(url("../images/service_02.png") 1x, url("../images/service_02@2x.png") 2x);
-    background-image: image-set(url("../images/service_02.png") 1x, url("../images/service_02@2x.png") 2x);
-  }
-}
-
-#service #service-contents .service-content #service-content-image03 {
-  background-image: url(../images/service_03_sp.png);
-  background-image: -webkit-image-set(url("../images/service_03_sp.png") 1x, url("../images/service_03_sp@2x.png") 2x);
-  background-image: image-set(url("../images/service_03_sp.png") 1x, url("../images/service_03_sp@2x.png") 2x);
-}
-
-@media screen and (min-width: 768px) {
-  #service #service-contents .service-content #service-content-image03 {
-    background-image: url(../images/service_03.png);
-    background-image: -webkit-image-set(url("../images/service_03.png") 1x, url("../images/service_03@2x.png") 2x);
-    background-image: image-set(url("../images/service_03.png") 1x, url("../images/service_03@2x.png") 2x);
   }
 }
 
@@ -649,6 +599,22 @@ header .nav-column-list li a:focus {
     margin-top: 5.7px;
     text-align: center;
     line-height: 1.75;
+  }
+}
+
+#service #service-contents .service-content img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#service #service-contents .service-content:not(:first-of-type) {
+  margin-top: 43px;
+}
+
+@media screen and (min-width: 768px) {
+  #service #service-contents .service-content:not(:first-of-type) {
+    margin-top: 0px;
   }
 }
 
@@ -854,11 +820,17 @@ header .nav-column-list li a:focus {
 
 @media screen and (min-width: 768px) {
   #access .access-contents .access-text .open-info {
-    margin-top: 35px;
+    margin-top: 20px;
     margin-left: 4px;
-    width: 390px;
     padding-top: 21px;
     padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  #access .access-contents .access-text .open-info {
+    margin-top: 35px;
+    width: 390px;
   }
 }
 
@@ -931,6 +903,8 @@ header .nav-column-list li a:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
   }
   #inquiry form .form-control:not(:first-of-type) {
     margin-top: 30px;
@@ -951,13 +925,18 @@ header .nav-column-list li a:focus {
   font-size: 1.8rem;
   font-weight: bold;
   display: block;
+  min-width: 140px;
+  margin-left: 2px;
 }
 
 @media screen and (min-width: 768px) {
   #inquiry form .form-control label {
     font-size: 2rem;
-    margin-left: 2px;
   }
+}
+
+#inquiry form .form-control #lblDetail {
+  min-width: 140px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1008,7 +987,7 @@ header .nav-column-list li a:focus {
   padding: 0.5rem 1rem;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   #inquiry form .form-control textarea {
     max-width: 711px;
   }
@@ -1048,6 +1027,7 @@ footer nav::after {
           transform: translateX(-50%);
   height: 1px;
   width: 100%;
+  bottom: -2px;
 }
 
 @media screen and (min-width: 768px) {

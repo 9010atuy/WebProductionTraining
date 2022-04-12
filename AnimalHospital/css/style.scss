@@ -56,7 +56,7 @@
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  @include mq(lg) {
+  @include mq(md) {
     padding-left: 98px;
     padding-right: 60px;
   }
@@ -208,6 +208,24 @@ header {
         padding-top: 9px;
       }
     }
+    @include mq(md) {
+      bottom: 138px;
+      width: 492px;
+      height: 210px;
+      padding: {
+        top: 22px;
+        left: 99px;
+      }
+      p {
+        font-size: 2.5rem;
+        line-height: 1.72;
+        span {
+          font-size: 4rem;
+          line-height: 1.4;
+          margin-top: -2px;
+        }
+      }
+    }
   }
 }
 
@@ -249,7 +267,7 @@ header {
         }
       }
     }
-    @media screen and(min-width:959px) {
+    @include mq(md) {
       padding-top: 59px;
       padding-bottom: 60px;
       h1 {
@@ -409,83 +427,22 @@ header {
     padding-bottom: 65px;
   }
   #service-contents {
-    @media screen and(min-width:959px) {
+    @include mq(md) {
       display: flex;
-      @include mq(lg) {
-        gap: 50px;
+      @include mq(md) {
+        gap: 5.5%;
       }
-      // flex-wrap: wrap;
       justify-content: center;
     }
     .service-content {
       width: 100%;
       text-align: center;
-      @include mq(sm) {
-        width: 100%;
+      @include mq(md) {
+        width: calc(33.3%-33px);
         max-width: 500px;
         margin: 0 auto;
       }
-      &:not(:first-of-type) {
-        margin-top: 43px;
-        @media screen and(min-width:959px) {
-          margin-top: 0px;
-        }
-      }
-      .service-content-image {
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        height: 200px;
-        background-size: cover;
-        @media screen and(min-width:959px) {
-          min-width: 260px;
-          width: 100%;
-          min-height: 200px;
-          background-size: auto;
-        }
-      }
-      #service-content-image01 {
-        background-image: url(../images/service_01_sp.png);
-        background-image: image-set(
-          url('../images/service_01_sp.png') 1x,
-          url('../images/service_01_sp@2x.png') 2x
-        );
-        @include mq(md) {
-          background-image: url(../images/service_01.png);
-          background-image: image-set(
-            url('../images/service_01.png') 1x,
-            url('../images/service_01@2x.png') 2x
-          );
-        }
-      }
-      #service-content-image02 {
-        background-image: url(../images/service_02_sp.png);
-        background-image: image-set(
-          url('../images/service_02_sp.png') 1x,
-          url('../images/service_02_sp@2x.png') 2x
-        );
-        @include mq(md) {
-          background-image: url(../images/service_02.png);
-          background-image: image-set(
-            url('../images/service_02.png') 1x,
-            url('../images/service_02@2x.png') 2x
-          );
-        }
-      }
-      #service-content-image03 {
-        background-image: url(../images/service_03_sp.png);
-        background-image: image-set(
-          url('../images/service_03_sp.png') 1x,
-          url('../images/service_03_sp@2x.png') 2x
-        );
-        @include mq(md) {
-          background-image: url(../images/service_03.png);
-          background-image: image-set(
-            url('../images/service_03.png') 1x,
-            url('../images/service_03@2x.png') 2x
-          );
-        }
-      }
+
       h2 {
         font-size: 2rem;
         margin-top: 24px;
@@ -503,6 +460,17 @@ header {
           margin-top: 5.7px;
           text-align: center;
           line-height: 1.75;
+        }
+      }
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+      &:not(:first-of-type) {
+        margin-top: 43px;
+        @include mq(md) {
+          margin-top: 0px;
         }
       }
     }
@@ -652,11 +620,14 @@ header {
         padding-top: 15px;
         padding-bottom: 18px;
         @include mq(md) {
-          margin-top: 35px;
+          margin-top: 20px;
           margin-left: 4px;
-          width: 390px;
           padding-top: 21px;
           padding-bottom: 20px;
+        }
+        @include mq(lg) {
+          margin-top: 35px;
+          width: 390px;
         }
         p {
           margin-top: 0;
@@ -706,6 +677,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        column-gap: 20px;
         &:not(:first-of-type) {
           margin-top: 30px;
         }
@@ -722,12 +694,14 @@ header {
         font-size: 1.8rem;
         font-weight: bold;
         display: block;
+        min-width: 140px;
+        margin-left: 2px;
         @include mq(md) {
           font-size: 2rem;
-          margin-left: 2px;
         }
       }
       #lblDetail {
+        min-width: 140px;
         @include mq(md) {
           margin-top: 11px;
         }
@@ -767,7 +741,7 @@ header {
         height: 300px;
         font-size: 1.8rem;
         padding: 0.5rem 1rem;
-        @include mq(lg) {
+        @include mq(md) {
           max-width: 711px;
         }
       }
@@ -797,6 +771,7 @@ footer {
       transform: translateX(-50%);
       height: 1px;
       width: 100%;
+      bottom: -2px;
       @include mq(md) {
         bottom: 8px;
         max-width: 747px;
