@@ -43,10 +43,10 @@
   width: 100%;
   max-width: 1080px;
   @include mq(md) {
-    padding: 0 60px;
+    padding: 0 9.1%;
   }
   @include mq(lg) {
-    padding: 0 98px;
+    padding: 0 9.1%;
     max-width: 1080px;
     margin: 0 auto;
   }
@@ -319,21 +319,24 @@ header {
           margin-top: 49px;
         }
       }
-      .content-image {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 200px;
-        @include mq(sm) {
-          background-size: cover;
-        }
+      .img-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56%;
         @include mq(md) {
           width: 50%;
-          height: 247px;
-          background-size: contain;
+          padding-top: 28%;
+        }
+        img {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: auto;
+          object-fit: cover;
         }
       }
       .content-text {
+        height: auto;
         width: 100%;
         @include mq(md) {
           width: 45%;
@@ -346,8 +349,11 @@ header {
           @include mq(md) {
             font-size: 2.2rem;
             line-height: 1.5;
-            margin-top: 50px;
+            margin-top: 5px;
             text-align: left;
+          }
+          @include mq(lg) {
+            margin-top: 12%;
           }
         }
       }
@@ -361,48 +367,6 @@ header {
           line-height: 1.8;
           margin-top: 18px;
         }
-      }
-    }
-    #content-image01 {
-      background-image: url(../images/about_01_sp.png);
-      background-image: image-set(
-        url('../images/about_01_sp.png') 1x,
-        url('../images/about_01_sp@2x.png') 2x
-      );
-      @include mq(md) {
-        background-image: url(../images/about_01.png);
-        background-image: image-set(
-          url('../images/about_01.png') 1x,
-          url('../images/about_01@2x.png') 2x
-        );
-      }
-    }
-    #content-image02 {
-      background-image: url(../images/about_02_sp.png);
-      background-image: image-set(
-        url('../images/about_02_sp.png') 1x,
-        url('../images/about_02_sp@2x.png') 2x
-      );
-      @include mq(md) {
-        background-image: url(../images/about_02.png);
-        background-image: image-set(
-          url('../images/about_02.png') 1x,
-          url('../images/about_02@2x.png') 2x
-        );
-      }
-    }
-    #content-image03 {
-      background-image: url(../images/about_03_sp.png);
-      background-image: image-set(
-        url('../images/about_03_sp.png') 1x,
-        url('../images/about_03_sp@2x.png') 2x
-      );
-      @include mq(md) {
-        background-image: url(../images/about_03.png);
-        background-image: image-set(
-          url('../images/about_03.png') 1x,
-          url('../images/about_03@2x.png') 2x
-        );
       }
     }
   }
@@ -447,7 +411,7 @@ header {
         font-size: 2rem;
         margin-top: 24px;
         @include mq(md) {
-          margin-top: 15px;
+          margin-top: 13px;
         }
       }
       p {
@@ -457,7 +421,7 @@ header {
         line-height: 1.875;
         @include mq(md) {
           font-size: 1.7rem;
-          margin-top: 5.7px;
+          margin-top: 3.9px;
           text-align: center;
           line-height: 1.75;
         }

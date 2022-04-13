@@ -63,13 +63,13 @@
 
 @media screen and (min-width: 768px) {
   .wrapper {
-    padding: 0 60px;
+    padding: 0 9.1%;
   }
 }
 
 @media screen and (min-width: 1080px) {
   .wrapper {
-    padding: 0 98px;
+    padding: 0 9.1%;
     max-width: 1080px;
     margin: 0 auto;
   }
@@ -409,28 +409,30 @@ header .nav-column-list li a:focus {
   }
 }
 
-#about #about-contents .content .content-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-}
-
-@media screen and (min-width: 475px) {
-  #about #about-contents .content .content-image {
-    background-size: cover;
-  }
+#about #about-contents .content .img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56%;
 }
 
 @media screen and (min-width: 768px) {
-  #about #about-contents .content .content-image {
+  #about #about-contents .content .img-container {
     width: 50%;
-    height: 247px;
-    background-size: contain;
+    padding-top: 28%;
   }
 }
 
+#about #about-contents .content .img-container img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #about #about-contents .content .content-text {
+  height: auto;
   width: 100%;
 }
 
@@ -451,8 +453,14 @@ header .nav-column-list li a:focus {
   #about #about-contents .content .content-text h2 {
     font-size: 2.2rem;
     line-height: 1.5;
-    margin-top: 50px;
+    margin-top: 5px;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  #about #about-contents .content .content-text h2 {
+    margin-top: 12%;
   }
 }
 
@@ -468,48 +476,6 @@ header .nav-column-list li a:focus {
     font-size: 1.8rem;
     line-height: 1.8;
     margin-top: 18px;
-  }
-}
-
-#about #about-contents #content-image01 {
-  background-image: url(../images/about_01_sp.png);
-  background-image: -webkit-image-set(url("../images/about_01_sp.png") 1x, url("../images/about_01_sp@2x.png") 2x);
-  background-image: image-set(url("../images/about_01_sp.png") 1x, url("../images/about_01_sp@2x.png") 2x);
-}
-
-@media screen and (min-width: 768px) {
-  #about #about-contents #content-image01 {
-    background-image: url(../images/about_01.png);
-    background-image: -webkit-image-set(url("../images/about_01.png") 1x, url("../images/about_01@2x.png") 2x);
-    background-image: image-set(url("../images/about_01.png") 1x, url("../images/about_01@2x.png") 2x);
-  }
-}
-
-#about #about-contents #content-image02 {
-  background-image: url(../images/about_02_sp.png);
-  background-image: -webkit-image-set(url("../images/about_02_sp.png") 1x, url("../images/about_02_sp@2x.png") 2x);
-  background-image: image-set(url("../images/about_02_sp.png") 1x, url("../images/about_02_sp@2x.png") 2x);
-}
-
-@media screen and (min-width: 768px) {
-  #about #about-contents #content-image02 {
-    background-image: url(../images/about_02.png);
-    background-image: -webkit-image-set(url("../images/about_02.png") 1x, url("../images/about_02@2x.png") 2x);
-    background-image: image-set(url("../images/about_02.png") 1x, url("../images/about_02@2x.png") 2x);
-  }
-}
-
-#about #about-contents #content-image03 {
-  background-image: url(../images/about_03_sp.png);
-  background-image: -webkit-image-set(url("../images/about_03_sp.png") 1x, url("../images/about_03_sp@2x.png") 2x);
-  background-image: image-set(url("../images/about_03_sp.png") 1x, url("../images/about_03_sp@2x.png") 2x);
-}
-
-@media screen and (min-width: 768px) {
-  #about #about-contents #content-image03 {
-    background-image: url(../images/about_03.png);
-    background-image: -webkit-image-set(url("../images/about_03.png") 1x, url("../images/about_03@2x.png") 2x);
-    background-image: image-set(url("../images/about_03.png") 1x, url("../images/about_03@2x.png") 2x);
   }
 }
 
@@ -582,7 +548,7 @@ header .nav-column-list li a:focus {
 
 @media screen and (min-width: 768px) {
   #service #service-contents .service-content h2 {
-    margin-top: 15px;
+    margin-top: 13px;
   }
 }
 
@@ -596,7 +562,7 @@ header .nav-column-list li a:focus {
 @media screen and (min-width: 768px) {
   #service #service-contents .service-content p {
     font-size: 1.7rem;
-    margin-top: 5.7px;
+    margin-top: 3.9px;
     text-align: center;
     line-height: 1.75;
   }
