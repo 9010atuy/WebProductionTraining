@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQueryTraining</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="./css/aos.css">
 </head>
 
 <body>
+    <!-- ハンバーガー -->
     <header>
         <button id="hamburger-block" class="hamburger hamburger-trigger">
             <span class="hamburger-line"></span>
@@ -27,6 +32,7 @@
         </div>
         <div id="hamburger-bg" class="hamburger-bg hamburger-trigger"></div>
     </header>
+    <!-- モーダル -->
     <button class="modal-open">OPEN</button>
     <section class="modal-area">
         <div class="modal-bg modal-close"></div>
@@ -35,8 +41,7 @@
             <div class="modal-cancel modal-close">✕</div>
         </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <!-- タブ -->
     <section class="tab-area">
         <ul class="tab-menu-block">
             <li class="tab-menu">
@@ -61,6 +66,63 @@
             </div>
         </div>
     </section>
+    <!-- アコーディオンメニュー -->
+    <section class="accordion-area">
+        <dl class="qa-list">
+            <dt class="qa-title">質問テキスト1</dt>
+            <dd class="qa-text">回答テキスト1回答テキスト1回答テキスト1回答テキスト1回答テキスト1回答テキスト1</dd>
+            <dt class="qa-title">質問テキスト2</dt>
+            <dd class="qa-text">回答テキスト2回答テキスト2回答テキスト2回答テキスト2回答テキスト2回答テキスト2</dd>
+            <dt class="qa-title">質問テキスト3</dt>
+            <dd class="qa-text">回答テキスト3回答テキスト3回答テキスト3回答テキスト3回答テキスト3回答テキスト3</dd>
+            <dt class="qa-title">質問テキスト4</dt>
+            <dd class="qa-text">回答テキスト4回答テキスト4回答テキスト4回答テキスト4回答テキスト4回答テキスト4</dd>
+        </dl>
+    </section>
+    <!-- スライダー -->
+    <section class="slide-area">
+        <div id="slider-container">
+            <ul id="slider">
+                <li><span>スライド1</span></li>
+                <li><span>スライド2</span></li>
+                <li><span>スライド3</span></li>
+            </ul>
+        </div>
+    </section>
+    <!-- ローディング -->
+    <div class="loading-area">
+        <div class="loading"></div>
+    </div>
+    <section class="content-area">
+        <h1>ローディングアニメーション</h1>
+        <p>ページをリロードするとローディングアニメーションが始まります</p>
+    </section>
+    <!-- スクロールアニメーション -->
+    <p>下へスクロールしてください</p>
+    <div class="block" data-aos="fade">fade</div>
+    <div class="block" data-aos="fade-up">fade-up</div>
+    <div class="block" data-aos="fade-down">fade-down</div>
+    <div class="block" data-aos="fade-left">fade-left</div>
+    <div class="block" data-aos="fade-right">fade-right</div>
+    <div class="block" data-aos="fade-up-left">fade-up-left</div>
+    <div class="block" data-aos="fade-up-right">fade-up-right</div>
+    <div class="block" data-aos="fade-down-left">fade-down-left</div>
+    <div class="block" data-aos="fade-down-right">fade-down-right</div>
+    <!-- スムーススクロール -->
+    <a href="#goal" class="start">クリックすると移動開始します</a>
+    <div id="goal">
+        <p>到着しました！</p>
+    </div>
+    <!-- トップへ戻る -->
+    <div id="fas-area"><i class="fas fa-arrow-up"></i></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        // スクロールアニメーション
+        AOS.init();
+    </script>
 </body>
 
 </html>
