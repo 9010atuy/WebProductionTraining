@@ -46,7 +46,7 @@
     padding: 0 9.1%;
   }
   @include mq(lg) {
-    padding: 0 9.1%;
+    padding: 0 100px;
     max-width: 1080px;
     margin: 0 auto;
   }
@@ -58,6 +58,8 @@
   margin: 0 auto;
   @include mq(md) {
     padding-left: 98px;
+  }
+  @media screen and (min-width: 840px) {
     padding-right: 60px;
   }
 }
@@ -180,7 +182,7 @@ header {
     );
   }
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   height: 550px;
   background-size: cover;
   @include mq(md) {
@@ -295,7 +297,7 @@ header {
     padding-bottom: 42px;
     @include mq(lg) {
       padding-top: 72px;
-      padding-bottom: 67.5px;
+      padding-bottom: 72px;
     }
     .content {
       &:not(:first-of-type) {
@@ -303,10 +305,6 @@ header {
         @include mq(md) {
           margin-top: 50px;
         }
-      }
-      @include mq(sm) {
-        width: 80%;
-        margin: 0 auto;
       }
       @include mq(md) {
         width: 100%;
@@ -343,7 +341,7 @@ header {
         }
         h2 {
           text-align: center;
-          margin-top: 26px;
+          margin-top: 38px;
           font-size: 2rem;
           font-weight: bold;
           @include mq(md) {
@@ -353,7 +351,7 @@ header {
             text-align: left;
           }
           @include mq(lg) {
-            margin-top: 12%;
+            margin-top: 12.6%;
           }
         }
       }

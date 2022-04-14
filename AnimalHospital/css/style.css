@@ -69,7 +69,7 @@
 
 @media screen and (min-width: 1080px) {
   .wrapper {
-    padding: 0 9.1%;
+    padding: 0 100px;
     max-width: 1080px;
     margin: 0 auto;
   }
@@ -85,6 +85,11 @@
 @media screen and (min-width: 768px) {
   .header-wrapper {
     padding-left: 98px;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .header-wrapper {
     padding-right: 60px;
   }
 }
@@ -226,7 +231,7 @@ header .nav-column-list li a:focus {
   background-image: -webkit-image-set(url(../images/top_sp.png) 1x, url(../images/top_sp@2x.png) 2x);
   background-image: image-set(url(../images/top_sp.png) 1x, url(../images/top_sp@2x.png) 2x);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   height: 550px;
   background-size: cover;
   position: relative;
@@ -367,7 +372,7 @@ header .nav-column-list li a:focus {
 @media screen and (min-width: 1080px) {
   #about #about-contents {
     padding-top: 72px;
-    padding-bottom: 67.5px;
+    padding-bottom: 72px;
   }
 }
 
@@ -378,13 +383,6 @@ header .nav-column-list li a:focus {
 @media screen and (min-width: 768px) {
   #about #about-contents .content:not(:first-of-type) {
     margin-top: 50px;
-  }
-}
-
-@media screen and (min-width: 475px) {
-  #about #about-contents .content {
-    width: 80%;
-    margin: 0 auto;
   }
 }
 
@@ -444,7 +442,7 @@ header .nav-column-list li a:focus {
 
 #about #about-contents .content .content-text h2 {
   text-align: center;
-  margin-top: 26px;
+  margin-top: 38px;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -460,7 +458,7 @@ header .nav-column-list li a:focus {
 
 @media screen and (min-width: 1080px) {
   #about #about-contents .content .content-text h2 {
-    margin-top: 12%;
+    margin-top: 12.6%;
   }
 }
 
