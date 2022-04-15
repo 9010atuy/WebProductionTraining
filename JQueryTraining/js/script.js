@@ -1,5 +1,8 @@
+// ハンバーガー
 $('.hamburger-trigger').on('click', () => {
+  //　要素自体を切り替え
   $('.header-menu').toggle(300);
+  // クラスのトグル
   $('.hamburger').toggleClass('active');
   $('#hamburger-bg').toggleClass('active');
 });
