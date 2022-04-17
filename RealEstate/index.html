@@ -8,27 +8,28 @@
     <title>株式会社キタムラ建設興業</title>
     <!-- css -->
     <link rel="stylesheet" href="./css/ress.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-
     <section id="top">
         <header class="header-wrapper">
-            <div id="site-title">株式会社北村建設興業</div>
-            <div class="header-menu pc">
+            <div id="site-title" class="font-white">株式会社北村建設興業</div>
+            <div class="header-menu header-nav-display">
                 <nav>
                     <ul>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#service">SERVICE</a></li>
-                        <li><a href="#works">WORKS</a></li>
-                        <li><a href="#news">NEWS</a></li>
-                        <li><a href="#company">COMPANY</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#about" class="font-white">ABOUT</a></li>
+                        <li><a href="#service" class="font-white">SERVICE</a></li>
+                        <li><a href="#works" class="font-white">WORKS</a></li>
+                        <li><a href="#news" class="font-white">NEWS</a></li>
+                        <li><a href="#company" class="font-white">COMPANY</a></li>
+                        <li><a href="#contact" class="font-white">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="hamburger no-pc hamburger-trigger">
+            <div class="hamburger header-hamburger-display hamburger-trigger">
                 <span></span>
             </div>
             <div class="hamburger-menu">
@@ -44,10 +45,28 @@
                 </nav>
             </div>
         </header>
+        <div class="slider">
+            <div class="fv01"></div>
+            <div class="fv02"></div>
+            <div class="fv03"></div>
+        </div>
+        <p class="top-message">永遠も。<br class="no-pc">瞬間も。<br>あなたと共に。</p>
         <div class="hamburger-trigger hamburger-bg"></div>
-        <p>永遠も。<br class="no-pc">瞬間も。<br>あなたと共に。</p>
     </section>
-    <section id="about">アバウト</section>
+    <section id="about">
+        <h1 class="wm-vl about-heading">伝統とイマを繋ぐ</h1>
+        <div class="about-message wm-vl">
+            <p>古来から伝わる伝統文化</p>
+            <p>昔からそこにある材料</p>
+            <p>その土地に長い間書けて</p>
+            <p>最適化してきた</p>
+            <p>たくさんのヒントを</p>
+            <p>イマを生きる私たちの</p>
+            <p>心地よさに取り入れ</p>
+            <p>新たな技術革新を</p>
+            <p>起こし続ける会社です</p>
+        </div>
+    </section>
     <section id="service">サービス</section>
     <section id="works">ワークス</section>
     <section id="news">ニュース</section>
@@ -58,6 +77,7 @@
     </footer>
     <!-- script -->
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
