@@ -140,6 +140,19 @@
           transform: translateX(-50%) translateY(-12px) rotate(45deg);
 }
 
+.nav-btn:hover {
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
 header .header-area {
   height: 50px;
   display: -webkit-box;
@@ -207,26 +220,45 @@ header .header-area nav {
 }
 
 header .nav-column-list {
-  background-color: rgba(6, 184, 146, 0.1);
+  position: fixed;
+  top: 50px;
+  background-color: rgba(13, 150, 160, 0.7);
+  width: 100vw;
+  height: 100vh;
   z-index: 999;
-}
-
-header .nav-column-list li:not(:last-of-type) {
-  border-bottom: 3px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .nav-column-list li a {
   display: block;
+  width: 100%;
   font-size: 2rem;
+  line-height: 3;
   text-align: center;
-  color: #0d96a0;
+  color: #fff;
+  font-weight: 700;
 }
 
 header .nav-column-list li a:focus {
   cursor: pointer;
 }
 
+header .nav-column-list li a:hover {
+  background-color: #fff;
+  color: #0d96a0;
+}
+
 #top {
+  margin-top: 50px;
   background-image: url(../images/top_sp.png);
   background-image: -webkit-image-set(url(../images/top_sp.png) 1x, url(../images/top_sp@2x.png) 2x);
   background-image: image-set(url(../images/top_sp.png) 1x, url(../images/top_sp@2x.png) 2x);

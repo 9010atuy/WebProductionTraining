@@ -1,11 +1,15 @@
 $(function () {
-  $('.nav-btn').on('click', function () {
-    $(this).toggleClass('active');
-    $('.nav-toggle-menu').stop(true).animate({ height: 'toggle' });
+  $('.nav-trigger').on('click', function () {
+    $('.nav-btn').toggleClass('active');
+    $('.nav-column-list').stop(true).animate({ height: 'toggle' });
     return false;
   });
-  $('.nav-column-list').on('click', () => {
-    $('.nav-btn').toggleClass('active');
-    $('.nav-toggle-menu').stop(true).animate({ height: 'toggle' });
+  $('a[href^="#"]').click(function () {
+    // スクロール先の座標を取得
+    const href = $(this).attr('href');
+    const target = $(href === '#' || href === '' ? 'html' : href);
+    const position = target.offset().top;
+    // アニメーション[swing]で1000ミリ秒かけて座標へスクロールする
+    $('html,body').animate({ scrollTop: position }, 1000, 'swing');
   });
 });
