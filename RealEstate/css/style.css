@@ -65,10 +65,13 @@ a {
           writing-mode: vertical-rl;
 }
 
+.bg-primary {
+  background-color: rgba(77, 150, 0, 0.1);
+}
+
 header {
   position: fixed;
   top: 0;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,6 +79,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1;
+  width: 100%;
 }
 
 header #site-title {
@@ -94,16 +98,17 @@ header #site-title {
   padding-left: 20px;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 900px) {
   .header-wrapper {
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 0;
   }
 }
 
 @media screen and (min-width: 1080px) {
   .header-wrapper {
-    padding: 0 80px;
+    padding-left: 80px;
+    padding-right: 105px;
   }
 }
 
@@ -118,19 +123,36 @@ header #site-title {
 }
 
 .header-menu nav ul li a {
-  display: block;
-  width: 100%;
+  display: inline-block;
   font-size: 1.8rem;
   font-height: 1.83;
-  text-align: center;
-  padding-left: 31px;
+  margin-left: 31px;
+  position: relative;
+}
+
+.header-menu nav ul li a::after {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .header-menu nav ul li a:hover {
   opacity: .5;
-  border-bottom: 1px solid #000;
+}
+
+.header-menu nav ul li a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 .hamburger {
@@ -262,11 +284,11 @@ header #site-title {
 
 @media screen and (min-width: 600px) {
   .top-message {
-    top: 49.7%;
-    left: 50.6%;
+    top: 41.3%;
+    left: 50.7%;
     font-size: 4rem;
     font-weight: 600;
-    line-height: 1.85;
+    line-height: 1.75;
   }
 }
 
@@ -274,6 +296,12 @@ header #site-title {
   background-position: top;
   background-size: cover;
   height: 601px;
+}
+
+@media screen and (min-width: 600px) {
+  .slider div {
+    height: 800px;
+  }
 }
 
 .slider div .fv01 {
@@ -319,7 +347,6 @@ header #site-title {
 }
 
 #about {
-  position: relative;
   background-image: url(../images/SP_About.png);
   background-image: -webkit-image-set(url(../images/SP_About.png) 1x, url(../images/SP_About@2x.png) 2x);
   background-image: image-set(url(../images/SP_About.png) 1x, url(../images/SP_About@2x.png) 2x);
@@ -337,27 +364,71 @@ header #site-title {
   }
 }
 
+@media screen and (min-width: 600px) {
+  #about {
+    width: 100%;
+    height: 500px;
+    background-position: top;
+  }
+}
+
+.about-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 33px;
+}
+
+@media screen and (min-width: 600px) {
+  .about-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    row-gap: 0;
+    -webkit-column-gap: 41px;
+            column-gap: 41px;
+    padding-top: 112px;
+  }
+}
+
 .about-heading {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin-top: 50px;
   font-size: 2.5rem;
   font-weight: 200;
   line-height: 1.2;
   letter-spacing: 0.2em;
 }
 
+@media screen and (min-width: 600px) {
+  .about-heading {
+    margin-right: 438px;
+    margin-top: 0;
+    font-size: 3rem;
+    line-height: 1.17;
+    letter-spacing: 0.17em;
+  }
+}
+
 .about-message {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 200;
-  line-height: 1.45;
-  letter-spacing: 0.1em;
+  line-height: 1.65;
+  letter-spacing: 0.2em;
+}
+
+@media screen and (min-width: 600px) {
+  .about-message {
+    font-size: 1.8rem;
+    line-height: 2.65;
+    letter-spacing: 0.4em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

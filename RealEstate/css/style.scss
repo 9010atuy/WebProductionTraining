@@ -46,14 +46,17 @@ a{
 .wm-vl{
   writing-mode: vertical-rl;
 }
+.bg-primary{
+  background-color: rgba(77, 150, 0, .1);
+}
 // header
 header {
   position:fixed;
   top:0;
-  width:100%;
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  width:100%;
   #site-title {
     margin-top: 12px;
     font-size: 2rem;
@@ -65,14 +68,17 @@ header {
 }
 .header-wrapper{
   padding-left:20px;
-  @include mq(xl){
+  @include mq(ll){
     padding: {
       left:5%;
-      right: 5%;
+      right:0;
     } 
   }
   @include mq(xl){
-    padding: 0 80px;
+    padding : {
+      left: 80px;
+      right:105px;
+    }
   }
 }
 .header-menu{
@@ -82,18 +88,30 @@ header {
       display: flex;
       li{
         a{
-          display: block;
-          width: 100%;
+          display: inline-block;
           font: {
             size: 1.8rem;
             height: 1.83;
           }
-          text-align: center;
-          padding-left:31px;
-          transition: .3s;
+          margin-left:31px;
+          position: relative;
+          &::after{
+            position: absolute;
+            bottom: 2px;
+            right:0;
+            content:'';
+            height: 2px;
+            width: 100%;
+            background: #fff;
+            transform: scale(0,1);
+            transform-origin: left top;
+            transition: .3s;
+          }
           &:hover{
             opacity: .5;
-            border-bottom: 1px solid #000;
+          }
+          &:hover::after{
+            transform: scale(1,1);
           }
         }
       }
@@ -198,13 +216,13 @@ header {
   text-shadow: 5px 5px 5px #000;
   z-index: 0;
   @include mq(md){
-    top:49.7%;
-    left:50.6%;
+    top:41.3%;
+    left:50.7%;
     font: {
       size:4rem;
       weight:600;
     }
-    line-height: 1.85;
+    line-height: 1.75;
   }
 }
 .slider{
@@ -213,6 +231,9 @@ header {
     background-position: top;
     background-size: cover;
     height: 601px;
+    @include mq(md){
+      height: 800px;
+    }
     .fv01{
       background-image: url(../images/SP_FirstView-1.png);
       background-image: image-set(url(../images/SP_FirstView-1.png) 1x, url(../images/SP_FirstView-1@2x.png) 2x);
@@ -241,7 +262,6 @@ header {
 }
 // about
 #about{
-  position: relative;
   background-image: url(../images/SP_About.png);
   background-image: image-set(url(../images/SP_About.png) 1x, url(../images/SP_About@2x.png) 2x);
   @include mq(md){
@@ -254,26 +274,51 @@ header {
   }
   width: 100%;
   height: 584px;
-}
-.about-heading{
-  position: absolute;
-  top:50px;
-  left:50%;
-  transform: translateX(-50%);
-  font: {
-    size: 2.5rem;
-    weight: 200;
+  @include mq(md){
+    width:100%;
+    height: 500px;
+    background-position: top;
   }
-  line-height: 1.2;
-  letter-spacing: 0.2em;
 }
-.about-message{
-  position: absolute;
-  bottom:50px;
-  left:50%;
-  transform: translateX(-50%);
-  font-size: 1.8rem;
-  font-weight: 200;
-  line-height: 1.45;
-  letter-spacing: 0.1em;
+.about{
+  &-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 33px;
+    @include mq(md){
+      flex-direction: row-reverse;
+      row-gap: 0;
+      column-gap: 41px;
+      padding-top: 112px;
+    }
+  }
+  &-heading{
+    margin-top:50px;
+    font: {
+      size: 2.5rem;
+      weight: 200;
+    }
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    @include mq(md){
+      margin-right: 438px;
+      margin-top: 0;
+      font-size: 3rem;
+      line-height: 1.17;
+      letter-spacing: 0.17em;
+    }
+  }
+  &-message{
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.65;
+    letter-spacing: 0.2em;
+    @include mq(md){
+      font-size: 1.8rem;
+      line-height: 2.65;
+      letter-spacing: 0.4em;
+    }
+  }
 }
+// service

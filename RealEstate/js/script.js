@@ -31,9 +31,13 @@ $(function () {
     if (scrollTop > aboutTop) {
       $('#site-title').removeClass('font-white');
       $('#site-title').addClass('font-black');
+      $('a[href^="#"]').removeClass('font-white');
+      $('a[href^="#"]').addClass('font-black');
     } else {
       $('#site-title').removeClass('font-black');
       $('#site-title').addClass('font-white');
+      $('a[href^="#"]').removeClass('font-black');
+      $('a[href^="#"]').addClass('font-white');
     }
   });
 });
