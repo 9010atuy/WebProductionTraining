@@ -12,6 +12,7 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 400,
+    arrows: false,
   });
   // スムーススクロール
   $('a[href^="#"]').click(function () {

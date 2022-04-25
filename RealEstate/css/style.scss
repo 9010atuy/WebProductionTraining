@@ -4,7 +4,7 @@
 $cGreen: #4d9600;
 
 html {
-  font-family: 'YuMincho', 'Yu Mincho', serif;
+  font-family: "游明朝体", "Yu Mincho", serif;
   font-size: 10px;
 }
 li{
@@ -46,8 +46,46 @@ a{
 .wm-vl{
   writing-mode: vertical-rl;
 }
-.bg-primary{
+.bg-light-green{
   background-color: rgba(77, 150, 0, .1);
+}
+.bg-green{
+  background-color: $cGreen;
+  color: #fff;
+}
+.section-title{
+  color: $cGreen;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  letter-spacing: 0.35em;
+  text-align: center;
+  margin-left: 7px;
+}
+.section-sub-title{
+  text-align: center;
+  font: {
+    size: 2rem;
+    weight: 200;
+  }
+  letter-spacing:0.3em;
+  margin: {
+    top: 4px;
+    left: 5px;
+  }
+  line-height: 1.65;
+}
+.wrapper{
+  margin: 0 30px;
+  @include mq(md){
+    max-width: 1080px;
+    padding:0 50px;
+  }
+}
+.pl-220{
+  padding-left: 220px;
+}
+.pr-185{
+  padding-right: 185px;
 }
 // header
 header {
@@ -321,4 +359,458 @@ header {
     }
   }
 }
+
 // service
+#service{
+  padding: 50px 0;
+  @include mq(ll){
+    padding-top: 80px;
+  }
+}
+.service{
+  &:first-of-type{
+    margin-top: 43px;
+  }
+  &:not(:first-of-type){
+    margin-top:50px;
+  }
+  &-img{
+    &-obj{
+      width: 100%;
+      height: auto;
+    }
+    &-title{
+      font-size: 1.6rem;
+      margin-top: 5px;
+    }
+  }
+  &-description{
+    padding: {
+      top:4px;
+      left:20px;
+      right: 20px;
+      bottom:15px;
+    }
+    margin-top: 6px;
+    &-heading{
+      margin-top: 10px;
+      font-size: 2rem;
+      line-height:1.65;
+      font-weight: 600;
+    }
+    &-detail{
+      margin-top: 5px;
+      font-size: 1.6rem;
+      line-height: 1.5625;
+    }
+  }
+}
+@include mq(ll){
+  .service{
+    &:first-of-type{
+      margin-top: 80px;
+    }
+    &:not(:first-of-type){
+      margin-top:130px;
+    }
+    position: relative;
+    display: flex;
+    &-img{
+      width:100%;
+      max-width: 600px;
+      z-index: 1;
+      &-obj{
+        height: auto;
+      }
+      &-title{
+        font-size: 1.6rem;
+        margin-top: 20px;
+      }
+    }
+    &-description{
+      position:absolute;
+      top:139px;
+      left:420px;
+      width:100%;
+      max-width: 500px;
+      padding: {
+        top:34px;
+        bottom:47px;
+        left:220px;
+        right: 0;
+      }
+      font-weight: 600;
+      &-heading{
+        font-size: 2.5rem;
+        line-height: 1.5;
+      }
+      &-detail{
+        font-size: 1.6rem;
+        line-height: 1.5625;
+      }
+    }
+    &:nth-child(odd){
+      flex-direction: row-reverse;
+      .service-img-title{
+        text-align: right;
+      }
+      .service-description{
+        left:0;
+        padding-left:40px;
+        padding-right: 185px;
+      }
+    }
+  }
+}
+// works
+#works{
+  padding:50px 0;
+}
+.works{
+  margin-top: 46px;
+}
+.work{
+  &:not(:first-of-type){
+    margin-top: 25px;
+  }
+  &-img{
+    width:100%;
+    &-description{
+      font-size: 1.6rem;
+      line-height: 1.5625;
+      font-weight: 200;
+    }
+  }
+}
+// news
+#news{
+  padding: 50px 0;
+}
+.news-content{
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+  row-gap:50px;
+  .news-content-info{
+    background-color: #fff;
+  }
+  .news-content-blog{
+    background-color: #fff;
+  }
+  .news-header{
+    font-size: 2rem;
+    padding: {
+      top: 14px;
+      bottom: 6px;
+      left:20px;
+    }
+  }
+  .news-row{
+    color:#000;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: {
+      top:16px;
+      bottom:17px;
+    }
+    border-bottom: 1px solid #55A500;
+    width:87%;
+    margin: 0 auto;
+    .news-date{
+      font-size: 1.6rem;
+    }
+    .news-text{
+      font-size: 1.8rem;
+      margin-left: 20px;
+      line-height: 1.38;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+  .first-row{
+    padding-top: 27px;
+  }
+  .news-footer{
+    position: relative;
+    height: 74px;
+    p{
+      position: absolute;
+      bottom:31px;
+      right: 55px;
+      color: #55A500;
+      font-size: 2rem;
+    }
+    img{
+      position: absolute;
+      bottom:22px;
+      right: 20px;
+    }
+  }
+}
+
+// company
+#company{
+  padding: 50px 0;
+}
+.access-map {
+  padding-top: 56.25%;
+  position: relative;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.company-contents{
+  margin-top: 50px;
+}
+.company-description{
+  margin-top: 20px;
+  padding: 20px;
+}
+.company{
+  &-name{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.65;
+    margin-top: 20px;
+  }
+  &-address{
+    font-size:1.6rem;
+    font-weight: 600;
+    line-height: 1.5625;
+    margin-top: 20px;
+  }
+  &-phone-number{
+    margin-top: 20px;
+    font-size: 1.6rem;
+  }
+  &-email{
+    margin-top: 20px;
+    font-size: 1.6rem;
+  }
+}
+.strong{
+  font-size: 2rem;
+  font-weight: 600;
+}
+// contact
+#contact{
+  padding: 50px 0;
+}
+.contact-description{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  line-height: 1.65;
+}
+.contact-form{
+  font-size: 20px;
+  .form-control{
+    margin-top:40px;
+  }
+  .form-control-sex{
+    display: flex;
+    margin-top: 40px;
+  }
+  .radio-form{
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    label{
+      padding-left: 50px;
+      position:relative;
+      // ボタンパーツ
+      &::before,&::after{
+        // ボタンパーツ
+        content:'';
+        display: block;
+        border-radius: 50%;
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%)
+      }
+      &::before{
+        background-color: #fff;
+        border: 1px solid #808000;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        left: 10px;
+      }
+      &::after{
+        background-color: #000;
+        border-radius: 50%;
+        opacity: 0;
+        width: 5px;
+        height: 5px;
+        left:17px;
+      }
+    }
+    input:checked + label::after{
+      opacity: 1;
+    }
+  }
+  input[type=text]{
+    background-color: #fff;
+    width:100%;
+    padding: {
+      top: 17px;
+      left: 20px;
+      bottom: 17px;
+    }
+  }
+  input[type=radio]{
+   margin-left: 30px; 
+  }
+  label{
+    display: block;
+    margin-bottom: 10px;
+  }
+  select{
+    width:100%;
+    background-color: #fff;
+    padding: {
+      top: 17px;
+      left: 20px;
+      bottom: 17px;
+    }
+    background: {
+      image:url(../images/triangle.svg);
+      position: right 10px top 50%;
+    }
+  }
+  textarea{
+    background-color: #fff;
+    width: 100%;
+    height:200px;
+    padding: {
+      top: 17px;
+      left: 20px;
+      bottom: 17px;
+    }
+  }
+  input[type='checkbox']{
+    transform: scale(1.5);
+  }
+  .checkbox{
+    &-form{
+      font-size: 1.6rem;
+      line-height: 2.0625;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      label{
+        margin-bottom: 0;
+      }
+    }
+    &-control{
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      row-gap: 10px;
+      width:50%;
+    }
+  }
+  .personal-information-protection{
+    background-color: #fff;
+    padding: 30px {
+      right: 50px;
+    }
+    height: 310px;
+    overflow-y: auto;
+    h4{
+      font-weight: 200;
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.8rem;
+    }
+  }
+}
+.btn{
+  width: 100%;
+  margin-top: 50px;
+  padding:15px 68px;
+}
+
+.visually-hidden {
+  /* コンテンツの流れから切り離す */
+  position: absolute;
+  /* 誤ったコードに対処するための回避策 */
+  white-space: nowrap;
+  /* 可能な限り文字サイズを小さくするための処理
+   * (スクリーンリーダー中には height と width が 0 のものを無視するため)
+   */
+  width: 1px;
+  height: 1px;
+  /* オーバーフローしているコンテンツを隠す */
+  overflow: hidden;
+  /* 要素サイズを変更しうるプロパティのリセット */
+  border: 0;
+  padding: 0;
+  /* 要素のどの部分が表示されるかを定義するもの */
+  /* 古いブラウザでは使用できない */
+  clip: rect(0 0 0 0);
+  /* 最近のブラウザ用
+   * コンテンツを非表示にする設定  */
+  clip-path: inset(50%); 
+  /* 今現在なぜ-1pxがここで設定されるかは分かっていないそうです。
+   * それに加えていくつか問題もあるそうです 
+   * (参考: https://github.com/h5bp/html5-boilerplate/issues/1985)
+   */
+  margin: -1px;
+}
+
+// footer
+footer{
+  .company-name{
+    font-size: 2rem;
+    font-weight: 200;
+    width:100%;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+  }
+  .footer-menu{
+    font-size: 1.8rem;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        &:not(:first-of-type){
+          margin-left: 30px;
+        }
+        a{
+          display: inline-block;
+          width:100%;
+        }
+      }
+    }
+  }
+  .sns-icon-list{
+    width:100%;
+    max-width: 200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .copy-right{
+    margin-top: 50px;
+    font-size: 2rem;
+    text-align: center;
+    padding: {
+      top:24px;
+      right:30px;
+      bottom:23px;
+      left:24px;
+    }
+  }
+}
