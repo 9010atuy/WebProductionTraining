@@ -41,4 +41,37 @@ $(function () {
       $('a[href^="#"]').addClass('font-white');
     }
   });
+  // モーダル
+  $('#work01-modal').on('click', () => {
+    $('.modal-area').show();
+    $('.modal-content-work01').show();
+  });
+  $('#work02-modal').on('click', () => {
+    $('.modal-area').show();
+    $('.modal-content-work02').show();
+  });
+  $('#work03-modal').on('click', () => {
+    $('.modal-area').show();
+    $('.modal-content-work02').show();
+  });
+  $('#work04-modal').on('click', () => {
+    $('.modal-area').show();
+    $('.modal-content-work02').show();
+  });
+  $('.modal-close').on('click', () => {
+    $('.modal-area').hide();
+  });
+  // スクロールフェードイン
+  $(function () {
+    $(window).scroll(function () {
+      const wHeight = $(window).height();
+      const scrollAmount = $(window).scrollTop();
+      $('.scrollanime').each(function () {
+        const targetPosition = $(this).offset().top;
+        if (scrollAmount > targetPosition - wHeight + 60) {
+          $(this).addClass('fadeInDown');
+        }
+      });
+    });
+  });
 });
