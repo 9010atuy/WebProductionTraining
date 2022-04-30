@@ -74,4 +74,21 @@ $(function () {
       });
     });
   });
+  // トップへ戻る
+  // ボタンがクリックされたら1秒でページトップへ戻る
+  const toTop = $('.to-top');
+  toTop.click(function () {
+    $('body, html').animate({ scrollTop: 0 }, 1000);
+    return false;
+  });
+  $(window).scroll(function () {
+    const aboutTop = $('#about').offset().top;
+    if ($(this).scrollTop() >= aboutTop) {
+      // 0.3秒でフェードイン
+      toTop.fadeIn(300);
+    } else {
+      // 0.3秒でフェードアウト
+      toTop.fadeOut(300);
+    }
+  });
 });

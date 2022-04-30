@@ -77,6 +77,7 @@ a{
 }
 .wrapper{
   margin: 0 30px;
+  margin: 0 auto;
   @include mq(md){
     max-width: 1080px;
     padding:0 50px;
@@ -101,23 +102,25 @@ a{
   }
 }
 .to-top{
-  &::before{
-    // display: none;
-    position: fixed;
-    right: 60px;
-    bottom:60px;
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
-    background-color: $cGreen;
-  } 
-  &::after{
-    left: 3px;
-    width: 3px;
-    height: 3px;
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
+  display:none;
+  position: fixed;
+  right: 60px;
+  bottom:60px;
+  background-color: $cGreen;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+.arrow{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  width: 25px;
+  height: 25px;
+  border: {
+    top: 5px solid #fff;
+    right: 5px solid #fff;
   }
 }
 // header
@@ -373,11 +376,17 @@ header {
     line-height: 1.2;
     letter-spacing: 0.2em;
     @include mq(md){
-      margin-right: 438px;
+      margin-right: 20%;
       margin-top: 0;
       font-size: 3rem;
       line-height: 1.17;
       letter-spacing: 0.17em;
+    }
+    @include mq(ll){
+      margin-right: 40%;
+    }
+    @include mq(xl){
+      margin-right: 438px;
     }
   }
   &-message{
