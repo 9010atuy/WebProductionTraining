@@ -210,7 +210,7 @@ header #site-title {
 @media screen and (min-width: 1080px) {
   .header-wrapper {
     padding-left: 80px;
-    padding-right: 94px;
+    padding-right: 88px;
   }
 }
 
@@ -577,14 +577,14 @@ header #site-title {
 
 .service-img-title {
   font-size: 1.6rem;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .service-description {
   padding-top: 4px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 7px;
+  padding-bottom: 16px;
   margin-top: 6px;
 }
 
@@ -596,9 +596,9 @@ header #site-title {
 }
 
 .service-description-detail {
-  margin-top: 5px;
+  margin-top: 8px;
   font-size: 1.6rem;
-  line-height: 1.7625;
+  line-height: 1.5625;
 }
 
 @media screen and (min-width: 1080px) {
@@ -967,7 +967,6 @@ header #site-title {
 }
 
 .access-map {
-  padding-top: 56.25%;
   min-width: 315px;
   min-height: 300px;
   position: relative;
@@ -998,10 +997,10 @@ header #site-title {
   .company-description {
     position: absolute;
     top: 181px;
-    left: 420px;
+    left: 418px;
     width: 500px;
     padding-top: 23px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     padding-left: 220px;
     z-index: -1;
   }
@@ -1010,12 +1009,12 @@ header #site-title {
 .company-name {
   font-size: 2rem;
   font-weight: 600;
-  line-height: 1.65;
+  line-height: 1.75;
 }
 
 @media screen and (min-width: 900px) {
   .company-name {
-    margin-top: 20px;
+    margin-top: 22px;
   }
 }
 
@@ -1028,7 +1027,7 @@ header #site-title {
 
 @media screen and (min-width: 900px) {
   .company-address {
-    margin-top: 20px;
+    margin-top: 7px;
   }
 }
 
@@ -1328,6 +1327,10 @@ header #site-title {
   }
 }
 
+.contact-form .form-control-textarea textarea {
+  margin-top: 5px;
+}
+
 .contact-form .form-control-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1341,8 +1344,74 @@ header #site-title {
 
 @media screen and (min-width: 900px) {
   .contact-form .form-control-checkbox {
-    margin-top: 44px;
+    margin-top: 49px;
   }
+}
+
+.contact-form .form-control-checkbox input[type=checkbox] {
+  display: none;
+}
+
+.contact-form .form-control-checkbox .checkbox-form {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 1px;
+}
+
+@media screen and (min-width: 900px) {
+  .contact-form .form-control-checkbox .checkbox-form {
+    line-height: 2.0625;
+    margin-top: 7px;
+    row-gap: 3px;
+  }
+}
+
+.contact-form .form-control-checkbox .checkbox-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 17px;
+          column-gap: 17px;
+  row-gap: 10px;
+  width: 50%;
+}
+
+@media screen and (min-width: 900px) {
+  .contact-form .form-control-checkbox .checkbox-control {
+    width: 25%;
+    font-size: 1.8rem;
+  }
+}
+
+.contact-form .form-control-checkbox .checkbox-control label {
+  margin-bottom: 0;
+  display: block;
+  width: 100%;
+  padding-left: 40px;
+  position: relative;
+}
+
+.contact-form .form-control-checkbox .checkbox-control label::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
 }
 
 .contact-form .form-control-protection {
@@ -1358,7 +1427,7 @@ header #site-title {
 
 @media screen and (min-width: 900px) {
   .contact-form .form-control-protection {
-    margin-top: 45px;
+    margin-top: 36px;
   }
 }
 
@@ -1410,73 +1479,6 @@ header #site-title {
   padding-bottom: 17px;
 }
 
-.contact-form input[type='checkbox'] {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  border: none;
-}
-
-@media screen and (min-width: 900px) {
-  .contact-form input[type='checkbox'] {
-    -webkit-transform: scale(1.8);
-            transform: scale(1.8);
-    margin-left: 4px;
-  }
-}
-
-.contact-form .checkbox-form {
-  font-size: 1.6rem;
-  line-height: 1.8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  row-gap: 1px;
-}
-
-@media screen and (min-width: 900px) {
-  .contact-form .checkbox-form {
-    line-height: 2.0625;
-  }
-}
-
-.contact-form .checkbox-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 17px;
-          column-gap: 17px;
-  row-gap: 10px;
-  width: 50%;
-}
-
-@media screen and (min-width: 900px) {
-  .contact-form .checkbox-control {
-    width: 25%;
-    -webkit-column-gap: 28px;
-            column-gap: 28px;
-    font-size: 1.8rem;
-  }
-}
-
-.contact-form .checkbox-control label {
-  margin-bottom: 0;
-}
-
-@media screen and (min-width: 900px) {
-  .contact-form .checkbox-control label {
-    margin-left: -6px;
-    margin-top: -4px;
-  }
-}
-
 .contact-form .personal-information-protection {
   background-color: #fff;
   padding-top: 22px;
@@ -1489,8 +1491,8 @@ header #site-title {
 
 @media screen and (min-width: 900px) {
   .contact-form .personal-information-protection {
-    padding-top: 35px;
-    padding-left: 39px;
+    padding-top: 39px;
+    padding-left: 40px;
     padding-right: 52px;
     padding-right: 63px;
     letter-spacing: -0.05em;
@@ -1503,14 +1505,20 @@ header #site-title {
   line-height: 1.7;
 }
 
+@media screen and (min-width: 900px) {
+  .contact-form .personal-information-protection h4 {
+    font-size: 1.9rem;
+    line-height: 1.6;
+  }
+}
+
 .contact-form .personal-information-protection h4:not(:first-of-type) {
   margin-top: 10px;
 }
 
 @media screen and (min-width: 900px) {
-  .contact-form .personal-information-protection h4 {
-    font-size: 1.9rem;
-    line-height: 1.6;
+  .contact-form .personal-information-protection h4:not(:first-of-type) {
+    margin-top: 1px;
   }
 }
 
@@ -1595,6 +1603,13 @@ footer .footer-wrapper {
   footer .footer-wrapper {
     padding-left: 141px;
     padding-right: 139px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  footer .footer-wrapper {
+    padding-left: 175px;
+    padding-right: 176px;
   }
 }
 

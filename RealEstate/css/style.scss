@@ -154,7 +154,7 @@ header {
   @include mq(xl){
     padding : {
       left: 80px;
-      right:94px;
+      right:88px;
     }
   }
 }
@@ -429,7 +429,7 @@ header {
     }
     &-title{
       font-size: 1.6rem;
-      margin-top: 5px;
+      margin-top: 7px;
     }
   }
   &-description{
@@ -437,7 +437,7 @@ header {
       top:4px;
       left:20px;
       right: 20px;
-      bottom:7px;
+      bottom:16px;
     }
     margin-top: 6px;
     &-heading{
@@ -447,9 +447,9 @@ header {
       font-weight: 600;
     }
     &-detail{
-      margin-top: 5px;
+      margin-top: 8px;
       font-size: 1.6rem;
-      line-height: 1.7625;
+      line-height: 1.5625;
     }
   }
 }
@@ -718,7 +718,6 @@ header {
   }
 }
 .access-map {
-  padding-top: 56.25%;
   min-width: 315px;
   min-height: 300px;
   position: relative;
@@ -743,11 +742,11 @@ header {
   @include mq(ll){
     position: absolute;
     top: 181px;
-    left: 420px;
+    left: 418px;
     width: 500px;
     padding: {
       top: 23px;
-      bottom: 50px;
+      bottom: 45px;
       left: 220px;
     }
     z-index: -1;
@@ -757,9 +756,9 @@ header {
   &-name{
     font-size: 2rem;
     font-weight: 600;
-    line-height: 1.65;
+    line-height: 1.75;
     @include mq(ll){
-      margin-top: 20px;
+      margin-top: 22px;
     }
   }
   &-address{
@@ -768,7 +767,7 @@ header {
     line-height: 1.5625;
     margin-top: 8px;
     @include mq(ll){
-      margin-top: 20px;
+      margin-top: 7px;
     }
   }
   &-phone-number{
@@ -979,13 +978,62 @@ header {
     @include mq(ll){
       row-gap: 0;
     }
+    textarea{
+      margin-top: 5px;
+    }
   }
   .form-control-checkbox{
     display: flex;
     flex-direction: column;
     margin-top: 29px;
     @include mq(ll){
-      margin-top: 44px;
+      margin-top: 49px;
+    }
+    input[type=checkbox]{
+      display: none;
+    }
+    .checkbox{
+      &-form{
+        font-size: 1.6rem;
+        line-height: 1.8;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 1px;
+        @include mq(ll){
+          line-height: 2.0625;
+          margin-top: 7px;
+          row-gap: 3px;
+        }
+      }
+      &-control{
+        display: flex;
+        align-items: center;
+        column-gap: 17px;
+        row-gap: 10px;
+        width:50%;
+        @include mq(ll){
+          width: 25%;
+          font-size: 1.8rem;
+        }
+        label{
+          margin-bottom: 0;
+          display: block;
+          width:100%;
+          padding-left: 40px;
+          position: relative;
+          &::after{
+            position: absolute;
+            content:'';
+            top:50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+          }
+        }
+      }
     }
   }
   .form-control-protection{
@@ -993,7 +1041,7 @@ header {
     flex-direction: column;
     margin-top: 29px;
     @include mq(ll){
-      margin-top: 45px;
+      margin-top: 36px;
     }
   }
   input[type=text]{
@@ -1036,46 +1084,7 @@ header {
       bottom: 17px;
     }
   }
-  input[type='checkbox']{
-    transform: scale(1.5);
-    border:none;
-    @include mq(ll){
-      transform: scale(1.8);
-      margin-left: 4px;
-    }
-  }
-  .checkbox{
-    &-form{
-      font-size: 1.6rem;
-      line-height: 1.8;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      row-gap: 1px;
-      @include mq(ll){
-        line-height: 2.0625;
-      }
-    }
-    &-control{
-      display: flex;
-      align-items: center;
-      column-gap: 17px;
-      row-gap: 10px;
-      width:50%;
-      @include mq(ll){
-        width: 25%;
-        column-gap: 28px;
-        font-size: 1.8rem;
-      }
-      label{
-        margin-bottom: 0;
-        @include mq(ll){
-          margin-left: -6px;
-          margin-top: -4px;
-        }
-      }
-    }
-  }
+  // 個人情報保護方針
   .personal-information-protection{
     background-color: #fff;
     padding: {
@@ -1087,8 +1096,8 @@ header {
     height: 310px;
     overflow-y: auto;
     @include mq(ll){
-      padding-top: 35px;
-      padding-left: 39px;
+      padding-top: 39px;
+      padding-left: 40px;
       padding-right: 52px;
       padding-right: 63px;
       letter-spacing: -0.05em;
@@ -1097,12 +1106,15 @@ header {
       font-weight: 200;
       font-size: 1.8rem;
       line-height: 1.7;
-      &:not(:first-of-type){
-        margin-top: 10px;
-      }
       @include mq(ll){
         font-size: 1.9rem;
         line-height: 1.6;
+      }
+      &:not(:first-of-type){
+        margin-top: 10px;
+        @include mq(ll){
+          margin-top: 1px;
+        }
       }
     }
     p{
@@ -1180,6 +1192,12 @@ footer{
       padding: {
         left:141px;
         right:139px;
+      }
+    }
+    @include mq(xl){
+      padding: {
+        left: 175px;
+        right: 176px;
       }
     }
   }
