@@ -82,7 +82,7 @@ a {
   line-height: 1.1;
   letter-spacing: 0.35em;
   text-align: center;
-  margin-left: 7px;
+  margin-left: 9.5px;
 }
 
 @media screen and (min-width: 1080px) {
@@ -589,14 +589,14 @@ header #site-title {
 }
 
 .service-description-heading {
-  margin-top: 10px;
+  margin-top: 14px;
   font-size: 2rem;
-  line-height: 1.65;
+  line-height: 1.35;
   font-weight: 600;
 }
 
 .service-description-detail {
-  margin-top: 8px;
+  margin-top: 9.5px;
   font-size: 1.6rem;
   line-height: 1.5625;
 }
@@ -667,7 +667,8 @@ header #site-title {
 }
 
 #works {
-  padding: 50px 0;
+  padding-top: 45px;
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 1080px) {
@@ -1339,7 +1340,7 @@ header #site-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 29px;
+  margin-top: 24px;
 }
 
 @media screen and (min-width: 900px) {
@@ -1398,8 +1399,15 @@ header #site-title {
   margin-bottom: 0;
   display: block;
   width: 100%;
-  padding-left: 40px;
+  padding-left: 30px;
   position: relative;
+  margin-top: 1.8px;
+}
+
+@media screen and (min-width: 900px) {
+  .contact-form .form-control-checkbox .checkbox-control label {
+    padding-left: 40px;
+  }
 }
 
 .contact-form .form-control-checkbox .checkbox-control label::after {
@@ -1464,13 +1472,14 @@ header #site-title {
 .contact-form .question-lbl {
   width: 100%;
   margin-bottom: 0;
+  line-height: 1.35;
 }
 
-.contact-form .protection-lbl {
+.protection-lbl {
   width: 100%;
 }
 
-.contact-form textarea {
+textarea {
   background-color: #fff;
   width: 100%;
   height: 200px;
@@ -1479,18 +1488,16 @@ header #site-title {
   padding-bottom: 17px;
 }
 
-.contact-form .personal-information-protection {
+.scroll-container {
   background-color: #fff;
   padding-top: 22px;
   padding-bottom: 30px;
   padding-left: 30px;
-  padding-right: 50px;
-  height: 310px;
-  overflow-y: auto;
+  padding-right: 10px;
 }
 
 @media screen and (min-width: 900px) {
-  .contact-form .personal-information-protection {
+  .scroll-container {
     padding-top: 39px;
     padding-left: 40px;
     padding-right: 52px;
@@ -1499,37 +1506,58 @@ header #site-title {
   }
 }
 
-.contact-form .personal-information-protection h4 {
+.personal-information-protection {
+  padding-right: 30px;
+  height: 310px;
+  overflow-y: auto;
+}
+
+.personal-information-protection::-webkit-scrollbar {
+  width: 10px;
+}
+
+.personal-information-protection::-webkit-scrollbar-thumb {
+  background-color: #9B9B9B;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+  height: 30px;
+}
+
+.personal-information-protection::-webkit-scrollbar-track-piece {
+  padding: 100px 0;
+}
+
+.personal-information-protection h4 {
   font-weight: 200;
   font-size: 1.8rem;
   line-height: 1.7;
 }
 
 @media screen and (min-width: 900px) {
-  .contact-form .personal-information-protection h4 {
+  .personal-information-protection h4 {
     font-size: 1.9rem;
     line-height: 1.6;
   }
 }
 
-.contact-form .personal-information-protection h4:not(:first-of-type) {
+.personal-information-protection h4:not(:first-of-type) {
   margin-top: 10px;
 }
 
 @media screen and (min-width: 900px) {
-  .contact-form .personal-information-protection h4:not(:first-of-type) {
+  .personal-information-protection h4:not(:first-of-type) {
     margin-top: 1px;
   }
 }
 
-.contact-form .personal-information-protection p {
+.personal-information-protection p {
   font-size: 1.6rem;
   margin-top: 5px;
   line-height: 1.8;
 }
 
 @media screen and (min-width: 900px) {
-  .contact-form .personal-information-protection p {
+  .personal-information-protection p {
     font-size: 1.8rem;
     line-height: 1.9;
     font-size: 1.7rem;
@@ -1538,7 +1566,7 @@ header #site-title {
 
 .btn {
   width: 100%;
-  margin-top: 46px;
+  margin-top: 43px;
   padding: 10px 68px;
   -webkit-transition: .5s;
   transition: .5s;
