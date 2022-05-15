@@ -946,11 +946,6 @@ header {
       margin-top: 54px;
       align-items: center;
     }
-    label{
-      @include mq(ll){
-        // letter-spacing: -0.05em;
-      }
-    }
     select{
       background-color: #fff;
       background: {
@@ -1079,10 +1074,13 @@ header {
     margin-bottom: 0;
     line-height: 1.35;
   }
-  }
   .protection-lbl{
     width: 100%;
+    @include mq(ll){
+      width: 100%;
+    }
   }
+}
   textarea{
     background-color: #fff;
     width: 100%;
@@ -1103,16 +1101,15 @@ header {
       right: 10px;
     }
     @include mq(ll){
-      padding-top: 39px;
+      padding-top: 14px;
       padding-left: 40px;
-      padding-right: 52px;
-      padding-right: 63px;
+      padding-right: 10px;
       letter-spacing: -0.05em;
     }
   }
   .personal-information-protection{
     padding-right: 30px;
-    height: 310px;
+    height: 262px;
     overflow-y: auto;
     &::-webkit-scrollbar{
       width:10px;
@@ -1124,6 +1121,10 @@ header {
     }
     &::-webkit-scrollbar-track-piece {
       padding:100px 0;
+    }
+    @include mq(ll){
+      padding-top: 25px;
+      padding-right: 45px;
     }
     h4{
       font-weight: 200;
@@ -1162,7 +1163,7 @@ header {
     max-width: 300px;
     display: block;
     margin: {
-      top:73px;
+      top:78px;
       left: auto;
       right: auto;
     }

@@ -1475,8 +1475,14 @@ header #site-title {
   line-height: 1.35;
 }
 
-.protection-lbl {
+.contact-form .protection-lbl {
   width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .contact-form .protection-lbl {
+    width: 100%;
+  }
 }
 
 textarea {
@@ -1498,17 +1504,16 @@ textarea {
 
 @media screen and (min-width: 900px) {
   .scroll-container {
-    padding-top: 39px;
+    padding-top: 14px;
     padding-left: 40px;
-    padding-right: 52px;
-    padding-right: 63px;
+    padding-right: 10px;
     letter-spacing: -0.05em;
   }
 }
 
 .personal-information-protection {
   padding-right: 30px;
-  height: 310px;
+  height: 262px;
   overflow-y: auto;
 }
 
@@ -1525,6 +1530,13 @@ textarea {
 
 .personal-information-protection::-webkit-scrollbar-track-piece {
   padding: 100px 0;
+}
+
+@media screen and (min-width: 900px) {
+  .personal-information-protection {
+    padding-top: 25px;
+    padding-right: 45px;
+  }
 }
 
 .personal-information-protection h4 {
@@ -1577,7 +1589,7 @@ textarea {
     width: 100%;
     max-width: 300px;
     display: block;
-    margin-top: 73px;
+    margin-top: 78px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
