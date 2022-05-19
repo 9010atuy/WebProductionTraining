@@ -52,11 +52,11 @@ $(function () {
   });
   $('#work03-modal').on('click', () => {
     $('.modal-area').show();
-    $('.modal-content-work02').show();
+    $('.modal-content-work03').show();
   });
   $('#work04-modal').on('click', () => {
     $('.modal-area').show();
-    $('.modal-content-work02').show();
+    $('.modal-content-work04').show();
   });
   $('.modal-close').on('click', () => {
     $('.modal-area').hide();

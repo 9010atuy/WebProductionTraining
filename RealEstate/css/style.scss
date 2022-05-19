@@ -179,10 +179,15 @@ header {
             content:'';
             height: 2px;
             width: 100%;
-            background: #fff;
             transform: scale(0,1);
             transform-origin: left top;
             transition: .3s;
+          }
+          .font-white + &::after{
+            background: #fff;
+          }
+          .font-black + &::after{
+            background: #000;
           }
           &:hover{
             opacity: .5;
@@ -540,7 +545,7 @@ header {
 .work{
   cursor: pointer;
   &:not(:first-of-type){
-    margin-top: 29px;
+    margin-top: 24px;
     @include mq(ll){
       margin-top: 0;
     }
@@ -551,6 +556,7 @@ header {
       font-size: 1.6rem;
       line-height: 1.5625;
       font-weight: 200;
+      margin-top: 5px;
       @include mq(ll){
         margin-top: 20px;
       }
@@ -713,7 +719,7 @@ header {
 }
 .company-contents{
   margin-top: 44px;
-  @include mq(ll){
+  @include mq(xl){
     display: flex;
     position: relative;
     margin-top: 70px;
@@ -721,13 +727,11 @@ header {
   }
 }
 .access-map {
-  min-width: 315px;
   min-height: 300px;
   position: relative;
-  @include mq(ll){
+  @include mq(xl){
     width: 600px;
     height: 400px;
-    // padding-top: 0;
   }
   iframe {
     position: absolute;
@@ -741,8 +745,9 @@ header {
   margin-top: 20px;
   padding: 20px{
     top: 11px;
+    bottom: 16px;
   };
-  @include mq(ll){
+  @include mq(xl){
     position: absolute;
     top: 181px;
     left: 418px;
@@ -760,7 +765,7 @@ header {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.75;
-    @include mq(ll){
+    @include mq(xl){
       margin-top: 22px;
     }
   }
@@ -769,14 +774,14 @@ header {
     font-weight: 600;
     line-height: 1.5625;
     margin-top: 8px;
-    @include mq(ll){
+    @include mq(xl){
       margin-top: 7px;
     }
   }
   &-phone-number{
     margin-top: 11px;
     font-size: 1.6rem;
-    @include mq(ll){
+    @include mq(xl){
       margin-top: 10px;
     }
   }
@@ -784,7 +789,7 @@ header {
     margin-top: 8px;
     font-size: 1.6rem;
     letter-spacing: 0.015em;
-    @include mq(ll){
+    @include mq(xl){
       margin-top: 8px;
     }
   }
@@ -828,24 +833,39 @@ header {
       column-gap: 23px;
     }
   }
+  .input-width{
+    width:100%;
+    @include mq(ll){
+      width: 70%;
+    }
+    @include mq(xl){
+      width: 663px;
+    }
+  }
   .form-control-name{
     margin-top:40px;
     @include mq(ll){
       margin-top: 74px;
       display: flex;
-      column-gap: 11px;
+      column-gap: 20px;
       align-items: center;
     }
     label{
+      margin-bottom: 6px;
       @include mq(ll){
         margin-top: 7px;
       }
     }
     input[type=text]{
       font-size: 1.5rem;
+      padding: {
+        top: 14px;
+        bottom: 13px;
+      }
+      letter-spacing: 0.05em;
       @include mq(ll){
         padding: 12px 0{
-          left: 21px;
+          left: 20px;
         }
         letter-spacing: 0.1em;
       }
@@ -853,19 +873,24 @@ header {
   }
   .form-control-sex{
     display: flex;
-    margin-top: 24px;
+    margin-top: 36px;
     column-gap: 40px;
+    @media screen and (max-width: 374px){
+      column-gap:20px;
+    }
     @include mq(ll){
       align-items: flex-start;
       margin-top: 50px;
+      column-gap: 0px;
     }
   .radio-form{
     display: flex;
     align-items: center;
-    column-gap: 25px;
+    column-gap: 21px;
     @include mq(ll){
       margin-left: 5px;
       margin-top: -4px;
+      column-gap: 0px;
     }
     label{
       font-size: 1.7rem;
@@ -912,7 +937,7 @@ header {
     @include mq(ll){
       display: flex;
       column-gap: 23px;
-      margin-top: 38px;
+      margin-top: 41px;
       align-items: center;
     }
     label{
@@ -926,13 +951,13 @@ header {
       padding-bottom: 9px;
       padding-left: 18px;
       font-size: 1.7rem;
-      width: 100%;
+      // width: 100%;
       @include mq(ll){
         padding: 12px 0{
           left: 17px;
         }
         letter-spacing: 0.05em;
-        width: 663px;
+        // width: 663px;
         font-size: 1.5rem;
         margin-top: -6px;
       }
@@ -943,7 +968,7 @@ header {
     @include mq(ll){
       display: flex;
       column-gap: 23px;
-      margin-top: 54px;
+      margin-top: 58px;
       align-items: center;
     }
     select{
@@ -955,13 +980,13 @@ header {
       padding: 13px 0{
         left: 20px;
       }
-      width:100%;
+      // width:100%;
       font-size: 1.6rem;
       @include mq(ll){
         padding: 19px 0{
           left: 17px;
         }
-        width: 663px;
+        // width: 663px;
         font-size: 1.8rem;
         margin-top: -6px;
         background-position: right 21px top 50%;
@@ -976,14 +1001,20 @@ header {
     @include mq(ll){
       row-gap: 0;
     }
+    label{
+      margin-bottom:1px;
+    }
     textarea{
       margin-top: 5px;
+      @include mq(ll){
+        margin-top: 12px
+      }
     }
   }
   .form-control-checkbox{
     display: flex;
     flex-direction: column;
-    margin-top: 24px;
+    margin-top: 36px;
     @include mq(ll){
       margin-top: 49px;
     }
@@ -993,6 +1024,9 @@ header {
     .checkbox{
       &-form{
         font-size: 1.6rem;
+        @media screen and (max-width:374px) {
+           font-size: 1.4rem; 
+        }
         line-height: 1.8;
         display: flex;
         flex-wrap: wrap;
@@ -1000,7 +1034,7 @@ header {
         row-gap: 1px;
         @include mq(ll){
           line-height: 2.0625;
-          margin-top: 7px;
+          margin-top: 2px;
           row-gap: 3px;
         }
       }
@@ -1012,6 +1046,9 @@ header {
         width:50%;
         @include mq(ll){
           width: 25%;
+          font-size: 1.5rem;
+        }
+        @include mq(xl){
           font-size: 1.8rem;
         }
         label{
@@ -1024,9 +1061,11 @@ header {
           @include mq(ll){
             padding-left: 40px;
           }
-          &::after{
+          &::before,&::after{
             position: absolute;
             content:'';
+          }
+          &::after{
             top:50%;
             transform: translateY(-50%);
             left: 0;
@@ -1034,6 +1073,22 @@ header {
             height: 20px;
             background-color: #fff;
           }
+          &::before{
+            border: {
+              bottom:2px solid #000;
+              left:2px solid #000;
+            }
+            height: 9px;
+            width: 15px;
+            transform: rotate(-45deg);
+            top: 7px;
+            left: 3px;
+            z-index: 1;
+            opacity: 0;
+          }
+        }
+        input:checked + label::before{
+          opacity: 1;
         }
       }
     }
@@ -1048,14 +1103,10 @@ header {
   }
   input[type=text]{
     background-color: #fff;
-    width:100%;
     padding: {
       top: 17px;
       left: 20px;
       bottom: 17px;
-    }
-    @include mq(ll){
-      width: 630px;
     }
   }
   input[type=radio]{
@@ -1076,6 +1127,7 @@ header {
   }
   .protection-lbl{
     width: 100%;
+    margin-bottom: 2px;
     @include mq(ll){
       width: 100%;
     }
@@ -1095,13 +1147,14 @@ header {
   .scroll-container{
     background-color: #fff;
     padding: {
-      top: 22px;
+      top: 26px;
       bottom: 30px;
       left: 30px;
       right: 10px;
     }
     @include mq(ll){
-      padding-top: 14px;
+      margin-top: 12px;
+      padding-top: 9px;
       padding-left: 40px;
       padding-right: 10px;
       letter-spacing: -0.05em;
@@ -1135,7 +1188,7 @@ header {
         line-height: 1.6;
       }
       &:not(:first-of-type){
-        margin-top: 10px;
+        margin-top: 6px;
         @include mq(ll){
           margin-top: 1px;
         }
@@ -1144,7 +1197,7 @@ header {
     p{
       font-size: 1.6rem;
       margin-top: 5px;
-      line-height: 1.8;
+      line-height: 1.85;
         @include mq(ll){
         font-size: 1.8rem;
         line-height: 1.9;
@@ -1152,11 +1205,13 @@ header {
       }
     }
   }
-
 .btn{
   width: 100%;
-  margin-top: 43px;
+  margin-top: 42.5px;
   padding:10px 68px;
+  @media screen and (max-width:374px) {
+    padding:10px 0;
+  }
   transition: .5s;
   @include mq(ll){
     width:100%;
