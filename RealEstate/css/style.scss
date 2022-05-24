@@ -297,6 +297,7 @@ header {
   width: 100%;
   text-shadow: 5px 5px 5px #000;
   z-index: 0;
+  width: 90%;
   @include mq(md){
     top:41.3%;
     left:50.7%;
@@ -1179,7 +1180,7 @@ header {
       padding-top: 25px;
       padding-right: 45px;
     }
-    h4{
+    h3{
       font-weight: 200;
       font-size: 1.8rem;
       line-height: 1.7;

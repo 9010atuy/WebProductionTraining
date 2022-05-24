@@ -389,6 +389,7 @@ header #site-title {
   width: 100%;
   text-shadow: 5px 5px 5px #000;
   z-index: 0;
+  width: 90%;
 }
 
 @media screen and (min-width: 600px) {
@@ -1614,25 +1615,25 @@ textarea {
   }
 }
 
-.personal-information-protection h4 {
+.personal-information-protection h3 {
   font-weight: 200;
   font-size: 1.8rem;
   line-height: 1.7;
 }
 
 @media screen and (min-width: 900px) {
-  .personal-information-protection h4 {
+  .personal-information-protection h3 {
     font-size: 1.9rem;
     line-height: 1.6;
   }
 }
 
-.personal-information-protection h4:not(:first-of-type) {
+.personal-information-protection h3:not(:first-of-type) {
   margin-top: 6px;
 }
 
 @media screen and (min-width: 900px) {
-  .personal-information-protection h4:not(:first-of-type) {
+  .personal-information-protection h3:not(:first-of-type) {
     margin-top: 1px;
   }
 }
