@@ -157,6 +157,7 @@ a {
   width: 68px;
   height: 68px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .arrow {
@@ -269,6 +270,7 @@ header #site-title {
   height: 50px;
   background-color: #fff;
   position: relative;
+  cursor: pointer;
 }
 
 .hamburger span {
@@ -891,6 +893,7 @@ header #site-title {
 .news-content .news-footer {
   position: relative;
   height: 74px;
+  display: block;
 }
 
 .news-content .news-footer:hover {
@@ -1656,6 +1659,7 @@ textarea {
   width: 100%;
   margin-top: 42.5px;
   padding: 10px 68px;
+  cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
 }
