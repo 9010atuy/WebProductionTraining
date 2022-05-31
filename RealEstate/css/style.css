@@ -1496,7 +1496,7 @@ header #site-title {
   width: 15px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: 12px;
+  top: 30%;
   left: 3px;
   z-index: 1;
   opacity: 0;
