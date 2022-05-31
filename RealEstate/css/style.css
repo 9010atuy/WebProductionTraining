@@ -988,6 +988,7 @@ header #site-title {
   .access-map {
     width: 600px;
     height: 400px;
+    z-index: 2;
   }
 }
 
@@ -1015,7 +1016,7 @@ header #site-title {
     padding-top: 23px;
     padding-bottom: 45px;
     padding-left: 220px;
-    z-index: -1;
+    z-index: 1;
   }
 }
 

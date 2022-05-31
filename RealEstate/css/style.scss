@@ -736,6 +736,7 @@ header {
   @include mq(xl){
     width: 600px;
     height: 400px;
+    z-index: 2;
   }
   iframe {
     position: absolute;
@@ -761,7 +762,8 @@ header {
       bottom: 45px;
       left: 220px;
     }
-    z-index: -1;
+    // z-index: -1;
+    z-index: 1;
   }
 }
 .company{
