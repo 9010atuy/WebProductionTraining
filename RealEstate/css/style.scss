@@ -918,7 +918,6 @@ header {
       }
       &::before{
         background-color: #fff;
-        border: 1px solid #808000;
         border-radius: 50%;
         width: 20px;
         height: 20px;
@@ -1087,7 +1086,7 @@ header {
             height: 9px;
             width: 15px;
             transform: rotate(-45deg);
-            top: 7px;
+            top: 12px;
             left: 3px;
             z-index: 1;
             opacity: 0;
@@ -1175,7 +1174,6 @@ header {
     }
     &::-webkit-scrollbar-thumb {
       background-color: #9B9B9B;
-      box-shadow:0 0 0 1px rgba(0,0,0, .3);
       height: 30px;
     }
     &::-webkit-scrollbar-track-piece {
