@@ -48,3 +48,5 @@ wp-config.php
 #/wp-content/themes
 
 *.zip
+
+/gulp-test
