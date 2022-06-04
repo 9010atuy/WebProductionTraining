@@ -404,6 +404,16 @@ header #site-title {
   }
 }
 
+.slider::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .slider div {
   background-position: top;
   background-size: cover;
@@ -754,16 +764,28 @@ header #site-title {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #fff;
-  width: 450px;
-  height: 280px;
+  width: 90%;
+  max-width: 450px;
+  height: auto;
+  max-height: 280px;
   padding: 15px;
   padding-bottom: 10px;
 }
 
+.modal-content img {
+  width: 100%;
+}
+
 .modal-img-description {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .modal-img-description {
+    font-size: 1.6rem;
+  }
 }
 
 .modal-bg {

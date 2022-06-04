@@ -60,6 +60,7 @@ $(function () {
   });
   $('.modal-close').on('click', () => {
     $('.modal-area').hide();
+    $('.modal-content').hide();
   });
   // スクロールフェードイン
   $(function () {
