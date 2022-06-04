@@ -50,3 +50,5 @@ wp-config.php
 *.zip
 
 /gulp-test
+
+node_modules/
