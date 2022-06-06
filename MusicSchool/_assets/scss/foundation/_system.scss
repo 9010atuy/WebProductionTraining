@@ -1,0 +1,111 @@
+/* system
+--------------------------- */
+
+// color system
+// ---------------------
+$c-red: #cb0000;
+$c-white: #fff;
+$c-gray: #e8e8e8;
+$c-darkgray: #e5e5e5;
+$c-black: #000;
+$c-lightBlack: #707070;
+$c-mask: rgba(#000, 0.5);
+$c-breadcrumb: #e8e8e8;
+
+/* ===============================================
+# ブレイクポイント
+=============================================== */
+
+$breakpoints: (
+    "sm": "screen and (max-width: 400px)",
+    "md": "screen and (max-width: 768px)",
+    "lg": "screen and (max-width: 1000px)",
+    "xl": "screen and (max-width: 1200px)",
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+/* ===============================================
+# rem設定
+=============================================== */
+
+@function rem($pixel) {
+    @return calc($pixel / 10) * 1rem;
+}
+
+// フレックスボックスで上下左右を中央寄せ
+// @mixin flex_center() {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// 親要素に対して中央寄せ
+@mixin center($direction) {
+    position: absolute;
+    @if $direction==xy {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } @else if $direction==x {
+        left: 50%;
+        transform: translateX(-50%);
+    } @else if $direction==y {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+////////////////////////////////////////
+
+// letter-spacing
+@mixin l_spacing($spacing) {
+    letter-spacing: calc($spacing / 1000) + em;
+}
+// 呼び出し例
+// .class {
+// 	@include l_spacing(200);
+// }
+////////////////////////////////////////
+// line-height
+@mixin l_height($pixels, $height) {
+    font-size: $pixels * 1px;
+    line-height: calc($height / $pixels);
+}
+
+// 呼び出し例
+// .class {
+// 	@include l_height(18 , 30);
+// }
+//////////////////////////////////////
+
+// 擬似要素で三角形
+@mixin triangle($direction, $width, $height, $color) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    $valWidth: $width / 2;
+    $valHeight: $height / 2;
+    @if ($direction == top) {
+        border-width: 0 $valWidth $height $valWidth;
+        border-color: transparent transparent $color transparent;
+    } @else if ($direction == left) {
+        border-width: $valHeight $width $valHeight 0;
+        border-color: transparent $color transparent transparent;
+    } @else if ($direction == right) {
+        border-width: $valHeight 0 $valHeight $width;
+        border-color: transparent transparent transparent $color;
+    } @else if ($direction == bottom) {
+        border-width: $height $valWidth 0 $valWidth;
+        border-color: $color transparent transparent transparent;
+    }
+}
+////////////////////////////////////////////
+
+// display:flex
+@mixin flex($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

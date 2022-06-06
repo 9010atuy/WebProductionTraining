@@ -53,3 +53,5 @@ wp-config.php
 
 node_modules/
 bk/
+
+dist/
