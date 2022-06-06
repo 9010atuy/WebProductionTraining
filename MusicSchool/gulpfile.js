@@ -1,11 +1,12 @@
 'use strict';
 
 const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
+const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const postcss = require('gulp-postcss');
 const mqpacker = require('css-mqpacker');
 const TARGET_BROWSERS = ['last 2 versions', 'ie >= 11'];
+const imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function () {
   // コンパイル元のSCSSを指定
@@ -20,7 +21,14 @@ gulp.task('sass', function () {
       .pipe(gulp.dest('./css'))
   );
 });
+gulp.task('imagemin', function () {
+  return gulp
+    .src('./src/images/**/*.png')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./images'));
+});
 // ファイル更新のタイミングで自動コンパイルさせる
-gulp.task('sass:watch', function () {
+gulp.task('watch', function () {
   gulp.watch('./scss/**/*.scss', gulp.task('sass'));
+  gulp.watch('./src/images/**/*.png', gulp.task('imagemin'));
 });
