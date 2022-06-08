@@ -4,6 +4,7 @@
 @use "./foundation/reset";
 @use "./foundation/system";
 @use "./foundation/base";
+@use "./foundation/variable";
 
 /*--------------------------------------*
  * layout
@@ -17,7 +18,8 @@
 /*-------------------
  * component
  *-------------------*/
-
+@use "./object/component/_button";
+@use "./object/component/_hamburger";
 /*-------------------
  * project
  *-------------------*/

@@ -2,3 +2,10 @@
 --------------------------- */
 @use "./system" as *;
 
+body{
+    font-family: "YuGothic","Yu Gothic","メイリオ","MS Pゴシック", sans-serif;
+    font-size: 10px;
+}
+a {
+    cursor: pointer;
+}

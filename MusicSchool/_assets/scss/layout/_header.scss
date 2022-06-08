@@ -2,3 +2,14 @@
 --------------------------- */
 @use "./../foundation/system" as *;
 
+.header-wrapper{
+    margin-left: 20px;
+    @include flex();
+}
+
+.header-logo-title{
+    @include flex(flex-start,center);
+    column-gap: 6.3px;
+    font-size: 13px;
+    font-weight: bold;
+}

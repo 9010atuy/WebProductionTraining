@@ -1,0 +1,73 @@
+/* _hamburger
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+// ハンバーガーメニュー
+@mixin hamburger-line($value) {
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: $value - (4/2);
+    left: 50%;
+    transform: translateX(-50%);
+    transition:.3s
+  }
+  .hamburger {
+    width: 72px;
+    height: 50px;
+    background-color: v.$red;
+    position: relative;
+    cursor: pointer;
+    span {
+      @include hamburger-line(25px);
+      &::before {
+        @include hamburger-line(-10px);
+        content: '';
+        width: 100%;
+      }
+      &::after {
+        @include hamburger-line(14px);
+        content: '';
+        width: 100%;
+      }
+    }
+    &.active{
+      span{
+        background: transparent;
+        &::before{
+          transform: translateX(-50%) translateY(12px) rotate(-45deg);
+        }
+        &::after{
+          transform: translateX(-50%) translateY(-12px) rotate(45deg);
+        }
+      }
+    }
+  }
+
+//   ハンバーガーメニュー
+.hamburger-menu{
+    background-color: v.$red;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+.hamburger-item{
+    display: block;
+    padding: 20px;
+    transition: .5s;
+    &:hover{
+        background-color: #000;
+        color: #fff;
+    }
+}
