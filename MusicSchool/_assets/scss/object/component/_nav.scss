@@ -1,0 +1,13 @@
+/* c-nav
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.nav{
+    font-size: rem(17);
+    font-weight: bold;
+}
+.nav-list{
+    @include flex();
+    column-gap: 33px;
+}

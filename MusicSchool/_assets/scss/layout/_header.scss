@@ -1,15 +1,57 @@
 /* l-header
 --------------------------- */
 @use "./../foundation/system" as *;
-
-.header-wrapper{
-    margin-left: 20px;
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    max-width: 1080px;
+    height: auto;
+    padding-left:rem(20);
     @include flex();
+    @include mq(lg){
+        padding: {
+            top: rem(18);
+            right: rem(100);
+            bottom: rem(16);
+            left: rem(100);
+        };
+        @include flex(flex-start,center);
+    }
 }
 
-.header-logo-title{
+.header__logo-title{
     @include flex(flex-start,center);
     column-gap: 6.3px;
-    font-size: 13px;
+    font-size: rem(13);
     font-weight: bold;
+    &--text-decoration{
+        display: inline;
+        @include mq(lg){
+            display: block;
+            font-size: rem(19.5);
+        }
+    }
+    @include mq(lg){
+        column-gap:11px;
+        font-size: rem(15);
+        @include flex(flex-start,start);
+        @include l_height(15,20);
+    }
+}
+.logo{
+    width: 20.31px;
+    height: 32.9px;
+    @include mq(lg){
+        width: 32px;
+        height: 46px;
+    }
+}
+.header__nav{
+    margin-left: 32px;
+    @include l_height(17,33);
+}
+.header__button{
+    margin: 0 0 0 auto;
 }

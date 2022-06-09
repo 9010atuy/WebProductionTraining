@@ -1,26 +1,14 @@
 /* system
 --------------------------- */
-
-// color system
-// ---------------------
-$c-red: #cb0000;
-$c-white: #fff;
-$c-gray: #e8e8e8;
-$c-darkgray: #e5e5e5;
-$c-black: #000;
-$c-lightBlack: #707070;
-$c-mask: rgba(#000, 0.5);
-$c-breadcrumb: #e8e8e8;
-
 /* ===============================================
 # ブレイクポイント
 =============================================== */
 
 $breakpoints: (
-    "sm": "screen and (max-width: 400px)",
-    "md": "screen and (max-width: 768px)",
-    "lg": "screen and (max-width: 1000px)",
-    "xl": "screen and (max-width: 1200px)",
+    "sm": "screen and (min-width: 400px)",
+    "md": "screen and (min-width: 768px)",
+    "lg": "screen and (min-width: 1000px)",
+    "xl": "screen and (min-width: 1200px)",
 ) !default;
 
 @mixin mq($breakpoint: md) {
@@ -31,9 +19,9 @@ $breakpoints: (
 /* ===============================================
 # rem設定
 =============================================== */
-
+$baseFontSize: 16;
 @function rem($pixel) {
-    @return calc($pixel / 10) * 1rem;
+    @return calc($pixel / $baseFontSize) * 1rem;
 }
 
 // フレックスボックスで上下左右を中央寄せ

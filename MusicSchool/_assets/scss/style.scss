@@ -20,6 +20,7 @@
  *-------------------*/
 @use "./object/component/_button";
 @use "./object/component/_hamburger";
+@use "./object/component/_nav";
 /*-------------------
  * project
  *-------------------*/
@@ -27,5 +28,6 @@
 /*-------------------
  * utility
  -------------------*/
-
+@use "./object/utility/text";
+@use "./object/utility/display";
 

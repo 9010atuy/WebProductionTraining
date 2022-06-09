@@ -10,7 +10,7 @@
     height: 4px;
     background-color: #fff;
     position: absolute;
-    top: $value - (4/2);
+    top: $value - calc(4/2);
     left: 50%;
     transform: translateX(-50%);
     transition:.3s

@@ -23,15 +23,26 @@
 
 <body>
     <header class="header">
-        <div class="header-wrapper">
-            <div class="header-logo-title">
-                <img src="./img/icon/logo.svg" alt="logo">
-                <p class="site-title">きたむらミュージックスクール</p>
-            </div>
-            <div class="hamburger hamburger-trigger">
-                <span></span>
-            </div>
+        <div class="header__logo-title">
+            <img src="./img/icon/logo.svg" alt="logo" class="logo">
+            <p class="site-title">
+                <span class="header__logo-title--text-decoration">きたむら</span>ミュージックスクール
+            </p>
         </div>
+        <div class="hamburger hamburger-trigger no-pc">
+            <span></span>
+        </div>
+        <nav class="nav pc header__nav">
+            <ul class="nav-list">
+                <li><a href="#fee" class="nav-item">料金</a></li>
+                <li><a href="#blog" class="nav-item">ブログ</a></li>
+                <li><a href="#information" class="nav-item">お知らせ</a></li>
+                <li><a href="#result" class="nav-item"></a>卒業実績</li>
+            </ul>
+        </nav>
+        <button class="pc button button--red button--small header__button">
+            お問い合わせ
+        </button>
     </header>
     <div class="hamburger-menu">
         <nav class="hamburger-nav">
