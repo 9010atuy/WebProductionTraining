@@ -18,16 +18,18 @@
 /*-------------------
  * component
  *-------------------*/
-@use "./object/component/_button";
-@use "./object/component/_hamburger";
-@use "./object/component/_nav";
+@use "./object/component/button";
+@use "./object/component/hamburger";
+@use "./object/component/nav";
+@use "./object/component/img";
 /*-------------------
  * project
  *-------------------*/
-
+@use "./object/project/top";
 /*-------------------
  * utility
  -------------------*/
 @use "./object/utility/text";
 @use "./object/utility/display";
+@use "./object/utility/size";
 
