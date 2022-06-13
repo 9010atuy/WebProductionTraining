@@ -3,6 +3,35 @@
 @use "./../../foundation/system" as *;
 @use "./../../foundation/variable" as v;
 
+.top__fv-img{
+    position: relative;
+    background-image: url(../img/SP/top/FV.png);
+    background-image: image-set(
+        url(../img/SP/top/FV.png) 1x,
+        url(../img/SP/top/FV@2x.png) 2x
+      );
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include mq(lg){
+        height: 470px;
+        background-image: url(../img/PC/top/FV.png);
+        background-image: image-set(
+            url(../img/PC/top/FV.png) 1x,
+            url(../img/PC/top/FV@2x.png) 2x
+          );
+    }
+    &::after{
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color: rgba(v.$gray,.4);        
+    }
+}
 
 .top__message{
     @include center('xy');
@@ -12,4 +41,9 @@
     width: 300px;
     text-align: center;
     z-index: 1;
+    @include mq(lg){
+        width:480px;
+        @include l_height(40,60);
+    }
 }
+
