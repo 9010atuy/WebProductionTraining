@@ -1,0 +1,15 @@
+/* p-******
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+
+.top__message{
+    @include center('xy');
+    color: #fff;
+    @include l_height(30,50);
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+    z-index: 1;
+}
