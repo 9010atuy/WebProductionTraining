@@ -1252,6 +1252,7 @@ header #site-title {
 }
 
 .contact-form .form-control-sex .radio-form label {
+  cursor: pointer;
   font-size: 1.7rem;
   padding-left: 50px;
   position: relative;
@@ -1356,6 +1357,7 @@ header #site-title {
 }
 
 .contact-form .form-control-type select {
+  cursor: pointer;
   background-color: #fff;
   background-image: url(../images/triangle.svg);
   background-position: right 18px top 50%;
@@ -1482,6 +1484,7 @@ header #site-title {
 }
 
 .contact-form .form-control-checkbox .checkbox-control label {
+  cursor: pointer;
   margin-bottom: 0;
   display: block;
   width: 100%;
