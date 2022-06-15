@@ -1,0 +1,12 @@
+/* l-wrapper
+--------------------------- */
+@use "./../foundation/system" as *;
+@use "./../foundation/variable" as v;
+
+.main-wrapper{
+    margin: 0 auto;
+    padding: 0 20px;
+    @include mq(){
+        padding: 0 100px;
+    }
+}

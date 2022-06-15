@@ -1,0 +1,61 @@
+/* about
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#about{
+    padding-top: 42px;
+    @include mq(){
+        padding-top: 63px;
+    }
+}
+.about__message{
+    @include l_height(18,30);
+    margin-top: 7px;
+    margin-bottom: 24px;
+    text-align: center;
+    @include mq(){
+        margin-top: 16px;
+        margin-bottom: 38px;
+    }
+}
+.about__vision{
+    @include l_height(20,50);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    @include mq(){
+        @include l_height(25,50);
+        margin-top: 10px;
+    }
+}
+.about-semicircle-icon{
+    margin: 0 auto;
+}
+.about-table{
+    width: 100%;
+}
+.about-table-col1{
+    width: 35%;
+    text-align: right;
+    height: 72px;
+    line-height: 72px;
+}
+.about-table-col2{
+    width: 20%;
+}
+.about-table-col3{
+    width: 35%;
+    text-align: left;
+    height: 72px;
+    line-height: 72px;
+}
+.about-vision-icon__arrow{
+    @include center(xy);
+    top:40%;
+}
+.about-vision-icon__circle{
+    @include center(xy);
+}

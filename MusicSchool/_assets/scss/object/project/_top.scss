@@ -13,14 +13,15 @@
     height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    @include mq(lg){
+    background-position: top;
+    @include mq(){
         height: 470px;
         background-image: url(../img/PC/top/FV.png);
         background-image: image-set(
             url(../img/PC/top/FV.png) 1x,
             url(../img/PC/top/FV@2x.png) 2x
           );
+          background-position: center;
     }
     &::after{
         content:'';
@@ -41,9 +42,10 @@
     width: 300px;
     text-align: center;
     z-index: 1;
-    @include mq(lg){
+    @include mq(){
         width:480px;
         @include l_height(40,60);
     }
 }
+
 

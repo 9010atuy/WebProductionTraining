@@ -11,6 +11,7 @@
  *--------------------------------------*/
 @use "./layout/footer";
 @use "./layout/header";
+@use "./layout/wrapper";
 
 /*--------------------------------------*
  * object
@@ -21,11 +22,12 @@
 @use "./object/component/button";
 @use "./object/component/hamburger";
 @use "./object/component/nav";
-@use "./object/component/img";
+@use "./object/component/section";
 /*-------------------
  * project
  *-------------------*/
 @use "./object/project/top";
+@use "./object/project/about";
 /*-------------------
  * utility
  -------------------*/

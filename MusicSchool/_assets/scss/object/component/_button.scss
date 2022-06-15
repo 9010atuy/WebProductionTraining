@@ -1,14 +1,14 @@
 @use "../../foundation/system" as *;
 @use "../../foundation/variable" as v;
 
-.button {
+.c-button {
   cursor: pointer;
 }
-.button--red {
+.c-button--red {
   background-color: v.$red;
   color: #fff;
 }
-.button--small{
+.c-button--small{
   width: 150px;
   padding: 14.2px 30px;
   font-size: rem(15);

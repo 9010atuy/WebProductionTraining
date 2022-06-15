@@ -1,6 +1,7 @@
 /* l-header
 --------------------------- */
 @use "./../foundation/system" as *;
+@use "./../foundation/variable" as v;
 .header {
     top:0;
     left:0;

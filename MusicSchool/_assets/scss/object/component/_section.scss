@@ -1,13 +1,13 @@
-/* c-nav
+/* title
 --------------------------- */
 @use "./../../foundation/system" as *;
 @use "./../../foundation/variable" as v;
 
-.c-nav{
-    font-size: rem(17);
+.c-title{
+    @include l_height(25,40);
+    text-align: center;
     font-weight: bold;
-}
-.c-nav-list{
-    @include flex();
-    column-gap: 33px;
+    @include mq(){
+        @include l_height(35,50);
+    }
 }

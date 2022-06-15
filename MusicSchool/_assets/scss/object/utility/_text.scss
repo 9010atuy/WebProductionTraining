@@ -4,3 +4,18 @@
 .u-font-size--18{
     font-size: rem(18);
 }
+.u-font--red{
+    color: v.$red;
+}
+.u-font--bold{
+    font-weight: bold;
+}
+.u-text--left{
+    text-align-last: left;
+}
+.u-text--center{
+    text-align: center;
+}
+.u-text--right{
+    text-align: right;
+}
