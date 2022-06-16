@@ -25,10 +25,12 @@
     max-width: 400px;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 21px;
     position: relative;
     @include mq(){
         @include l_height(25,50);
         margin-top: 10px;
+        margin-bottom: 42px;
     }
 }
 .about-semicircle-icon{
@@ -58,4 +60,28 @@
 }
 .about-vision-icon__circle{
     @include center(xy);
+}
+.about__declaration{
+    background-color: v.$red;
+    padding-top: 43px;
+    @include mq(){
+        padding-top: 59px;
+    }
+}
+.about__declaration__title{
+    text-align: center;
+    @include l_height(25,40);
+    @include mq(){
+        @include l_height(30,50);
+    }
+}
+.about__declaration__message{
+    text-align: center;
+    @include l_height(18,30);
+    padding-top: 16px;
+    padding-bottom: 44px;
+    @include mq(){
+        padding-top: 35px;
+        padding-bottom: 63.3px;
+    }
 }
