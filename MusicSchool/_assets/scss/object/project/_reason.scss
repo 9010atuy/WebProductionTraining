@@ -1,0 +1,77 @@
+/* reason
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#reason {
+    padding-top: 43px;
+    @include mq(){
+        padding-top: 60px;
+    }
+}
+.reason__heading{
+    @include l_height(25,40);
+    font-weight: bold;
+    text-align: center;
+    @include mq(lg){
+        @include l_height(30,50);
+    }
+}
+.reason__item{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 42px;
+    @include mq(lg){
+        @include flex(flex-start,start);
+        margin-top: 50px;
+    }
+    &:first-of-type{
+        @include mq(lg){
+            margin-top: 32px;
+        }
+    }
+}
+.reason__img-container{
+    @include mq(lg){
+        width: 100%;
+        min-width: 350px;
+    }
+}
+.reason__desc-container{
+    @include mq(lg){
+        width: 100%;
+        min-width: 532px;
+    }
+}
+.reason__img{
+    width: 100%;
+    @include mq(lg){
+        max-width: 350px;
+    }
+}
+.reason__title{
+    @include l_height(20,30);
+    font-weight: bold;
+    text-align: left;
+    margin-top: 26px;
+    @include mq(){
+        margin-left: 50px;
+        @include l_height(22,33);
+        margin-top: 4px;
+    }
+}
+.reason__hr{
+    margin-top: 13px;
+    margin-bottom: 12px;
+    border-top: 2px solid v.$red;
+    width: 100%;
+}
+.reason__description{
+    text-align: left;
+    @include l_height(16,30);
+    @include mq(lg){
+        margin-top: 31px;
+        margin-left: 50px;
+        @include l_height(18,33);
+    }
+}
