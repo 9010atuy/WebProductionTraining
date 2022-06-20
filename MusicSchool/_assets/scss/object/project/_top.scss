@@ -33,7 +33,14 @@
         background-color: rgba(v.$gray,.4);        
     }
 }
-
+.top__title{
+    @include l_height(25,40);
+    text-align: center;
+    font-weight: bold;
+    @include mq(){
+        @include l_height(35,50);
+    }
+}
 .top__message{
     @include center('xy');
     color: #fff;

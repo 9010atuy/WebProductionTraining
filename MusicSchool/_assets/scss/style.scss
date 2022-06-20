@@ -29,10 +29,14 @@
 @use "./object/project/top";
 @use "./object/project/about";
 @use "./object/project/reason";
+@use "./object/project/voice";
 /*-------------------
  * utility
  -------------------*/
 @use "./object/utility/text";
 @use "./object/utility/display";
 @use "./object/utility/size";
-
+/*-------------------
+ * javascript
+ -------------------*/
+@use "./object/javascript/js-slider"

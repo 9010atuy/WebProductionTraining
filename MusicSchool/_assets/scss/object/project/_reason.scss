@@ -5,8 +5,10 @@
 
 #reason {
     padding-top: 43px;
+    padding-bottom: 46px;
     @include mq(){
         padding-top: 60px;
+        padding-bottom: 70px;
     }
 }
 .reason__heading{
