@@ -23,6 +23,7 @@
 @use "./object/component/hamburger";
 @use "./object/component/nav";
 @use "./object/component/section";
+@use "./object/component/toggle";
 /*-------------------
  * project
  *-------------------*/
@@ -31,6 +32,7 @@
 @use "./object/project/reason";
 @use "./object/project/voice";
 @use "./object/project/introduction";
+@use "./object/project/faq";
 /*-------------------
  * utility
  -------------------*/

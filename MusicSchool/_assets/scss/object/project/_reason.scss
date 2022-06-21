@@ -77,3 +77,8 @@
         @include l_height(18,33);
     }
 }
+.reason__not-first-title{
+    @include mq(lg){
+        margin-top: -6px;
+    }
+}

@@ -7,8 +7,8 @@ $('.hamburger-trigger').on('click', () => {
   $('.c-hamburger').toggleClass('active');
 });
 
-// スライダー
 $(document).ready(function () {
+  // スライダー
   $('.js-slider').slick({
     autoplay: false,
     prevArrow: '<img src="../img/icon/prev-arrow.svg" class="js-slick-prev">',
@@ -27,5 +27,10 @@ $(document).ready(function () {
         },
       },
     ],
+  });
+  // アコーディオン
+  $('.js-accordion-toggle').click(function () {
+    $(this).toggleClass('active');
+    $(this).next($('.accordion-collapse')).slideToggle();
   });
 });

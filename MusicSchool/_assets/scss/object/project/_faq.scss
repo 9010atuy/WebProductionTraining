@@ -1,0 +1,51 @@
+/* p-******
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#faq{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include mq(){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+.faq__contents{
+    padding-top: 40px;
+    @include mq(){
+        padding-top: 40px;
+    }
+}
+.accordion__item{
+    border-top: 0.5px solid #000;
+    &:last-of-type{
+        border-bottom: 0.5px solid #000;
+    }
+}
+.accordion__collapse{
+    display: none;
+    background-color: rgba(v.$red,.1);
+}
+.accordion__item__text{
+    font-weight: normal;
+}
+.accordion__flex{
+    @include flex(flex-start);
+    column-gap: 20.3px;
+    @include l_height(16,30);
+    padding: {
+        top: 13px;
+        right: 50px;
+        bottom: 12px;
+    }
+    @include mq(){
+        column-gap: 11px;
+        @include l_height(17,30);
+        padding: {
+            top:14px;
+            left: 19px;
+            bottom:16px;
+        }
+    }
+}
