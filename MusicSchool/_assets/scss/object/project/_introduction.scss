@@ -1,0 +1,95 @@
+/* p-******
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#introduction {
+    padding-top: 42px;
+    @include mq(){
+        padding-top: 49px;
+    }
+}
+.introduction__contents{
+    margin-top: 37px;
+    @include flex(center, start);
+    column-gap: 13px;
+    @include mq(){
+        margin-top: 54px;
+        @include flex(flex-start, start);
+        column-gap: 44px;
+    }
+}
+.introduction__shape{
+    position: relative;
+    padding-top: 10px;
+    @include mq(){
+        padding-top: 25px;
+        margin-left: 42.5px;
+    }
+}
+
+.introduction__circle{
+    position: absolute;
+    left: 8px;
+    @include mq(){
+        left: 8px;
+    }
+}
+.introduction__circle__container{
+    img:nth-child(1){
+        top:1%;
+    }
+    img:nth-child(2){
+        top:25.5%;
+    }
+    img:nth-child(3){
+        top:54.5%;
+    }
+    img:nth-child(4){
+        top:79.1%;
+    }
+    @include mq(){
+        img:nth-child(1){
+            top:3.7%;
+        }
+        img:nth-child(2){
+            top:31%;
+        }
+        img:nth-child(3){
+            top:58.3%;
+        }
+        img:nth-child(4){
+            top:85.6%;
+        }
+    }
+}
+.introduction__table{
+    width: 100%;
+    tbody{
+        tr{
+            td{
+                display: block;
+                @include mq(){
+                    display: table-cell;
+                }
+            }
+        }
+    }
+}
+.introduction__title{
+    width:99.9%;
+    @include l_height(22,33);
+    height: 41px;
+    @include mq(){
+        width: 25.4%;
+        padding-top:10px;
+    }
+}
+.introduction__text{
+    @include l_height(16,30);
+    height: 127px;
+    @include mq(){
+        @include l_height(18,30);
+        height: 118px;
+    }
+}
