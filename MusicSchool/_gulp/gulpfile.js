@@ -190,7 +190,7 @@ const watchFiles = () => {
   gulp.watch(srcPath.img, gulp.series(imgImagemin, browserSyncReload));
   gulp.watch(srcPath.php, gulp.series(php, browserSyncReload));
   gulp.watch(srcPath.font, gulp.series(font, browserSyncReload));
-  gulp.watch(srcPath.font, gulp.series(importLib, browserSyncReload));
+  gulp.watch(srcPath.lib, gulp.series(importLib, browserSyncReload));
 };
 
 /**

@@ -1,0 +1,30 @@
+/* c-card
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.c-card{
+    &__img-container{
+        position: relative;
+    }
+    &__label{
+        background-color: v.$red;
+        color: #fff;
+        position: absolute;
+        top:0;
+        left:0;
+        text-align: center;
+        font-weight: bold;
+        @include flex(center);
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+    &__title{
+        font-weight: bold;
+    }
+    &__date{
+        text-align: right;
+    }
+}

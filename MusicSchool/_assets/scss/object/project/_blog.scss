@@ -1,0 +1,70 @@
+/* p-blog
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#blog{
+    padding-top:42px;
+    padding-bottom: 48px;
+    @include mq(){
+        padding-top:62px;
+        padding-bottom: 48px;
+    }
+}
+.blog__title{
+    text-align: center;
+    font-weight: bold;
+    @include l_height(25,40);
+    @include mq(lg){
+        @include l_height(25,43);
+    }
+}
+.blog__contents{
+    @include mq(lg){
+        @include flex();
+        margin-top: 40px;
+    }
+}
+.blog__card{
+    margin-top: 46px;
+    @include mq(lg){
+        width:260px;
+        margin-top: 0;
+    }
+    &__label{
+        width: 90px;
+        height: 30px;
+        @include l_height(15,25);
+        @include mq(lg){
+            width: 80px;
+        }
+    }
+    &__img{
+        min-height: 200px;
+    }
+    &__title{
+        @include l_height(20,30);
+        margin-top: 25px;
+        @include mq(lg){
+            margin-top: 18px;
+            @include l_height(20,25);
+        }
+    }
+    &__date{
+        margin-top: 14px;
+        @include mq(lg){
+            margin-top: 11px;
+            @include l_height(17,30);
+        }
+    }
+}
+.blog__forward{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 50px;
+    @include l_height(18,30);
+    @include mq(lg){
+        text-align: right;
+        margin-top: 38px;
+    }
+}

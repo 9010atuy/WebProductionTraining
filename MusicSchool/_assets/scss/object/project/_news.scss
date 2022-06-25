@@ -5,11 +5,11 @@
 
 #news{
     background-color: v.$red;
-    padding-top: 42px;
-    padding-bottom: 43px;
+    padding-top: 43px;
+    padding-bottom: 46.5px;
     @include mq(lg){
         padding-top: 60px;
-        padding-bottom: 70px;
+        padding-bottom: 134px;
     }
 }
 .news__table{
@@ -42,7 +42,7 @@
 .news__text{
     @include l_height(17,30);
     text-decoration: underline;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
     @include mq(lg){
         @include l_height(18,30);
     }
