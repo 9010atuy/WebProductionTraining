@@ -1,0 +1,11 @@
+/* js-button
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.js-fixed-btn-pc{
+    display: none;
+}
+.js-fixed-btn-no-pc{
+    display: none;
+}

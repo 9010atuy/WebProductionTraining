@@ -12,17 +12,19 @@
     }
 }
 .footer__nav{
-    @include flex(space-evenly);
-    flex-wrap: wrap;
-    column-gap: 12px;
-    row-gap: 4px;
-    padding: {
-        left:50px;
-        right:50px;
-    }
-    @include mq(){
-        @include flex(center);
-        column-gap: 33px;
+    ul{
+        @include flex(space-evenly);
+        flex-wrap: wrap;
+        column-gap: 12px;
+        row-gap: 4px;
+        padding: {
+            left:50px;
+            right:50px;
+        }
+        @include mq(){
+            @include flex(center);
+            column-gap: 33px;
+        }
     }
 }
 .footer__nav__item{
@@ -46,10 +48,12 @@
     margin-top: 27px;
 }
 .footer__sns__nav{
-    @include flex(center);
-    column-gap: 12px;
-    margin-top: 18px;
-    @include mq(){
-        margin-top: 9px;
+    ul{
+        @include flex(center);
+        column-gap: 12px;
+        margin-top: 18px;
+        @include mq(){
+            margin-top: 9px;
+        }
     }
 }
