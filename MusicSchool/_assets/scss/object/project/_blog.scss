@@ -5,10 +5,10 @@
 
 #blog{
     padding-top:42px;
-    padding-bottom: 48px;
+    padding-bottom: 200px;
     @include mq(){
         padding-top:62px;
-        padding-bottom: 48px;
+        padding-bottom: 206px;
     }
 }
 .blog__title{
@@ -40,7 +40,11 @@
         }
     }
     &__img{
-        min-height: 200px;
+        height: 200px;
+        @include mq(md){
+           min-height: 200px;
+        }
+
     }
     &__title{
         @include l_height(20,30);

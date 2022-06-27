@@ -11,3 +11,9 @@
         padding: 0 100px;
     }
 }
+.footer-wrapper{
+    @include mq(){
+        padding: 0 240px;
+        margin: 0 auto;
+    }
+}

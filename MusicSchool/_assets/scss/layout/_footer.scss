@@ -1,4 +1,55 @@
 /* l-footer
 --------------------------- */
 @use "./../foundation/system" as *;
+@use "./../foundation/variable" as v;
 
+#footer{
+    background-color: v.$red;
+    padding-top: 33px;
+    padding-bottom: 50px;
+    @include mq(){
+        padding-top: 42px;
+    }
+}
+.footer__nav{
+    @include flex(space-evenly);
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 4px;
+    padding: {
+        left:50px;
+        right:50px;
+    }
+    @include mq(){
+        @include flex(center);
+        column-gap: 33px;
+    }
+}
+.footer__nav__item{
+    @include l_height(17,33);
+}
+.footer__logo{
+    display: block;
+    margin: {
+        top: 20px;
+        right: auto;
+        left: auto;
+    };
+    @include mq(){
+        margin-top: 24px;
+    }
+}
+.copyright{
+    display: block;
+    @include l_height(15,20);
+    text-align: center;
+    margin-top: 27px;
+}
+.footer__sns__nav{
+    @include flex(center);
+    column-gap: 12px;
+    margin-top: 18px;
+    @include mq(){
+        margin-top: 9px;
+    }
+}

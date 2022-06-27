@@ -13,3 +13,22 @@
   padding: 14.2px 30px;
   font-size: rem(15);
 }
+.c-button--mid{
+  width: 300px;
+  height: 60px;
+  @include l_height(20,33);
+  text-align: center;
+}
+.c-button--fixed-right{
+  position: fixed;
+  right: 0;
+  bottom: 277px;
+}
+.c-button--circle{
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+}
+.c-button--gray{
+  background-color: rgba(#000000,.5);
+}
