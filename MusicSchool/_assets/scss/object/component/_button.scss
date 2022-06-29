@@ -14,8 +14,12 @@
   font-size: rem(15);
 }
 .c-button--mid{
-  width: 300px;
+  width: 335px;
+  @include mq(lg){
+    width: 300px;
+  }
   height: 60px;
   @include l_height(20,33);
+  @include l_spacing(200);
   text-align: center;
 }

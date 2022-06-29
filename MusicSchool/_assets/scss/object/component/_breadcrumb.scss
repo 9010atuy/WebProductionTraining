@@ -1,0 +1,28 @@
+/* c-breadcrumb
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.c-breadcrumb{
+    width: 100%;
+    background-color: #E8E8E8;
+    @include l_height(16,33);
+    ul{
+        display: flex;
+        li:not(:first-child)::before{
+            content: '>';
+        }
+        li{
+            a{
+                display: inline-block;
+                padding: 2px 18.5px;
+                @include mq(){
+                    padding: 7.5px 16px;
+                }
+            }
+        }
+    }
+    @include mq(){
+        padding: 0 86px;
+    }
+}

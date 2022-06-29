@@ -39,7 +39,7 @@ $(document).ready(function () {
 // トップへ戻る
 // フッターの手前で止める
 const goTop = $('.js-go-top');
-const displayHeight = $('#about').offset().top;
+const displayHeight = $('.js-fv').next().offset().top;
 const footerHeight = $('#footer').innerHeight();
 // FV以外で表示
 $(window).scroll(function () {
@@ -61,9 +61,11 @@ $(window).scroll(function () {
   if (scrollHeight - scrollPosition <= footerHeight) {
     fixedBtn.removeClass('u-pos-fixed');
     fixedBtn.addClass('u-pos-abs');
-    $('#blog').addClass('u-pos-rel');
+    // フッターのひとつ上の兄弟要素
+    $('#footer').prev().addClass('u-pos-rel');
   } else {
-    $('#blog').removeClass('u-pos-rel');
+    // フッターのひとつ上の兄弟要素
+    $('#footer').prev().removeClass('u-pos-rel');
     fixedBtn.removeClass('u-pos-abs');
     fixedBtn.addClass('u-pos-fixed');
   }

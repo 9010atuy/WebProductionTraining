@@ -25,6 +25,7 @@
 @use "./object/component/section";
 @use "./object/component/toggle";
 @use "./object/component/card";
+@use "./object/component/breadcrumb";
 /*-------------------
  * project
  *-------------------*/
@@ -36,6 +37,7 @@
 @use "./object/project/faq";
 @use "./object/project/news";
 @use "./object/project/blog";
+@use "./object/project/plan";
 /*-------------------
  * utility
  -------------------*/
