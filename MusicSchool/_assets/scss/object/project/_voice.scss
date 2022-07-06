@@ -12,6 +12,13 @@
         padding-bottom: 64px;
     }
 }
+.voice__slider{
+    @include mq(){
+        :not(:first-of-type){
+            margin-left: 20px;
+        }
+    }
+}
 .voice__item{
     margin-top: 42px;
 }

@@ -9,7 +9,8 @@
     @include l_height(16,33);
     ul{
         display: flex;
-        li:not(:first-child)::before{
+        flex-wrap: wrap;
+        li:not(:last-child)::after{
             content: '>';
         }
         li{
@@ -17,7 +18,7 @@
                 display: inline-block;
                 padding: 2px 18.5px;
                 @include mq(){
-                    padding: 7.5px 16px;
+                    padding: 8px 15px;
                 }
             }
         }

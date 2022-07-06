@@ -44,7 +44,6 @@
         @include mq(md){
            min-height: 200px;
         }
-
     }
     &__title{
         @include l_height(20,30);
@@ -70,5 +69,128 @@
     @include mq(lg){
         text-align: right;
         margin-top: 38px;
+    }
+}
+
+// ブログ一覧
+#blog-list{
+    padding-top: 42px;
+    padding-bottom: 196px;
+    @include mq(lg){
+        padding-top: 61px;
+        padding-bottom: 50px;
+    }
+}
+.blog__fv-img{
+    background-image: url(../img/SP/blog/FV.png);
+    background-image: image-set(
+        url(../img/SP/blog/FV.png) 1x,
+        url(../img/SP/blog/FV@2x.png) 2x
+      );
+    height: 300px;
+    @include mq(){
+        background-image: url(../img/PC/blog/FV.png);
+        background-image: image-set(
+            url(../img/PC/blog/FV.png) 1x,
+            url(../img/PC/blog/FV@2x.png) 2x
+        );
+        height: 200px;
+    }
+    background-position: top;
+}
+.blog__message{
+    @include l_height(25,60);
+}
+@include mq(lg){
+    .blog-list__item{
+        @include flex(flex-start,start);
+        column-gap: 50px;
+        &--left{
+            flex:0.9;
+        }
+        &--right{
+            flex:2;
+        }
+    }
+}
+
+.blog-list__card{
+    margin-top: 42px;
+    @include mq(lg){
+        margin-top: 40px;
+    }
+    &__label{
+        width: 90px;
+        height: 30px;
+        @include l_height(15,25);
+        @include mq(lg){
+            width: 80px;
+        }
+    }
+    &__title{
+        @include l_height(20,30);
+        margin-top: 25px;
+        @include mq(lg){
+            margin-top: 0;
+            @include l_height(20,25);
+        }
+    }
+    &__img{
+        min-height: 200px;
+        height: 200px;
+        @include mq(sm){
+            height: auto;
+        }
+        @include mq(md){
+           height: 184px;
+           min-height: 184px;
+        }
+    }
+    &__date{
+        margin-top: 13.5px;
+        text-align: right;
+        letter-spacing: 0.027em;
+        @include mq(lg){
+            text-align: left;
+            @include l_height(17,30);
+            margin-top: 0;
+        }
+    }
+    &__text{
+        margin-top: 13px;
+        @include l_height(16,30);
+        @include mq(lg){
+            margin-top: 10px;
+            @include l_height(18,30);
+        }
+    }
+}
+.blog-list__pagination{
+    margin-top: 70px;
+    &__inner{
+        column-gap: 10px;
+    }
+    &__link{
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+        padding: {
+            top: 16px;
+            bottom: 16px;
+            right: 20px;
+            left: 20px;
+        }
+        &:hover{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    &__ellipsis{
+        padding: {
+            top: 16px;
+            bottom: 16px;
+            right: 20px;
+            left: 20px;
+        }
     }
 }

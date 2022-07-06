@@ -1,0 +1,23 @@
+/* c-fv
+----------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+.c-fv__img{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::after{
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color: rgba(v.$gray,.4);        
+    }
+}
+
+.c-fv__message{
+    @include center(xy);
+    z-index: 1;
+}
