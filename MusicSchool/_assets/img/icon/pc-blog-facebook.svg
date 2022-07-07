@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="40" viewBox="0 0 105 40">
+  <g id="グループ_122" data-name="グループ 122" transform="translate(-100 -692)">
+    <rect id="長方形_52" data-name="長方形 52" width="105" height="40" transform="translate(100 692)" fill="#425893"/>
+    <text id="Facebook" transform="translate(165.079 716)" fill="#fff" font-size="10" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="-23.405" y="0">Facebook</tspan></text>
+    <path id="icon-share-facebook" d="M-685.554,171.74l.579-3.777H-688.6v-2.451a1.889,1.889,0,0,1,2.13-2.041h1.648v-3.216a20.094,20.094,0,0,0-2.925-.255c-2.985,0-4.936,1.809-4.936,5.084v2.879H-696v3.777h3.318v9.131c.74.031,3.394,0,4.084,0V171.74Z" transform="translate(813 542)" fill="#fff"/>
+  </g>
+</svg>

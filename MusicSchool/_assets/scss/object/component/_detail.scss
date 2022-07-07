@@ -1,0 +1,67 @@
+/* c-detail
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.c-detail__introduction{
+    @include l_height(16,30);
+    margin-top: 30px;
+}
+.c-detail__main{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 0.5px solid #000;
+    h2{
+        @include l_height(20,30);
+        font-weight: bold;
+    }
+    p{
+        margin-top: 30px;
+        @include l_height(16,30);
+    }
+    img{
+        margin-top: 50px;
+    }
+    ul{
+        margin-top: 30px;
+        li{
+            @include l_height(16,30);
+            list-style: circle;
+        }
+    }
+}
+.c-detail__summary{
+    margin-top: 50px;
+    h3{
+        @include l_height(20,30);
+        font-weight: bold;
+        border-left: 3px solid #000;
+    }
+}
+.c-detail__quote{
+    margin-top: 30px;
+    background-color: #E8E8E8;
+    position: relative;
+    padding: {
+        top:22px;
+        right: 20px;
+        bottom: 22px;
+        left: 70px;
+    }
+    &__icon{
+        position: absolute;
+        top:10px;
+        left:10px;
+    }
+    &__text{
+        @include l_height(16,30);
+        width: 100%;
+    }
+}
+.c-detail__back-link{
+    margin-top: 30px;
+    text-decoration: underline;
+    color: v.$red;
+    @include l_height(20,33);
+    font-weight: bold;
+}

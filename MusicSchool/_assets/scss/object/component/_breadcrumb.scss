@@ -7,19 +7,21 @@
     width: 100%;
     background-color: #E8E8E8;
     @include l_height(16,33);
+    padding: 2px 18.5px;
+    @include mq(){
+        padding: 8px 15px;
+    }
     ul{
         display: flex;
         flex-wrap: wrap;
         li:not(:last-child)::after{
             content: '>';
+            margin-left: 16px;
+            margin-right: 21px;
         }
         li{
             a{
                 display: inline-block;
-                padding: 2px 18.5px;
-                @include mq(){
-                    padding: 8px 15px;
-                }
             }
         }
     }

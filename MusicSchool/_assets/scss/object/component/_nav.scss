@@ -11,3 +11,12 @@
     @include flex();
     column-gap: 33px;
 }
+.c-sns-nav{
+    width:100%;
+}
+.c-sns-inner{
+    @include flex();
+}
+.c-sns-link{
+
+}
