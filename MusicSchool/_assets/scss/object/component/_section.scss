@@ -19,3 +19,13 @@
         @include l_height(25,43);
     }
 }
+.c-section__title{
+    background-color: #000;
+    color: #fff;
+    @include l_height(18,30);
+    padding: {
+        top: 16px;
+        bottom: 16px;
+    }
+    text-align: center;
+}

@@ -54,6 +54,7 @@
         }
     }
     &__date{
+        text-align: right;
         margin-top: 14px;
         @include mq(lg){
             margin-top: 11px;
@@ -195,6 +196,54 @@
     }
 }
 // ブログ詳細
-.blog__sns-nav{
-    margin-top: 20px;
+.blog-detail__sns-nav{
+    margin-top: 23px;
+}
+.blog-detail__card {
+    margin-top: 50px;
+    &__date{
+        text-align: left;
+        @include l_height(17,30);
+        margin-top: 8.1px;
+    }
+}
+#blog-detail__rel-article{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.blog-detail__card{
+    &--flex{
+        column-gap: 20px;
+    }
+    &__label{
+        padding: {
+            top: 7px;
+            bottom: 8px;
+            left: 17px;
+            right: 19px;
+        }
+    }
+    &__img{
+        max-width:160px;
+    }
+    &__title{
+        @include l_height(15,25);
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    &__date{
+        margin-top: 18px;
+        @include l_height(17,30);
+    }
+}
+.blog-detail__ad__content{
+    background-color: #E8E8E8;
+    height: 228px;
+    margin: {
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+    }
+    @include flex(center,center);
 }

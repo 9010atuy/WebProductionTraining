@@ -5,53 +5,58 @@
 
 .c-detail__introduction{
     @include l_height(16,30);
-    margin-top: 30px;
+    margin-top: 24px;
 }
 .c-detail__main{
-    margin-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 38px;
+    padding-bottom: 42px;
     border-bottom: 0.5px solid #000;
     h2{
         @include l_height(20,30);
         font-weight: bold;
     }
     p{
-        margin-top: 30px;
+        margin-top: 18px;
         @include l_height(16,30);
     }
     img{
-        margin-top: 50px;
+        margin-top: 42px;
     }
     ul{
-        margin-top: 30px;
+        margin-top: 24px;
         li{
-            @include l_height(16,30);
-            list-style: circle;
+            @include l_height(16,30); 
+            &::before{
+                content: '・'
+            }
         }
     }
 }
 .c-detail__summary{
-    margin-top: 50px;
+    margin-top: 45px;
     h3{
         @include l_height(20,30);
         font-weight: bold;
         border-left: 3px solid #000;
+        padding: {
+            left: 6px;
+        }
     }
 }
 .c-detail__quote{
-    margin-top: 30px;
+    margin-top: 24px;
     background-color: #E8E8E8;
     position: relative;
     padding: {
-        top:22px;
+        top:13px;
         right: 20px;
-        bottom: 22px;
+        bottom: 15px;
         left: 70px;
     }
     &__icon{
         position: absolute;
-        top:10px;
-        left:10px;
+        top: 22px;
+        left: 25px;
     }
     &__text{
         @include l_height(16,30);
@@ -59,8 +64,8 @@
     }
 }
 .c-detail__back-link{
-    margin-top: 30px;
-    text-decoration: underline;
+    margin-top: 24px;
+    border-bottom: 1px solid v.$red;
     color: v.$red;
     @include l_height(20,33);
     font-weight: bold;

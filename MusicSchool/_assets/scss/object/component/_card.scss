@@ -4,6 +4,9 @@
 @use "./../../foundation/variable" as v;
 
 .c-card{
+    &-flex{
+        display: flex;
+    }
     &__img-container{
         position: relative;
     }
@@ -25,6 +28,5 @@
         font-weight: bold;
     }
     &__date{
-        text-align: right;
     }
 }

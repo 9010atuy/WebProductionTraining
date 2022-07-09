@@ -6,10 +6,21 @@
 .c-breadcrumb{
     width: 100%;
     background-color: #E8E8E8;
-    @include l_height(16,33);
-    padding: 2px 18.5px;
+    font-size: rem(16);
+    line-height: 1.35;
+    padding: {
+        top: 8px;
+        bottom: 8px;
+        left: 20px;
+        right: 20px;
+    }
     @include mq(){
-        padding: 8px 15px;
+        padding: {
+            top: 8px;
+            bottom: 8px;
+            left: 20px;
+            right: 20px;
+        }
     }
     ul{
         display: flex;
@@ -24,8 +35,5 @@
                 display: inline-block;
             }
         }
-    }
-    @include mq(){
-        padding: 0 86px;
     }
 }
