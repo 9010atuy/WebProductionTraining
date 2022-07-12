@@ -106,3 +106,20 @@
         height: 50px;
     }
 }
+// 詳細画面
+#notice-detail-main{
+    padding-bottom: 190px;
+    
+}
+.notice-detail__linear-nav{
+    margin-top: 30px;
+    @include mq(){
+        margin-top: 50px;
+    }
+}
+.notice-detail__back-link{
+    width: 11.3rem;
+}
+.notice-detail__linear-nav{
+    margin-top: 50px;
+}

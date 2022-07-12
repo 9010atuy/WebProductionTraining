@@ -4,11 +4,32 @@
 @use "./../../foundation/variable" as v;
 
 .c-detail__introduction{
-    @include l_height(16,30);
     margin-top: 24px;
     @include mq(){
-        @include l_height(18,30);
         margin-top: 45px;
+    }
+    h1{
+        @include l_height(20,30);
+        font-weight: bold;
+        @include mq(){
+            @include l_height(25,40);
+        }
+    }
+    p{
+        @include l_height(16,30);
+        margin-top: 30px;
+        @include mq(){
+            @include l_height(18,30);
+            margin-top: 50px;
+        }
+    }
+    &__date{
+        margin-top: 20px;
+        @include l_height(17,30);
+        @include mq(){
+            margin-top: 28px;
+            @include l_height(17,30);
+        }
     }
 }
 .c-detail__main{
@@ -119,7 +140,6 @@
     color: v.$red;
     @include l_height(20,33);
     font-weight: bold;
-    width: 8.8rem;
     @include mq(){
         margin-top: 24px;
     }
