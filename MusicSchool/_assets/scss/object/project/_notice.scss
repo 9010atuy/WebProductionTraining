@@ -1,0 +1,108 @@
+/* p-notice
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.notice__fv-img{
+    background-image: url(../img/SP/notice/FV.png);
+    background-image: image-set(
+        url(../img/SP/notice/FV.png) 1x,
+        url(../img/SP/notice/FV@2x.png) 2x
+      );
+    height: 300px;
+    @include mq(){
+        background-image: url(../img/PC/notice/FV.png);
+        background-image: image-set(
+            url(../img/PC/notice/FV.png) 1x,
+            url(../img/PC/notice/FV@2x.png) 2x
+        );
+        height: 200px;
+    }
+    background-position: top;
+}
+.notice__message{
+    @include l_height(25,60);
+}
+#notice-list{
+    padding: {
+        top: 41px;
+        bottom: 196px;
+    }
+    @include mq(){
+        padding: {
+            top: 60px;
+        }
+    }
+}
+.notice-list__contents{
+    margin-top: 42px;
+    @include mq(){
+        margin-top: 41px;
+    }
+}
+.notice-list__content__link{
+    display: block;
+    border: {
+        top: 0.5px solid #000;
+        bottom: 0.5px solid #000;
+    }
+    padding: {
+        top: 13.5px;
+        bottom: 13px;
+    }
+    @include flex(start,flex-start);
+    flex-direction: column;
+    row-gap: 6px;
+    @include mq(){
+        padding: {
+            top: 14px;
+            bottom: 13px;
+        }
+        flex-direction: row;
+        column-gap: 52.5px;
+    }
+}
+.notice-list__content__date{
+    @include l_height(17,30);
+}
+.notice-list__content__summary{
+    @include l_height(16,30);
+    letter-spacing: -0.002em;
+    @include mq(){
+        @include l_height(17,30);
+    }
+}
+.notice-list__pagination {
+    margin-top: 45px;
+    max-width: 278px;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(){
+        margin-top: 70px;
+    }
+    &__inner{
+        column-gap: 6px;
+    }
+    &__link{
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+        @include l_height(18,30);
+        @include flex(center,center);
+        width: 50px;
+        height: 50px;
+        &:hover{
+            background-color: #000;
+            color: #fff;
+        }
+        &.actived{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    &__ellipsis{
+        @include flex(center,center);
+        width: 50px;
+        height: 50px;
+    }
+}
