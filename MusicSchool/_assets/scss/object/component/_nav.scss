@@ -16,6 +16,10 @@
 }
 .c-sns-inner{
     @include flex();
+    @include mq(){
+        @include flex(start);
+        column-gap: 3.4px;
+    }
 }
 .c-sns-link{
 

@@ -24,8 +24,15 @@
     color: #fff;
     @include l_height(18,30);
     padding: {
-        top: 16px;
-        bottom: 16px;
+        top: 10px;
+        bottom: 10px;
     }
     text-align: center;
+    @include mq(){
+        @include l_height(18,33);
+        padding: {
+            top: 9px;
+            bottom: 9px;
+        }
+    }
 }

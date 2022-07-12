@@ -11,15 +11,11 @@
     padding: {
         top: 8px;
         bottom: 8px;
-        left: 20px;
-        right: 20px;
     }
     @include mq(){
         padding: {
-            top: 8px;
-            bottom: 8px;
-            left: 20px;
-            right: 20px;
+            top: 14px;
+            bottom: 14px;
         }
     }
     ul{

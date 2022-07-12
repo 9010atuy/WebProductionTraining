@@ -5,10 +5,11 @@
 
 #footer{
     background-color: v.$red;
-    padding-top: 41px;
+    padding-top: 50px;
     padding-bottom: 50px;
     @include mq(){
-        padding-top: 42px;
+        padding-top: 49.5px;
+        padding-bottom: 47px;
     }
 }
 .footer__nav{
@@ -16,14 +17,16 @@
         @include flex(center);
         flex-wrap: wrap;
         column-gap: 30px;
-        row-gap: 4px;
+        row-gap: 18px;
         padding: {
             left:50px;
             right:50px;
         }
+        letter-spacing: 0.05em;
         @include mq(){
             @include flex(center);
             column-gap: 33px;
+            row-gap: 4px;
         }
     }
 }
@@ -33,12 +36,12 @@
 .footer__logo{
     display: block;
     margin: {
-        top: 20px;
+        top: 29px;
         right: auto;
         left: auto;
     };
     @include mq(){
-        margin-top: 24px;
+        margin-top: 30px;
     }
 }
 .copyright{
