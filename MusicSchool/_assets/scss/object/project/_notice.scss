@@ -108,8 +108,17 @@
 }
 // 詳細画面
 #notice-detail-main{
+    padding-top: 42px;
     padding-bottom: 190px;
-    
+    @include mq(){
+        padding-top: 63px;
+        padding-bottom: 214px;
+    }
+    ul{
+        @include mq(){
+            margin-top: 23px;
+        }
+    }
 }
 .notice-detail__linear-nav{
     margin-top: 30px;
@@ -118,8 +127,32 @@
     }
 }
 .notice-detail__back-link{
-    width: 11.3rem;
+    width: 9rem;
+    @include l_height(16,33);
+    margin-top: 22px;
+    @include mq(){
+        margin-top: 44px;
+        @include l_height(20,33);
+        width: 11.4rem;
+    }
 }
 .notice-detail__linear-nav{
-    margin-top: 50px;
+    margin-top: 45px;
+    @include mq(){
+        margin-top: 57px;
+    }
+}
+.notice-detail__introduction{
+    p{
+        margin-top: 17px;
+        @include mq(){
+            margin-top: 37px;
+            height: 91px;
+        }
+    }
+}
+.notice-detail__linear-nav__list{
+    @include mq(){
+        column-gap: 200px;
+    }
 }

@@ -4,10 +4,6 @@
 @use "./../../foundation/variable" as v;
 
 .c-detail__introduction{
-    margin-top: 24px;
-    @include mq(){
-        margin-top: 45px;
-    }
     h1{
         @include l_height(20,30);
         font-weight: bold;
@@ -24,10 +20,10 @@
         }
     }
     &__date{
-        margin-top: 20px;
+        margin-top: 8px;
         @include l_height(17,30);
         @include mq(){
-            margin-top: 28px;
+            margin-top: 16px;
             @include l_height(17,30);
         }
     }
@@ -115,6 +111,7 @@
             top: 14px;
             bottom: 14px;
             right: 30px;
+            left: 67px;
         }
     }
     &__icon{
