@@ -30,6 +30,7 @@
 @use "./object/component/pagination";
 @use "./object/component/detail";
 @use "./object/component/linear-nav";
+@use "./object/component/form";
 /*-------------------
  * project
  *-------------------*/
@@ -43,6 +44,7 @@
 @use "./object/project/blog";
 @use "./object/project/plan";
 @use "./object/project/notice";
+@use "./object/project/contact";
 /*-------------------
  * utility
  -------------------*/
