@@ -1,0 +1,110 @@
+/* p-search
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#search-list{
+    padding-top: 40px;
+    padding-bottom: 196px;
+    @include mq(){
+        padding-top: 40px;
+        padding-bottom: 196px;
+    }
+}
+.search-list__result-message{
+    @include flex();
+    @include l_height(18,30);
+}
+.search-list__result-message__text{
+    
+}
+.search-list__result-message_count{
+
+}
+.search-list__contents{
+    margin-top: 50px;
+    @include mq(){
+        margin-top: 50px;
+    }
+}
+.search-list__card{
+    &:not(:first-of-type){
+        margin-top: 50px;
+        @include mq(){
+            margin-top: 70px;
+        }
+    }
+}
+.search-list__card__label{
+    padding: {
+        top: 7px;
+        bottom: 8px;
+    }
+    width: 80px;
+    text-align: center;
+}
+.search-list__card__img{
+    height: 200px;
+    @include mq(){
+        width: 260px;
+        height: 184px;
+    }
+}
+.search-list__card__title{
+    margin-top: 30px;
+    @include l_height(20,30);
+    @include mq(){
+        margin-top: 0;
+        @include l_height(20,25);
+    }
+}
+.search-list__card__date{
+    margin-top: 20px;
+    text-align: right;
+    @include l_height(17,30);
+    @include mq(){
+        margin-top: 20px;
+        text-align: left;
+    }
+}
+.search-list__card__text{
+    margin-top: 20px;
+    @include l_height(16,30);
+    @include mq(){
+        margin-top: 22px;
+        @include l_height(18,30);
+    }
+}
+.search-list__pagination{
+    margin-top: 70px;
+    &__inner{
+        column-gap: 10px;
+    }
+    &__link{
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+        padding: {
+            top: 16px;
+            bottom: 16px;
+            right: 20px;
+            left: 20px;
+        }
+        &:hover{
+            background-color: #000;
+            color: #fff;
+        }
+        &:active{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    &__ellipsis{
+        padding: {
+            top: 16px;
+            bottom: 16px;
+            right: 20px;
+            left: 20px;
+        }
+    }
+}
