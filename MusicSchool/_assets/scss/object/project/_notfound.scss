@@ -1,0 +1,54 @@
+/* p-404
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#not-found{
+    padding-top:42px;
+    padding-bottom: 50px;
+    @include mq(){
+        padding-top: 64px;
+        padding-bottom: 90px;
+    }
+}
+.not-found__fv-img{
+    background-image: url(../img/SP/404/FV.png);
+    background-image: image-set(
+        url(../img/SP/404/FV.png) 1x,
+        url(../img/SP/404/FV@2x.png) 2x
+      );
+    height: 300px;
+    @include mq(){
+        background-image: url(../img/PC/404/FV.png);
+        background-image: image-set(
+            url(../img/PC/404/FV.png) 1x,
+            url(../img/PC/404/FV@2x.png) 2x
+        );
+        height: 200px;
+    }
+    background-position: center;
+}
+.not-found__message{
+    @include l_height(25,60);
+}
+.not-found__desc{
+    @include l_height(16,30);
+    @include mq(){
+        @include l_height(18,30);
+        text-align: center;
+    }
+}
+.not-found__button{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    @include l_height(20,26);
+    @include mq(){
+        width: 250px;
+        margin-top: 44px;
+        @include l_height(25,33);
+    }
+}
