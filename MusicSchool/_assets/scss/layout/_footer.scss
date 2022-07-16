@@ -33,6 +33,29 @@
 .footer__nav__item{
     @include l_height(17,33);
 }
+.footer__nav__itemlink{
+    &:hover{
+        opacity: 0.5;
+    }
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    &::after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .5s;
+    }
+    &:hover::after {
+        transform: scale(1, 1);
+    }
+}
 .footer__logo{
     display: block;
     margin: {

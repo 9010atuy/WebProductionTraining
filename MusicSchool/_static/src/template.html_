@@ -38,10 +38,10 @@
         </div>
         <nav class="c-nav pc header__nav">
             <ul class="c-nav-list">
-                <li><a href="./plan.html" class="nav-item">料金</a></li>
-                <li><a href="./blog_list.html" class="nav-item">ブログ</a></li>
-                <li><a href="./notice_list.html" class="nav-item">お知らせ</a></li>
-                <li><a href="./result_list.html" class="nav-item"></a>卒業実績</li>
+                <li><a href="./plan.html" class="c-nav-itemlink">料金</a></li>
+                <li><a href="./blog_list.html" class="c-nav-itemlink">ブログ</a></li>
+                <li><a href="./notice_list.html" class="c-nav-itemlink">お知らせ</a></li>
+                <li><a href="./result_list.html" class="c-nav-itemlink">卒業実績</a></li>
             </ul>
         </nav>
         <button class="pc c-button c-button--red c-button--small header__button">
@@ -72,11 +72,11 @@
         <div class="main-wrapper footer-wrapper">
             <nav class="footer__nav">
                 <ul>
-                    <li><a href="./index.html" class="u-font--white u-font--bold">ホーム</a></li>
-                    <li><a href="./plan.html" class="u-font--white u-font--bold">料金</a></li>
-                    <li><a href="./blog_list.html" class="u-font--white u-font--bold">ブログ</a></li>
-                    <li><a href="./notice_list.html" class="u-font--white u-font--bold">お知らせ</a></li>
-                    <li><a href="./result_list.html" class="u-font--white u-font--bold">卒業実績</a></li>
+                    <li><a href="./index.html" class="u-font--white u-font--bold footer__nav__itemlink">ホーム</a></li>
+                    <li><a href="./plan.html" class="u-font--white u-font--bold footer__nav__itemlink">料金</a></li>
+                    <li><a href="./blog_list.html" class="u-font--white u-font--bold footer__nav__itemlink">ブログ</a></li>
+                    <li><a href="./notice_list.html" class="u-font--white u-font--bold footer__nav__itemlink">お知らせ</a></li>
+                    <li><a href="./result_list.html" class="u-font--white u-font--bold footer__nav__itemlink">卒業実績</a></li>
                 </ul>
             </nav>
             <img src="../img/icon/footer-logo.svg" alt="footer-logo" class="footer__logo">

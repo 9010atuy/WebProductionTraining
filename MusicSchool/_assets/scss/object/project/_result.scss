@@ -1,0 +1,126 @@
+/* p-result
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#result-list{
+    padding-top: 42px;
+    padding-bottom: 195px;
+    @include mq(){
+        padding-top: 61px;
+        padding-bottom: 211px;
+    }
+}
+
+.result-list__fv-img{
+    background-image: url(../img/SP/result/FV.png);
+    background-image: image-set(
+        url(../img/SP/result/FV.png) 1x,
+        url(../img/SP/result/FV@2x.png) 2x
+      );
+    height: 300px;
+    @include mq(){
+        background-image: url(../img/PC/result/FV.png);
+        background-image: image-set(
+            url(../img/PC/result/FV.png) 1x,
+            url(../img/PC/result/FV@2x.png) 2x
+        );
+        height: 200px;
+    }
+    background-position: center;
+}
+.result-list__message{
+    @include l_height(25,60);
+    @include mq(){
+        @include l_height(25,60);
+    }
+}
+.result-list__contents{
+    margin-top: 50px;
+    @include mq(){
+        margin-top: 40px;
+        display: grid;
+        row-gap: 68px;
+        column-gap: 106px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}
+.result-list__card__label{
+    @include l_height(15,25);
+    width: 100px;
+    height: 30px;
+    @include mq(){
+        @include l_height(15,25);
+        width: 100px;
+        height: 30px;
+    }
+}
+.result-list__card__title{
+    @include l_height(20,25);
+    margin-top: 20px;
+    @include mq(){
+        margin-top: 22px;
+    }
+}
+.result-list__card__date{
+    @include l_height(18,32);
+    text-align: right;
+    margin-top: 10px;
+    @include mq(){
+        @include l_height(18,32);
+        text-align: right;
+        margin-top: 10px;
+    }
+}
+.result-list__card{
+    &:not(:first-of-type){
+        margin-top: 41px;
+        @include mq(){
+            margin-top: 0;
+        }
+    }
+}
+.result-list__card__img{
+    width: 335px;
+    height: 236px;
+    @include mq(){
+        width: 387px;
+        height: 273px;
+    }
+}
+.result-list__pagination{
+    margin-top: 61px;
+    @include mq(){
+        margin-top: 60px;
+    }
+    &__inner{
+        column-gap: 10px;
+    }
+    &__link{
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+        padding: {
+            top: 16px;
+            bottom: 16px;
+            right: 20px;
+            left: 20px;
+        }
+        &:hover{
+            background-color: #000;
+            color: #fff;
+        }
+        &:active{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    &__ellipsis{
+        padding: {
+            top: 16px;
+            bottom: 16px;
+            right: 6px;
+            left: 6px;
+        }
+    }
+}
