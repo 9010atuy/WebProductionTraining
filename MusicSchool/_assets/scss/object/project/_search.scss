@@ -4,11 +4,11 @@
 @use "./../../foundation/variable" as v;
 
 #search-list{
-    padding-top: 40px;
-    padding-bottom: 196px;
+    padding-top: 33px;
+    padding-bottom: 195px;
     @include mq(){
-        padding-top: 40px;
-        padding-bottom: 196px;
+        padding-top: 64px;
+        padding-bottom: 209px;
     }
 }
 .search-list__result-message{
@@ -22,36 +22,42 @@
 
 }
 .search-list__contents{
-    margin-top: 50px;
+    margin-top: 43px;
     @include mq(){
-        margin-top: 50px;
+        margin-top: 44px;
     }
 }
 .search-list__card{
     &:not(:first-of-type){
-        margin-top: 50px;
+        margin-top: 42px;
         @include mq(){
-            margin-top: 70px;
+            margin-top: 69px;
         }
     }
 }
-.search-list__card__label{
-    padding: {
-        top: 7px;
-        bottom: 8px;
+.search-list__item{
+    @include mq(){
+        @include flex(start, flex-start);
+        column-gap: 50px;
     }
-    width: 80px;
+}
+.search-list__card__label{
+    height: 32px;
+    width: 90px;
     text-align: center;
+    @include mq(){
+        width: 80px;
+    }
 }
 .search-list__card__img{
     height: 200px;
     @include mq(){
         width: 260px;
-        height: 184px;
+        height: 185px;
     }
 }
 .search-list__card__title{
-    margin-top: 30px;
+    margin-top: 26px;
     @include l_height(20,30);
     @include mq(){
         margin-top: 0;
@@ -59,24 +65,27 @@
     }
 }
 .search-list__card__date{
-    margin-top: 20px;
+    margin-top: 8px;
     text-align: right;
     @include l_height(17,30);
     @include mq(){
-        margin-top: 20px;
+        margin-top: 0;
         text-align: left;
     }
 }
 .search-list__card__text{
-    margin-top: 20px;
+    margin-top: 7px;
     @include l_height(16,30);
     @include mq(){
-        margin-top: 22px;
+        margin-top: 9px;
         @include l_height(18,30);
     }
 }
 .search-list__pagination{
-    margin-top: 70px;
+    margin-top: 61px;
+    @include mq(){
+        margin-top: 68px;
+    }
     &__inner{
         column-gap: 10px;
     }
