@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”robots” content=”noindex”>
+    <!-- ogp -->
+    <meta property="og:type" content="website">
+    <title>きたむらミュージックスクール | ブログ</title>
+    <meta name="description" content="きたむらミュージックスクールのデモサイトです">
+    <meta property="og:title" content="きたむらミュージックスクール">
+    <meta property="og:description" content="きたむらミュージックスクールのデモサイトです">
+
+    <!-- ogp-image -->
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- css -->
+    <link rel="stylesheet" href="./lib/slick.css">
+    <link rel="stylesheet" href="./lib/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html">
+            <div class="header__logo-title">
+                <img src="./img/icon/logo.svg" alt="logo" class="logo">
+                <p class="site-title">
+                    <span class="header__logo-title--text-decoration">きたむら</span>ミュージックスクール
+                </p>
+            </div>
+        </a>
+        <div class="c-hamburger hamburger-trigger no-pc">
+            <span></span>
+        </div>
+        <nav class="c-nav pc header__nav">
+            <ul class="c-nav-list">
+                <li><a href="./plan.html" class="c-nav-itemlink">料金</a></li>
+                <li><a href="./blog_list.html" class="c-nav-itemlink">ブログ</a></li>
+                <li><a href="./notice_list.html" class="c-nav-itemlink">お知らせ</a></li>
+                <li><a href="./result_list.html" class="c-nav-itemlink">卒業実績</a></li>
+            </ul>
+        </nav>
+        <button class="pc c-button c-button--red c-button--small header__button"
+            onclick="location.href='./contact_form.html'">
+            お問い合わせ
+        </button>
+    </header>
+    <div class="c-hamburger-menu">
+        <nav class="hamburger-nav">
+            <ul class="hamburger-list">
+                <li><a href="./plan.html" class="c-hamburger-item hamburger-trigger">料金</a></li>
+                <li><a href="./blog_list.html" class="c-hamburger-item hamburger-trigger">ブログ</a></li>
+                <li><a href="./notice_list.html" class="c-hamburger-item hamburger-trigger">お知らせ</a></li>
+                <li><a href="./result_list.html" class="c-hamburger-item hamburger-trigger">卒業実績</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="c-hamburger-bg hamburger-trigger">
+    </div>
+    <nav class="c-breadcrumb">
+        <div class="main-wrapper">
+            <ul>
+                <li>
+                    <a href="#">ホーム</a>
+                </li>
+                <li>
+                    <a href="#">卒業実績</a>
+                </li>
+                <li>
+                    <a href="#">ポップス</a>
+                </li>
+                <li>
+                    <a href="#">タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-wrapper">
+        <div class="result_details__main-container">
+            <div class="result_details__left">
+                <section id="result_details-main">
+                    <!-- カード -->
+                    <div class="c-card result_details__main-card js-fv">
+                        <a href="#">
+                            <div class="c-card__img-container">
+                                <div class="c-card__label result-details__main-card__label">ポップス</div>
+                                <img src="../img/SP/top/voice01.png"
+                                    srcset="../img/SP/top/voice01.png 1x, ../img/PC/top/voice01@2x.png 2x"
+                                    alt="卒業実績画像01" class="c-card__img result-details__main-card__img no-pc">
+                                <img src="../img/PC/top/voice01.png"
+                                    srcset="../img/PC/top/voice01.png 1x, ../img/PC/top/voice01@2x.png 2x"
+                                    alt="卒業実績画像01" class="c-card__img result-details__main-card__img pc">
+                            </div>
+                            <h2 class="c-card__title result_details__main-card__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                            </h2>
+                            <p class="c-card__date result_details__main-card__date">2022.01.01</p>
+                        </a>
+                    </div>
+                    <!-- プロフィール -->
+                    <div class="result-details__profile__container">
+                        <div class="result-details__profile__container-left">
+                            <table class="result-detail__profile-table">
+                                <tr>
+                                    <th>名前</th>
+                                    <td>丸山</td>
+                                </tr>
+                                <tr>
+                                    <th>職業</th>
+                                    <td>証券会社勤務</td>
+                                </tr>
+                                <tr>
+                                    <th>ジャンル</th>
+                                    <td>入力欄</td>
+                                </tr>
+                                <tr>
+                                    <th>実績</th>
+                                    <td>入力欄</td>
+                                </tr>
+                                <tr>
+                                    <th>SNS</th>
+                                    <td>入力欄</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- 紹介文 -->
+                        <div class="result-details__profile__container-right">
+                            <p class="result-details__profile__desc">
+                                昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- 前の記事・次の記事 -->
+                <nav class="c-linear-nav result_details__linear-nav">
+                    <ul class="c-linear-nav__list result_details__linear-nav__list">
+                        <li>
+                            <a href="#" class="c-linear-nav__link-item">
+                                <div class="c-linear-nav__item">
+                                    <div class="c-linear-nav__item__label c-linear-nav__prev__label">◀︎ 前の記事
+                                    </div>
+                                    <div class="c-linear-nav__card">
+                                        <img class="c-linear-nav__item__img pc" src="../img/PC/top/blog03.png"
+                                            srcset="../img/PC/top/blog03.png 1x, ../img/PC/top/blog03@2x.png 2"></img>
+                                        <div class="c-linear-nav__item__title">タイトルが入ります。タイトルが入ります。タイトルが入</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="c-linear-nav__link-item">
+                                <div class="c-linear-nav__item">
+                                    <div class="c-linear-nav__item__label c-linear-nav__next__label">次の記事 ▶︎
+                                    </div>
+                                    <div class="c-linear-nav__card">
+                                        <img class="c-linear-nav__item__img pc" src="../img/PC/top/blog03.png"
+                                            srcset="../img/PC/top/blog03.png 1x, ../img/PC/top/blog03@2x.png 2"></img>
+                                        <div class="c-linear-nav__item__title">タイトルが入ります。タイトルが入ります。タイトルが入</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 関連記事 -->
+                <section id="result_details__rel-article">
+                    <h2 class="c-section__title result_details__rel-article__title">
+                        関連記事
+                    </h2>
+                    <div class="c-card-list">
+                        <div class="c-card result_details__rel-card">
+                            <a href="#">
+                                <div class="c-card-flex result_details__card--flex">
+                                    <div class="c-card__img-container">
+                                        <div class="c-card__label result_details__card__label">ギター</div>
+                                        <img src="../img/SP/top/voice02.png"
+                                            srcset="../img/SP/top/voice02.png 1x, ../img/PC/top/voice02@2x.png 2x"
+                                            alt="卒業実績02" class="c-card__img result_details__card__img no-pc">
+                                        <img src="../img/PC/top/voice02.png"
+                                            srcset="../img/PC/top/voice02.png 1x, ../img/PC/top/voice02@2x.png 2x"
+                                            alt="卒業実績02" class="c-card__img result_details__card__img pc">
+                                    </div>
+                                    <div class="c-card__txt-container">
+                                        <h2 class="c-card__title result_details__card__title">
+                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+                                        <p class="c-card__date result_details__card__date">2022.01.01</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="c-card result_details__rel-card">
+                            <a href="#">
+                                <div class="c-card-flex result_details__card--flex">
+                                    <div class="c-card__img-container">
+                                        <div class="c-card__label result_details__card__label">ギター</div>
+                                        <img src="../img/SP/top/voice03.png"
+                                            srcset="../img/SP/top/voice03.png 1x, ../img/PC/top/voice03@2x.png 2x"
+                                            alt="卒業実績03" class="c-card__img result_details__card__img no-pc">
+                                        <img src="../img/PC/top/voice03.png"
+                                            srcset="../img/PC/top/voice03.png 1x, ../img/PC/top/voice03@2x.png 2x"
+                                            alt="卒業実績03" class="c-card__img result_details__card__img pc">
+                                    </div>
+                                    <div class="c-card__txt-container">
+                                        <h2 class="c-card__title result_details__card__title">
+                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+                                        <p class="c-card__date result_details__card__date">2022.01.01</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="c-card result_details__rel-card">
+                            <a href="#">
+                                <div class="c-card-flex result_details__card--flex">
+                                    <div class="c-card__img-container">
+                                        <div class="c-card__label result_details__card__label">ギター</div>
+                                        <img src="../img/SP/top/voice04.png"
+                                            srcset="../img/SP/top/voice04.png 1x, ../img/PC/top/voice04@2x.png 2x"
+                                            alt="卒業実績04" class="c-card__img result_details__card__img no-pc">
+                                        <img src="../img/PC/top/voice04.png"
+                                            srcset="../img/PC/top/voice04.png 1x, ../img/PC/top/voice04@2x.png 2x"
+                                            alt="卒業実績04" class="c-card__img result_details__card__img pc">
+                                    </div>
+                                    <div class="c-card__txt-container">
+                                        <h2 class="c-card__title result_details__card__title">
+                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+                                        <p class="c-card__date result_details__card__date">2022.01.01</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pc u-pos-fixed u-bottom-0 u-right-0 js-fixed-btn-pc">
+                        <button class="c-button u-mr-100 u-ml-auto js-go-top">
+                            <img src="./img/icon/to-top.svg" alt="トップへ戻る">
+                        </button>
+                        <button class="c-button--red c-button--mid u-mt-30"
+                            onclick="location.href='./contact_form.html'">お問い合わせ</button>
+                    </div>
+                    <div class="no-pc u-pos-fixed u-l-50 u-bottom-0 js-fixed-btn-no-pc">
+                        <button class="c-button u-ml-auto js-go-top">
+                            <img src="./img/icon/to-top.svg" alt="トップへ戻る">
+                        </button>
+                        <button class="c-button--red c-button--mid u-mt-19"
+                            onclick="location.href='./contact_form.html'">お問い合わせ</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="main-wrapper footer-wrapper">
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="./index.html" class="u-font--white u-font--bold footer__nav__itemlink">ホーム</a></li>
+                    <li><a href="./plan.html" class="u-font--white u-font--bold footer__nav__itemlink">料金</a></li>
+                    <li><a href="./blog_list.html" class="u-font--white u-font--bold footer__nav__itemlink">ブログ</a></li>
+                    <li><a href="./notice_list.html" class="u-font--white u-font--bold footer__nav__itemlink">お知らせ</a>
+                    </li>
+                    <li><a href="./result_list.html" class="u-font--white u-font--bold footer__nav__itemlink">卒業実績</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="../img/icon/footer-logo.svg" alt="footer-logo" class="footer__logo">
+            <small class="copyright u-font--white">
+                Copyright © 2021 KITAMURA music school Inc. All Rights
+            </small>
+            <nav class="footer__sns__nav">
+                <ul>
+                    <li><a href="#"><img src="../img/icon/twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="../img/icon/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="../img/icon/youtube.svg" alt="youtube"></a></li>
+                    <li><a href="#"><img src="../img/icon/instagram.svg" alt="instagram"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
