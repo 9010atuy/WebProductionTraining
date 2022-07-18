@@ -12,15 +12,15 @@
         padding-bottom: 64px;
     }
 }
-.voice__slider{
-    @include mq(){
-        :not(:first-of-type){
-            margin-left: 20px;
-        }
-    }
-}
+// .voice__slider{
+//     @include mq(){
+//         :not(:first-of-type){
+//             margin-left: 20px;
+//         }
+//     }
+// }
 .voice__item{
-    margin-top: 42px;
+    margin: 42px 10px 0;
 }
 .voice__title{
     text-align: center;

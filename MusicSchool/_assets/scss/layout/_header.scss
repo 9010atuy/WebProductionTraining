@@ -10,13 +10,15 @@
     max-width: 1080px;
     height: auto;
     padding-left:rem(20);
+    margin-left: auto;
+    margin-right: auto;
     @include flex();
     @include mq(lg){
         padding: {
-            top: rem(18);
-            right: rem(100);
-            bottom: rem(16);
-            left: rem(100);
+            top: 18px;
+            bottom: 16px;
+            left: 100px;
+            right: 100px;
         };
         @include flex(flex-start,center);
     }

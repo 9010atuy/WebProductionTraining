@@ -42,22 +42,22 @@
     &__img{
         height: 200px;
         @include mq(md){
-           min-height: 350px;
+           max-height: 350px;
         }
     }
     &__title{
         @include l_height(20,30);
         margin-top: 25px;
         @include mq(lg){
-            margin-top: 50px;
-            @include l_height(25,40);
+            margin-top: 19px;
+            @include l_height(20,25);
         }
     }
     &__date{
         text-align: right;
         margin-top: 14px;
         @include mq(lg){
-            margin-top: 20px;
+            margin-top: 11px;
             @include l_height(17,30);
         }
     }

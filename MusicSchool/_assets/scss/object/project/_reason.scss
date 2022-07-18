@@ -56,7 +56,7 @@
     font-weight: bold;
     text-align: left;
     margin-top: 26px;
-    @include mq(){
+    @include mq(lg){
         margin-left: 50px;
         @include l_height(22,33);
         margin-top: 4px;
@@ -78,7 +78,7 @@
     }
 }
 .reason__not-first-title{
-    @include mq(lg){
+    @include mq(){
         margin-top: -6px;
     }
 }
