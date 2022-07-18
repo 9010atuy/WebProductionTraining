@@ -138,7 +138,7 @@
 }
 .result-details__main-card__img{
     @include mq(){
-        width: 880px;
+        max-width: 880px;
         height: 400px;
     }
 }
