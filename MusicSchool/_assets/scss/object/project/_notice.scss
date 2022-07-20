@@ -31,6 +31,7 @@
     @include mq(){
         padding: {
             top: 60px;
+            bottom: 210px;
         }
     }
 }
@@ -55,7 +56,7 @@
     row-gap: 6px;
     @include mq(){
         padding: {
-            top: 14px;
+            top: 13px;
             bottom: 13px;
         }
         flex-direction: row;
@@ -109,7 +110,7 @@
 // 詳細画面
 #notice-detail-main{
     padding-top: 42px;
-    padding-bottom: 190px;
+    padding-bottom: 194px;
     @include mq(){
         padding-top: 63px;
         padding-bottom: 214px;
@@ -118,12 +119,6 @@
         @include mq(){
             margin-top: 23px;
         }
-    }
-}
-.notice-detail__linear-nav{
-    margin-top: 30px;
-    @include mq(){
-        margin-top: 50px;
     }
 }
 .notice-detail__back-link{
@@ -152,7 +147,7 @@
     }
 }
 .notice-detail__linear-nav__list{
-    @include mq(){
+    @include mq(lg){
         column-gap: 200px;
     }
 }

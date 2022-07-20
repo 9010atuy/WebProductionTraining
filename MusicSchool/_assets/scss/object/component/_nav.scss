@@ -15,7 +15,7 @@
     width:100%;
 }
 .c-sns-inner{
-    @include flex();
+    @include flex(center);
     @include mq(){
         @include flex(start);
         column-gap: 3.4px;
