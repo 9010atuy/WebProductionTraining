@@ -15,12 +15,6 @@
     @include flex();
     @include l_height(18,30);
 }
-.search-list__result-message__text{
-    
-}
-.search-list__result-message_count{
-
-}
 .search-list__contents{
     margin-top: 43px;
     @include mq(){
@@ -51,6 +45,9 @@
 }
 .search-list__card__img{
     height: 200px;
+    @include mq(sm){
+        height: auto;
+    }
     @include mq(){
         width: 260px;
         height: 185px;
