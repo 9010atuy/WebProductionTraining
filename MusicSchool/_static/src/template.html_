@@ -79,16 +79,16 @@
                     <li><a href="./result_list.html" class="u-font--white u-font--bold footer__nav__itemlink">卒業実績</a></li>
                 </ul>
             </nav>
-            <img src="../img/icon/footer-logo.svg" alt="footer-logo" class="footer__logo">
+            <img src="./img/icon/footer-logo.svg" alt="footer-logo" class="footer__logo">
             <small class="copyright u-font--white">
                 Copyright © 2021 KITAMURA music school Inc. All Rights
             </small>
             <nav class="footer__sns__nav">
                 <ul>
-                    <li><a href="#"><img src="../img/icon/twitter.svg" alt="twitter"></a></li>
-                    <li><a href="#"><img src="../img/icon/facebook.svg" alt="facebook"></a></li>
-                    <li><a href="#"><img src="../img/icon/youtube.svg" alt="youtube"></a></li>
-                    <li><a href="#"><img src="../img/icon/instagram.svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="./img/icon/twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="./img/icon/youtube.svg" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./img/icon/instagram.svg" alt="instagram"></a></li>
                 </ul>
             </nav>
         </div>
