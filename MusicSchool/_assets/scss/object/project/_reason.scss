@@ -78,7 +78,7 @@
     }
 }
 .reason__not-first-title{
-    @include mq(){
+    @include mq(lg){
         margin-top: -6px;
     }
 }

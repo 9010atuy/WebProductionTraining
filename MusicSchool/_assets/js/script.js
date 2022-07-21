@@ -18,7 +18,7 @@ $(document).ready(function () {
     variableWidth: false,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1000,
         prevArrow:
           '<img src="./img/icon/prev-arrow-pc.svg" class="js-slick-prev">',
         nextArrow:
