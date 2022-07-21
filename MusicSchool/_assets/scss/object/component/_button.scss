@@ -8,6 +8,11 @@
 .c-button--red {
   background-color: v.$red;
   color: #fff;
+  transition: .5s;
+  &:hover{
+    background-color: #fff;
+    color: v.$red;
+  }
 }
 .c-button--small{
   width: 150px;
