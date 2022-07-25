@@ -4,6 +4,7 @@
 @use "./../../foundation/variable" as v;
 
 .js-slick-prev{
+    cursor: pointer;
     position: absolute;
     top: 42.5%;
     left:0;
@@ -13,6 +14,7 @@
     }
 }
 .js-slick-next{
+    cursor: pointer;
     position: absolute;
     top: 42.5%;
     right: 0;

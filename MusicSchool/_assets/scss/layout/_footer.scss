@@ -30,12 +30,11 @@
         }
     }
 }
-.footer__nav__item{
-    @include l_height(17,33);
-}
 .footer__nav__itemlink{
+    @include l_height(17,33);
     &:hover{
         opacity: 0.5;
+        cursor: pointer;
     }
     position: relative;
     display: inline-block;
