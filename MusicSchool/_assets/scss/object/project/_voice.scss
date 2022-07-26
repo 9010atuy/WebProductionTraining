@@ -12,15 +12,11 @@
         padding-bottom: 64px;
     }
 }
-// .voice__slider{
-//     @include mq(){
-//         :not(:first-of-type){
-//             margin-left: 20px;
-//         }
-//     }
-// }
 .voice__item{
     margin: 42px 10px 0;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .voice__title{
     text-align: center;
@@ -38,17 +34,24 @@
     @include l_height(18,30);
     margin-top: 9px;
 }
-.voice__img{
+.voice__img-container{
+    position: relative;
     width: 100%;
-    height: auto;
-    min-height: 200px;
+    &::before{
+        content: "";
+        display: block;
+        padding-top: calc(200 / 335 * 100%);
+    }
+}
+.voice__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    @include mq(){
-        // max-width: 270px;
-        min-height: 190px;
-    }
 }
 .voice01{
     background-image: url(../img/SP/top/voice01.png);
