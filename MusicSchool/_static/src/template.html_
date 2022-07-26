@@ -61,7 +61,7 @@
     <div class="c-hamburger-bg hamburger-trigger">
     </div>
     <section>
-    <div class="no-pc u-pos-fixed u-l-50 u-bottom-0 js-fixed-btn-no-pc">
+    <div class="u-pos-fixed u-l-50 u-bottom-0 js-fixed-btn-no-pc">
             <button class="c-button u-ml-auto js-go-top">
                 <img src="./img/icon/to-top.svg" alt="トップへ戻る">
             </button>

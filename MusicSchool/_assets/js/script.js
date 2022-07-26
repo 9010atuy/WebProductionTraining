@@ -41,13 +41,10 @@ $(document).ready(function () {
 const goTop = $('.js-go-top');
 const displayHeight = $('.js-fv').next().offset().top;
 const footerHeight = $('#footer').innerHeight();
-// FV以外で表示
-$(window).scroll(function () {
-  let fixedBtn = $('.js-fixed-btn-pc');
-  // ウィンドウ幅が1000px以下の場合はターゲット変更
-  if ($(window).width() < 1000) {
-    fixedBtn = $('.js-fixed-btn-no-pc');
-  }
+// FV以外で固定ボタン表示
+let fixedBtn = $('.js-fixed-btn-pc');
+let pcWindowFlg = false;
+const displayFixedBtn = () => {
   // 表示開始要素
   if ($(this).scrollTop() > displayHeight) {
     // 0.3秒でフェードイン
@@ -69,6 +66,29 @@ $(window).scroll(function () {
     fixedBtn.removeClass('u-pos-abs');
     fixedBtn.addClass('u-pos-fixed');
   }
+};
+$(window).resize(function () {
+  if ($(this).scrollTop() > displayHeight) {
+    fixedBtn.hide();
+    if ($(window).width() < 1000) {
+      fixedBtn = $('.js-fixed-btn-no-pc');
+    } else {
+      pcWindowFlg = true;
+      fixedBtn = $('.js-fixed-btn-pc');
+    }
+    fixedBtn.show();
+  }
+});
+$(window).scroll(function () {
+  // ウィンドウ幅が1000px以下の場合はターゲット変更
+  if ($(window).width() < 1000) {
+    pcWindowFlg = false;
+    fixedBtn = $('.js-fixed-btn-no-pc');
+  } else {
+    pcWindowFlg = true;
+    fixedBtn = $('.js-fixed-btn-pc');
+  }
+  displayFixedBtn();
 });
 // ボタンがクリックされたら1秒でページトップへ戻る
 goTop.click(function () {
