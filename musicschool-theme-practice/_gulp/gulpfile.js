@@ -31,7 +31,7 @@ const srcPath = {
   html: srcBase + '/**/*.html',
   php: srcBase + '/**/*.php',
   lib: assetsBase + '/lib/**/*',
-  tmpCss: assetsBase + '/style.css',
+  tmpWpThm: [assetsBase + '/style.css', assetsBase + '/screenshot.png'],
 };
 
 const distPath = {
@@ -42,7 +42,7 @@ const distPath = {
   html: distBase + '/',
   php: distBase + '/',
   lib: distBase + '/lib/',
-  tmpCss: assetsBase + '/',
+  tmpWpThm: distBase + '/',
 };
 
 /**
@@ -170,7 +170,7 @@ const browserSyncFunc = () => {
 };
 
 const browserSyncOption = {
-  // proxy: 'http://localhost:10008/',
+  proxy: 'http://localhost:10008/',
 };
 /**
  * リロード
@@ -180,8 +180,8 @@ const browserSyncReload = done => {
   done();
 };
 
-const tmpCss = () => {
-  return gulp.src(srcPath.tmpCss).pipe(gulp.dest(distPath.tmpCss));
+const tmpWpThm = () => {
+  return gulp.src(srcPath.tmpWpThm).pipe(gulp.dest(distPath.tmpWpThm));
 };
 
 /**
@@ -208,6 +208,6 @@ const watchFiles = () => {
  */
 exports.default = gulp.series(
   clean,
-  gulp.parallel(html, cssSass, js, imgImagemin, php, font, importLib, tmpCss),
+  gulp.parallel(html, cssSass, js, imgImagemin, php, font, importLib, tmpWpThm),
   gulp.parallel(watchFiles, browserSyncFunc)
 );
