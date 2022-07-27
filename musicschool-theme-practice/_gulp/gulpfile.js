@@ -19,9 +19,9 @@ const imageminSvgo = require('imagemin-svgo');
 // 入出力するフォルダを指定
 const srcBase = '../_src';
 const assetsBase = '../_assets';
+// wordpress開発環境へ出力
 const distBase =
-  '/Users/zembayutra/Local Sites/musicschool/app/public/wp-content/themes/gulptest/';
-// '/Users/zembayutra/Local Sites/musicschool/app/public/wp-content/themes/musicschool/';
+  '/Users/zembayutra/Local Sites/musicschool/app/public/wp-content/themes/musicschool/';
 
 const srcPath = {
   scss: assetsBase + '/scss/**/*.scss',
@@ -31,16 +31,18 @@ const srcPath = {
   html: srcBase + '/**/*.html',
   php: srcBase + '/**/*.php',
   lib: assetsBase + '/lib/**/*',
+  tmpCss: assetsBase + '/style.css',
 };
 
 const distPath = {
   css: distBase + '/css/',
   js: distBase + '/js/',
-  img: distBase + '/img/',
+  img: distBase + '/images/',
   font: distBase + '/font/',
   html: distBase + '/',
   php: distBase + '/',
   lib: distBase + '/lib/',
+  tmpCss: assetsBase + '/',
 };
 
 /**
@@ -168,15 +170,18 @@ const browserSyncFunc = () => {
 };
 
 const browserSyncOption = {
-  proxy: 'http://localhost:10008/',
+  // proxy: 'http://localhost:10008/',
 };
-
 /**
  * リロード
  */
 const browserSyncReload = done => {
   browserSync.reload();
   done();
+};
+
+const tmpCss = () => {
+  return gulp.src(srcPath.tmpCss).pipe(gulp.dest(distPath.tmpCss));
 };
 
 /**
@@ -203,6 +208,6 @@ const watchFiles = () => {
  */
 exports.default = gulp.series(
   clean,
-  gulp.parallel(html, cssSass, js, imgImagemin, php, font, importLib),
+  gulp.parallel(html, cssSass, js, imgImagemin, php, font, importLib, tmpCss),
   gulp.parallel(watchFiles, browserSyncFunc)
 );
