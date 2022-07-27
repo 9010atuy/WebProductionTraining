@@ -1,0 +1,54 @@
+.headline--notice {
+    background-image: url(../images/notice/headline-notice-list.png);
+    background-size: cover;
+    background-position: left;
+}
+.notice-list {
+    &__item {
+        align-items: center;
+        border-bottom: 0.5px solid #000;
+        list-style: none;
+        &--top {
+            border-top: 0.5px solid #000;
+        }
+        &-text {
+            display: flex;
+            font-size: 1.7rem;
+            padding: 18.4px 0;
+            color: #000;
+            text-decoration: none;
+        }
+        &--search {
+            border-bottom: none;
+        }
+    }
+    &__time {
+        margin-right: 50px;
+    }
+}
+.content-area-notice-pager {
+    padding: 0 0 210px;
+}
+
+@media screen and (max-width:767px) {
+    .notice-list {
+        &__item {
+            flex-wrap: wrap;
+            &-text {
+                flex-wrap: wrap;
+                letter-spacing: -0.01rem;
+            }
+        }
+        &__time {
+            margin-bottom: 8px;
+            width: 100%;
+        }
+        &__title {
+            font-size: 1.6rem;
+            line-height: 1.8;
+        }
+    }
+    .content-area-notice-pager {
+        padding: 0 0 196px;
+    }
+}
