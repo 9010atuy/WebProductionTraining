@@ -449,6 +449,9 @@
     }
 }
 .blog-detail__main-container{
+    @include mq(){
+        margin-top: 50px;
+    }
     @include mq(lg){
         @include flex(center, flex-start);
         column-gap: 30px;
@@ -459,12 +462,16 @@
 .blog-detail__left{
     @include mq(){
         width: 100%;
+    }
+    @include mq(lg){
         max-width: 600px;
     }
 }
 .blog-detail__right{
     @include mq(){
         width: 100%;
+    }
+    @include mq(lg){
         max-width: 250px;
     }
 }
