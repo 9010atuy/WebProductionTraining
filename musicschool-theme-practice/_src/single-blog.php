@@ -23,9 +23,12 @@
                             <?php the_post_thumbnail('large'); ?>
                         </p>
                         <p class="c-blog-block__tag">
-                            <?php if (has_term('', 'blog_tag', '$post->ID')) : $post_term = get_the_terms($post->ID, 'blog_tag');
+                            <?php
+                            if (has_term('', 'blog_tag', $post->ID)) :
+                                $post_term = get_the_terms($post->ID, 'blog_tag');
                                 echo $post_term[0]->name;
-                            endif; ?>
+                            endif;
+                            ?>
                         </p>
                     </div>
                     <div class="c-article-details-title-area c-article-details-title-area">
@@ -39,89 +42,12 @@
                             </time>
                         </p>
                     </div>
-                    <div class="c-article-details-share">
-                        <a href="" class="c-article-details-share__item c-article-details-share__item--facebook">
-                            <p class="c-article-details-share__icon"><img src="<?php echo get_template_directory_uri(); ?>/images/blog/icon-share-facebook.svg" alt="facebook"></p>
-                            <p class="c-article-details-share__text">Facebook</p>
-                        </a>
-                        <a href="" class="c-article-details-share__item c-article-details-share__item--twitter">
-                            <p class="c-article-details-share__icon"><img src="<?php echo get_template_directory_uri(); ?>/images/blog/icon-share-twitter.svg" alt="twitter"></p>
-                            <p class="c-article-details-share__text">Twitter</p>
-                        </a>
-                        <a href="" class="c-article-details-share__item c-article-details-share__item--hatena">
-                            <p class="c-article-details-share__icon"><img src="<?php echo get_template_directory_uri(); ?>/images/blog/icon-share-hatena.svg" alt="hatena"></p>
-                            <p class="c-article-details-share__text">Hatena</p>
-                        </a>
-                        <a href="" class="c-article-details-share__item c-article-details-share__item--line">
-                            <p class="c-article-details-share__icon"><img src="<?php echo get_template_directory_uri(); ?>/images/blog/icon-share-line.svg" alt="line"></p>
-                            <p class="c-article-details-share__text">LINE</p>
-                        </a>
-                        <a href="" class="c-article-details-share__item c-article-details-share__item--pocket">
-                            <p class="c-article-details-share__icon"><img src="<?php echo get_template_directory_uri(); ?>/images/blog/icon-share-pocket.svg" alt="pocket"></p>
-                            <p class="c-article-details-share__text">Pocket</p>
-                        </a>
-                    </div>
                     <div class="c-article-details-body">
                         <?php the_content(); ?>
                     </div>
                 </div>
-                <div class="c-col-main--arrow">
-                    <a href="" class="c-col-main--arrow-prev c-col-main--arrow-blog">
-                        <p class="c-blog-section-name c-blog-section-name--arrow-prev">◀︎ 前の記事</p>
-                        <div class="c-arrow-block">
-                            <div class="c-arrow-block__img-area">
-                                <p class="c-arrow-block__img"><img srcset="<?php echo get_template_directory_uri(); ?>/images/top/blog03.png 1x, <?php echo get_template_directory_uri(); ?>/images/top/blog03@2x.png 2x" alt=""></p>
-                            </div>
-                            <div class="c-arrow-block__text-area">
-                                <p class="c-arrow-block__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="" class="c-col-main--arrow-next c-col-main--arrow-blog">
-                        <p class="c-blog-section-name c-blog-section-name--arrow-next">次の記事 ▶︎</p>
-                        <div class="c-arrow-block">
-                            <div class="c-arrow-block__img-area">
-                                <p class="c-arrow-block__img"><img srcset="<?php echo get_template_directory_uri(); ?>/images/top/blog03.png 1x, <?php echo get_template_directory_uri(); ?>/images/top/blog03@2x.png 2x" alt=""></p>
-                            </div>
-                            <div class="c-arrow-block__text-area">
-                                <p class="c-arrow-block__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="c-col-main--related">
-                    <p class="c-blog-section-name c-blog-section-name--related">関連記事</p>
-                    <a href="" class="c-blog-block c-blog-block--related ">
-                        <div class="c-blog-block__img-area c-blog-block__img-area--related">
-                            <p class="c-blog-block__img c-blog-block__img--related"><img srcset="<?php echo get_template_directory_uri(); ?>/images/top/blog03.png 1x, <?php echo get_template_directory_uri(); ?>/images/top/blog03@2x.png 2x" alt=""></p>
-                            <p class="c-blog-block__tag">ギター</p>
-                        </div>
-                        <div class="c-blog-block__text-area">
-                            <p class="c-blog-block__title c-blog-block__title--related">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
-                            <p class="c-blog-block__date c-blog-block__date--related"><time datetime="2022-01-01">2022.01.01</time></p>
-                        </div>
-                    </a>
-                    <a href="" class="c-blog-block c-blog-block--related">
-                        <div class="c-blog-block__img-area c-blog-block__img-area--related">
-                            <p class="c-blog-block__img c-blog-block__img--related"><img srcset="<?php echo get_template_directory_uri(); ?>/images/top/blog03.png 1x, <?php echo get_template_directory_uri(); ?>/images/top/blog03@2x.png 2x" alt=""></p>
-                            <p class="c-blog-block__tag">ギター</p>
-                        </div>
-                        <div class="c-blog-block__text-area">
-                            <p class="c-blog-block__title c-blog-block__title--related">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
-                            <p class="c-blog-block__date c-blog-block__date--related"><time datetime="2022-01-01">2022.01.01</time></p>
-                        </div>
-                    </a>
-                    <a href="" class="c-blog-block c-blog-block--related">
-                        <div class="c-blog-block__img-area c-blog-block__img-area--related">
-                            <p class="c-blog-block__img c-blog-block__img--related"><img srcset="<?php echo get_template_directory_uri(); ?>/images/top/blog03.png 1x, <?php echo get_template_directory_uri(); ?>/images/top/blog03@2x.png 2x" alt=""></p>
-                            <p class="c-blog-block__tag">ギター</p>
-                        </div>
-                        <div class="c-blog-block__text-area">
-                            <p class="c-blog-block__title c-blog-block__title--related">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
-                            <p class="c-blog-block__date c-blog-block__date--related"><time datetime="2022-01-01">2022.01.01</time></p>
-                        </div>
-                    </a>
-                </div>
+                <?php get_template_part('./template-parts/single-arrows-area', '', $args = array('image_area' => 'has', 'post_type' => 'blog')); ?>
+                <?php get_template_part('./template-parts/single-related-area', '', $args = array('post_type' => 'blog')); ?>
             </div>
             <?php get_sidebar(); ?>
         </div>
