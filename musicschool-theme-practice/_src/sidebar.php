@@ -59,20 +59,15 @@
     </div>
     <div class="c-blog-section c-blog-section--bottom">
         <p class="c-blog-section-name c-blog-section-name--side ">カテゴリー</p>
-        <div class="c-blog-section__category">
-            <a href="" class="c-blog-section__category-link">カテゴリー</a>
-        </div>
-        <div class="c-blog-section__category">
-            <a href="" class="c-blog-section__category-link">カテゴリー</a>
-        </div>
-        <div class="c-blog-section__category">
-            <a href="" class="c-blog-section__category-link">カテゴリー</a>
-        </div>
-        <div class="c-blog-section__category">
-            <a href="" class="c-blog-section__category-link">カテゴリー</a>
-        </div>
-        <div class="c-blog-section__category">
-            <a href="" class="c-blog-section__category-link">カテゴリー</a>
-        </div>
+        <?php
+        $terms = get_terms('blog_tag');
+        foreach ($terms as $term) :
+        ?>
+            <div class="c-blog-section__category">
+                <a href="<?php echo esc_url(home_url('/blog_tag/' . $term->slug)); ?>" class="c-blog-section__category-link">
+                    <?php echo $term->name; ?>
+                </a>
+            </div>
+        <?php endforeach; ?>
     </div>
 </div>
