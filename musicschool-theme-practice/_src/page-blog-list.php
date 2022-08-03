@@ -1,0 +1,94 @@
+<?php get_header(); ?>
+<?php get_template_part('./template-parts/contact-button.php'); ?>
+
+<div class="c-headline headline--blog-list">
+    <p class="c-headline-text">ブログ</p>
+</div>
+
+<div class="c-breadcrumbs">
+    <div class="c-breadcrumbs-text-area">
+        <a href="index.html" class="c-breadcrumbs-text">ホーム</a>
+        <p class="c-breadcrumbs-sign">&#62;</p>
+        <p class="c-breadcrumbs-text">ブログ</p>
+    </div>
+</div>
+
+<section class="blog-list">
+    <?php
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $args = array(
+        'paged' => $paged,
+        'post_type' => 'blog',
+        'orderby' => 'date',
+        'order' => 'DESC'
+    );
+    $the_query = new WP_Query($args);
+    ?>
+    <div class="content-area">
+        <h2 class="c-head-lower">ブログ一覧</h2>
+        <?php
+        if ($the_query->have_posts()) :
+            while ($the_query->have_posts()) :
+                $the_query->the_post();
+        ?>
+                <a href="<?php echo get_permalink($post->ID); ?>" class="c-blog-block c-blog-block--list">
+                    <div class="c-blog-block__img-area c-blog-block__img-area--list">
+                        <p class="c-blog-block__img c-blog-block__img--list">
+                            <?php
+                            // 現在の投稿のIDを条件にサムネイル画像のIDを取得
+                            $thumbnail_id = get_post_thumbnail_id($post->ID);
+                            // サムネイルIDを条件にサムネイル画像のURLを取得
+                            $thumb_url = wp_get_attachment_image_src($thumbnail_id, 'small');
+                            if (get_post_thumbnail_id($post->ID)) :
+                            ?>
+                                <img srcset="<?php echo $thumb_url[0] ?>" alt="">
+                            <?php endif; ?>
+                        </p>
+                        <p class="c-blog-block__tag">
+                            <?php
+                            $terms = get_the_terms($post->ID, 'blog_tag');
+                            foreach ($terms as $term) :
+                                echo $term->name;
+                            endforeach;
+                            ?>
+                        </p>
+                    </div>
+                    <div class="c-blog-block__text-area">
+                        <p class="c-blog-block__title c-blog-block__title--list">
+                            <?php
+                            if (mb_strlen($post->post_title) > 37) {
+                                $title = mb_substr($post->post_title, 0, 37);
+                                echo $title . '...';
+                            } else {
+                                echo $post->post_title;
+                            }
+                            ?>
+                        </p>
+                        <p class="c-blog-block__date c-blog-block__date--list">
+                            <time datetime="<?php the_time('Y-m-d') ?>">
+                                <?php the_time('Y.m.d') ?>
+                            </time>
+                        </p>
+                        <p class="c-blog-block__text">
+                            <!-- 投稿の概要を取得する -->
+                            <?php echo get_the_excerpt(); ?>
+                        </p>
+                    </div>
+                </a>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
+    </div>
+    <div class="content-area content-area-blog-pager">
+        <div class="c-pager">
+            <?php
+            echo paginate_links(array(
+                'prev_next' => false,
+                'total' => $the_query->max_num_pages,
+                'current' => max(1, get_query_var('paged'))
+            ));
+            ?>
+        </div>
+    </div>
+</section>
+<?php get_footer(); ?>

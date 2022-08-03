@@ -698,7 +698,7 @@
     display: inline-block;
     width: 100%;
     text-align: center;
-    &__item {
+    .page-numbers {
         display: inline-block;
         width: 50px;
         height: 50px;
@@ -711,19 +711,20 @@
         border: 1px solid #000;
         margin-right: 10px;
         margin-bottom: 10px;
-        &--active {
-            color: #fff;
-            background: #000;
-        }
-        &--last {
+        :last-child {
             margin-right: 0;
         }
     }
-    &__leader {
+    .current {
+        color: #fff;
+        background: #000;
+    }
+    .dots {
         display: inline-block;
         font-size: 1.8rem;
         font-weight: bold;
         margin-right: 10px;
+        border: none;
     }
 }
 .c-message-description {
