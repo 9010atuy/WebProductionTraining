@@ -1,18 +1,10 @@
 <?php get_header(); ?>
-<?php get_template_part('./template-parts/contact-button.php'); ?>
+<?php get_template_part('./template-parts/contact-button'); ?>
 
 <div class="c-headline headline--blog-list">
     <p class="c-headline-text">ブログ</p>
 </div>
-
-<div class="c-breadcrumbs">
-    <div class="c-breadcrumbs-text-area">
-        <a href="index.html" class="c-breadcrumbs-text">ホーム</a>
-        <p class="c-breadcrumbs-sign">&#62;</p>
-        <p class="c-breadcrumbs-text">ブログ</p>
-    </div>
-</div>
-
+<?php get_template_part('./template-parts/breadcrumbs'); ?>
 <section class="blog-list">
     <?php
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -79,16 +71,6 @@
             <?php wp_reset_postdata(); ?>
         <?php endif; ?>
     </div>
-    <div class="content-area content-area-blog-pager">
-        <div class="c-pager">
-            <?php
-            echo paginate_links(array(
-                'prev_next' => false,
-                'total' => $the_query->max_num_pages,
-                'current' => max(1, get_query_var('paged'))
-            ));
-            ?>
-        </div>
-    </div>
+    <?php get_template_part('./template-parts/pager', '', $the_query); ?>
 </section>
 <?php get_footer(); ?>
