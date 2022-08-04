@@ -412,9 +412,11 @@
     @include mq(){
         margin-top: -6px;
         overflow: hidden;
-        max-width: 140px;
         width: 100%;
         height: 55px;
+    }
+    @include mq(lg){
+        max-width: 140px;
     }
 }
 #blog-detail__category{
