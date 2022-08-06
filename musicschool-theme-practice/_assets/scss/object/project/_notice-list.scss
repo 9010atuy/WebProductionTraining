@@ -4,6 +4,9 @@
     background-position: left;
 }
 .notice-list {
+    ul{
+        border-top: 0.5px solid #000;
+    }
     &__item {
         align-items: center;
         border-bottom: 0.5px solid #000;
