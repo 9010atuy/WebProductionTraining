@@ -42,3 +42,11 @@ function show_page_number()
     $paged = get_query_var('paged');
     echo $paged;
 }
+
+// 管理画面の「投稿」を非表示にする
+function remove_menus()
+{
+    global $menu;
+    remove_menu_page('edit.php');
+}
+add_action('admin_menu', 'remove_menus');
