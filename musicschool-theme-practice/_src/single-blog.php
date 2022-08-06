@@ -1,17 +1,6 @@
 <?php get_header(); ?>
-<?php get_template_part('template-parts/contact-button'); ?>
-
-<div class="c-breadcrumbs">
-    <div class="c-breadcrumbs-text-area">
-        <a href="index.html" class="c-breadcrumbs-text">ホーム</a>
-        <p class="c-breadcrumbs-sign">&#62;</p>
-        <a href="blog-list.html" class="c-breadcrumbs-text">ブログ</a>
-        <p class="c-breadcrumbs-sign">&#62;</p>
-        <a href="" class="c-breadcrumbs-text">ギター</a>
-        <p class="c-breadcrumbs-sign">&#62;</p>
-        <p class="c-breadcrumbs-text">アルペジオが劇的に向上する３つの習慣</p>
-    </div>
-</div>
+<?php get_template_part('./template-parts/contact-button'); ?>
+<?php get_template_part('./template-parts/breadcrumbs'); ?>
 <?php while (have_posts()) : the_post(); ?>
     <section class="blog-details">
         <div class="content-area content-area--blog-details">
