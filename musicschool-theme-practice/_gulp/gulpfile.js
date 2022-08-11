@@ -41,7 +41,7 @@ const distPath = {
   font: distBase + '/font/',
   html: distBase + '/',
   php: distBase + '/',
-  lib: distBase + '/lib/',
+  lib: distBase + '/',
   tmpWpThm: distBase + '/',
 };
 
