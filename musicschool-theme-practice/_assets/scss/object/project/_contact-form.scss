@@ -138,21 +138,20 @@
         &__input {
             width: 100%;
         }
-        &__textarea {
-            height: 190px;
+        &_check-area__item {
+            font-size: 1.6rem;
         }
-        &-check-area {
+        .wpcf7-form-control-wrap {
             width: 100%;
-            &__item {
-                font-size: 1.6rem;
-                &:not(:last-child) {
-                    margin-bottom: 22px;
-                }
+            &.wpcf7-form-control {
+                width: 100%;
             }
+        }
+        .contact-form-check-area{
+            width: 100%;
         }
     }
     .content-area--contact-form {
-        margin-bottom: 14px;
-        padding: 40px 0;
+        margin-bottom: 60px;
     }
 }

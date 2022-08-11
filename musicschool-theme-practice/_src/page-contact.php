@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php get_template_part('./template-parts/contact-button'); ?>
 <?php get_template_part('./template-parts/breadcrumbs'); ?>
 
 <section class="contact-form c-message">
