@@ -1,4 +1,9 @@
 $(function () {
+  $('body').show();
+});
+$(function () {
+  // header お問い合わせ
+  $('#menu-item-192').addClass('c-button c-button--head');
   //TOP スライダー
   $('.slider').slick({
     infinite: true,

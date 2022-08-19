@@ -50,3 +50,10 @@ function remove_menus()
     remove_menu_page('edit.php');
 }
 add_action('admin_menu', 'remove_menus');
+
+// 管理画面の「外観」に「メニュー」を追加する
+add_action('after_setup_theme', 'register_menu');
+function register_menu()
+{
+    register_nav_menu('primary', __('Primary Menu', 'theme-slug'));
+}

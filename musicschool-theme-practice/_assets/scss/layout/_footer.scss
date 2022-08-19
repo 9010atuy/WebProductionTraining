@@ -12,9 +12,9 @@
             list-style: none;
             justify-content: center;
             margin-bottom: 32px;
-            &__item {
+            .menu-item {
                 margin-right: 35px;
-                &-text {
+                a {
                     color: #fff;
                     font-size: 1.7rem;
                     font-weight: bold;
@@ -55,7 +55,7 @@
             &-list {
                 flex-wrap: wrap;
                 margin-bottom: 10px;
-                &__item {
+                .menu-item {
                     display: inline-block;
                     margin-right: 17px;
                     margin-left: 17px;
