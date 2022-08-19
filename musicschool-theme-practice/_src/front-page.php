@@ -206,18 +206,33 @@
     <section id="info" class="info bg-red">
         <div class="content-area content-area--info">
             <h2 class="c-head-middle c-head-middle--white">お知らせ</h2>
+            <?php
+            $args_notice = array(
+                'posts_per_page' => '3',
+                'post_type' => 'notice',
+                'orderby' => 'date',
+                'order' => 'DESC'
+            );
+            $the_query_notice = new WP_Query($args_notice);
+            ?>
             <ul class="info-list">
-                <li class="info__item">
-                    <a href="<?php echo get_template_directory_uri(); ?>/notice-details.html" class="info__item-text"><time datetime="2022-01-01" class="info__item-time">2022.01.01</time><span class="sp-none">&emsp;</span>卒業生のケニーさんによるyoutubeサムネイル講座が始まります。</a>
-                </li>
-                <li class="info__item">
-                    <a href="<?php echo get_template_directory_uri(); ?>/notice-details.html" class="info__item-text"><time datetime="2022-01-01" class="info__item-time">2022.01.01</time><span class="sp-none">&emsp;</span>専用アプリから予約できるようになりました。</a>
-                </li>
-                <li class="info__item">
-                    <a href="<?php echo get_template_directory_uri(); ?>/notice-details.html" class="info__item-text"><time datetime="2022-01-01" class="info__item-time">2022.01.01</time><span class="sp-none">&emsp;</span>あけましておめでとうございます。</a>
-                </li>
+                <?php
+                if ($the_query_notice->have_posts()) :
+                    while ($the_query_notice->have_posts()) :
+                        $the_query_notice->the_post();
+                ?>
+                        <li class="info__item">
+                            <a href="<?php echo get_permalink($post->ID); ?>" class="info__item-text">
+                                <time datetime="the_time('Y-m-d')" class="info__item-time"><?php the_time('Y.m.d'); ?></time>
+                                <span class="sp-none">&emsp;</span><?php echo get_the_title(); ?>
+                            </a>
+                        </li>
+                <?php
+                    endwhile;
+                endif;
+                ?>
             </ul>
-            <a href="<?php echo get_template_directory_uri(); ?>/notice-list.html" class="info-anchor">お知らせ一覧へ</a>
+            <a href="<?php echo esc_url(home_url('/notice-list')); ?>" class="info-anchor">お知らせ一覧へ</a>
         </div>
     </section>
 
@@ -225,32 +240,69 @@
         <div class="content-area content-area--blog">
             <h2 class="c-head-middle">ブログ</h2>
             <div class="blog-flex-area">
-                <a href="<?php echo get_template_directory_uri(); ?>/blog-details.html" class="c-blog-block c-blog-block--flex">
-                    <div class="c-blog-block__img-area">
-                        <p class="c-blog-block__img"><img srcset="<?php echo get_template_directory_uri(); ?>/images/top/blog03.png 1x, <?php echo get_template_directory_uri(); ?>/images/top/blog03@2x.png 2x" alt=""></p>
-                        <p class="c-blog-block__tag">SNS</p>
-                    </div>
-                    <p class="c-blog-block__title">フォロワーではなくファンを増やせとは？</p>
-                    <p class="c-blog-block__date c-blog-block__date--right"><time datetime="2022-01-01">2022.01.01</time></p>
-                </a>
-                <a href="<?php echo get_template_directory_uri(); ?>/blog-details.html" class="c-blog-block c-blog-block--flex">
-                    <div class="c-blog-block__img-area">
-                        <p class="c-blog-block__img"><img srcset="<?php echo get_template_directory_uri(); ?>/images/top/blog02.png 1x, <?php echo get_template_directory_uri(); ?>/images/top/blog02@2x.png 2x" alt=""></p>
-                        <p class="c-blog-block__tag">集客方法</p>
-                    </div>
-                    <p class="c-blog-block__title">集客してる間は売れないという法則</p>
-                    <p class="c-blog-block__date c-blog-block__date--right"><time datetime="2022-01-01">2022.01.01</time></p>
-                </a>
-                <a href="<?php echo get_template_directory_uri(); ?>/blog-details.html" class="c-blog-block c-blog-block--flex">
-                    <div class="c-blog-block__img-area">
-                        <p class="c-blog-block__img"><img srcset="<?php echo get_template_directory_uri(); ?>/images/top/blog01.png 1x, <?php echo get_template_directory_uri(); ?>/images/top/blog01@2x.png 2x" alt=""></p>
-                        <p class="c-blog-block__tag">ギター</p>
-                    </div>
-                    <p class="c-blog-block__title">アルペジオが劇的に向上する3つの習慣</p>
-                    <p class="c-blog-block__date c-blog-block__date--right"><time datetime="2022-01-01">2022.01.01</time></p>
-                </a>
+                <?php
+                $args_blog = array(
+                    'posts_per_page' => 3,
+                    'post_type' => 'blog',
+                    'taxonomy' => 'blog_recommend',
+                    'term' => 'on',
+                    'orderby' => 'date',
+                    'order' => 'DESC'
+                );
+                $the_query_blog = new WP_Query($args_blog);
+                ?>
+                <?php
+                if ($the_query_blog->have_posts()) :
+                    while ($the_query_blog->have_posts()) :
+                        $the_query_blog->the_post();
+                ?>
+                        <a href="<?php echo get_permalink($post->ID); ?>" class="c-blog-block c-blog-block--flex">
+                            <div class="c-blog-block__img-area">
+                                <p class="c-blog-block__img c-blog-block__img--front">
+                                    <?php
+                                    $thumbnail_id = get_post_thumbnail_id($post->ID);
+                                    $thumb_url = wp_get_attachment_image_src($thumbnail_id);
+                                    if (get_post_thumbnail_id($post->ID)) :
+                                    ?>
+                                        <img src="<?php echo $thumb_url[0]; ?>" alt="">
+                                    <?php endif; ?>
+                                </p>
+                                <p class="c-blog-block__tag">
+                                    <?php
+                                    $terms = get_the_terms($post->ID, 'blog_tag');
+                                    foreach ($terms as $term) :
+                                        echo $term->name;
+                                    endforeach;
+                                    ?>
+                                </p>
+                            </div>
+                            <p class="c-blog-block__title">
+                                <?php
+                                if (!is_mobile()) :
+                                    if (mb_strlen($post->post_title) > 19) {
+                                        $title = mb_substr($post->post_title, 0, 19);
+                                        echo $title . '...';
+                                    } else {
+                                        echo $post->post_title;
+                                    }
+                                else :
+                                    if (mb_strlen($post->post_title) > 35) {
+                                        $title = mb_substr($post->post_title, 0, 35);
+                                        echo $title . '...';
+                                    } else {
+                                        echo $post->post_title;
+                                    }
+                                endif;
+                                ?>
+                            </p>
+                            <p class="c-blog-block__date c-blog-block__date--right"><time datetime="the_time('Y-m-d')"><?php the_time('Y.m.d'); ?></time></p>
+                        </a>
+                <?php
+                    endwhile;
+                endif;
+                ?>
             </div>
-            <a href="<?php echo get_template_directory_uri(); ?>/blog-list.html" class="blog-anchor">ブログ一覧へ</a>
+            <a href="<?php echo esc_url(home_url('/blog-list')); ?>" class="blog-anchor">ブログ一覧へ</a>
         </div>
     </section>
 
