@@ -1,0 +1,84 @@
+/* l-footer
+--------------------------- */
+@use "./../foundation/system" as *;
+@use "./../foundation/variable" as v;
+
+#footer{
+    background-color: v.$red;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include mq(){
+        padding-top: 49.5px;
+        padding-bottom: 47px;
+    }
+}
+.footer__nav{
+    ul{
+        @include flex(center);
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 18px;
+        padding: {
+            left:50px;
+            right:50px;
+        }
+        letter-spacing: 0.05em;
+        @include mq(){
+            @include flex(center);
+            column-gap: 33px;
+            row-gap: 4px;
+        }
+    }
+}
+.footer__nav__itemlink{
+    @include l_height(17,33);
+    &:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    &::after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .5s;
+    }
+    &:hover::after {
+        transform: scale(1, 1);
+    }
+}
+.footer__logo{
+    display: block;
+    margin: {
+        top: 29px;
+        right: auto;
+        left: auto;
+    };
+    @include mq(){
+        margin-top: 30px;
+    }
+}
+.copyright{
+    display: block;
+    @include l_height(15,20);
+    text-align: center;
+    margin-top: 27px;
+}
+.footer__sns__nav{
+    ul{
+        @include flex(center);
+        column-gap: 12px;
+        margin-top: 18px;
+        @include mq(){
+            margin-top: 9px;
+        }
+    }
+}

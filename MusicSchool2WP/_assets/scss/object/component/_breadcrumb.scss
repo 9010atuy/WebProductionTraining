@@ -1,0 +1,35 @@
+/* c-breadcrumb
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.c-breadcrumb{
+    width: 100%;
+    background-color: #E8E8E8;
+    font-size: rem(16);
+    line-height: 1.35;
+    padding: {
+        top: 8px;
+        bottom: 8px;
+    }
+    @include mq(){
+        padding: {
+            top: 14px;
+            bottom: 14px;
+        }
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        li:not(:last-child)::after{
+            content: '>';
+            margin-left: 16px;
+            margin-right: 21px;
+        }
+        li{
+            a{
+                display: inline-block;
+            }
+        }
+    }
+}

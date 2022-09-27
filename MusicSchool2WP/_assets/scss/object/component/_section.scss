@@ -1,0 +1,38 @@
+/* title
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.c-title{
+    @include l_height(25,40);
+    text-align: center;
+    font-weight: bold;
+    @include mq(){
+        @include l_height(30,50);
+    }
+}
+.c-sub-page-title{
+    @include l_height(25,40);
+    text-align: center;
+    font-weight: bold;
+    @include mq(){
+        @include l_height(25,43);
+    }
+}
+.c-section__title{
+    background-color: #000;
+    color: #fff;
+    @include l_height(18,30);
+    padding: {
+        top: 10px;
+        bottom: 10px;
+    }
+    text-align: center;
+    @include mq(){
+        @include l_height(18,33);
+        padding: {
+            top: 9px;
+            bottom: 9px;
+        }
+    }
+}

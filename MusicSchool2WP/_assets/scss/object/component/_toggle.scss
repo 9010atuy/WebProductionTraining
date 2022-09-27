@@ -1,0 +1,26 @@
+/* c-******
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.c-accordion-toggle{
+    position: relative;
+    &::after{
+        content: '';
+        border-top: 1px #000 solid;
+        border-right: 1px #000 solid;
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        right: 14px;
+        transform: rotate(135deg);
+        transition: .2s;
+        @include mq(){
+            right: 29px;
+        }
+    }
+    &.active::after{
+        top:50%;
+        transform: rotate(-45deg);
+    }
+}

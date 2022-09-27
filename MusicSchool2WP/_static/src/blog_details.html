@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”robots” content=”noindex”>
+    <!-- ogp -->
+    <meta property="og:type" content="website">
+    <title>きたむらミュージックスクール | ブログ</title>
+    <meta name="description" content="きたむらミュージックスクールのデモサイトです">
+    <meta property="og:title" content="きたむらミュージックスクール">
+    <meta property="og:description" content="きたむらミュージックスクールのデモサイトです">
+
+    <!-- ogp-image -->
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- css -->
+    <link rel="stylesheet" href="./lib/slick.css">
+    <link rel="stylesheet" href="./lib/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html">
+            <div class="header__logo-title">
+                <img src="./img/icon/logo.svg" alt="logo" class="logo">
+                <p class="site-title">
+                    <span class="header__logo-title--text-decoration">きたむら</span>ミュージックスクール
+                </p>
+            </div>
+        </a>
+        <div class="c-hamburger hamburger-trigger no-pc">
+            <span></span>
+        </div>
+        <nav class="c-nav pc header__nav">
+            <ul class="c-nav-list">
+                <li><a href="./plan.html" class="c-nav-itemlink">料金</a></li>
+                <li><a href="./blog_list.html" class="c-nav-itemlink">ブログ</a></li>
+                <li><a href="./notice_list.html" class="c-nav-itemlink">お知らせ</a></li>
+                <li><a href="./result_list.html" class="c-nav-itemlink">卒業実績</a></li>
+            </ul>
+        </nav>
+        <button class="pc c-button c-button--red c-button--small header__button"
+            onclick="location.href='./contact_form.html'">
+            お問い合わせ
+        </button>
+    </header>
+    <div class="c-hamburger-menu">
+        <nav class="hamburger-nav">
+            <ul class="hamburger-list">
+                <li><a href="./plan.html" class="c-hamburger-item hamburger-trigger">料金</a></li>
+                <li><a href="./blog_list.html" class="c-hamburger-item hamburger-trigger">ブログ</a></li>
+                <li><a href="./notice_list.html" class="c-hamburger-item hamburger-trigger">お知らせ</a></li>
+                <li><a href="./result_list.html" class="c-hamburger-item hamburger-trigger">卒業実績</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="c-hamburger-bg hamburger-trigger">
+    </div>
+    <nav class="c-breadcrumb">
+        <div class="main-wrapper">
+            <ul>
+                <li>
+                    <a href="./index.html">ホーム</a>
+                </li>
+                <li>
+                    <a href="./blog_list.html">ブログ</a>
+                </li>
+                <li>
+                    <a href="#">ギター</a>
+                </li>
+                <li>
+                    <a href="#">アルペジオが劇的に向上する３つの習慣</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-wrapper">
+        <div class="blog-detail__main-container">
+            <div class="blog-detail__left">
+                <section id="blog-detail-main" class="js-fv">
+                    <!-- カード -->
+                    <div class="c-card blog-detail__card">
+                        <a href="#">
+                            <div class="c-card__img-container">
+                                <div class="c-card__label blog__card__label">ギター</div>
+                                <img src="./img/SP/top/blog01.png"
+                                    srcset="./img/SP/top/blog01.png 1x, ./img/PC/top/blog01@2x.png 2x" alt="ブログ画像01"
+                                    class="c-card__img blog-detail__main-card__img no-pc">
+                                <img src="./img/PC/top/blog01.png"
+                                    srcset="./img/PC/top/blog01.png 1x, ./img/PC/top/blog01@2x.png 2x" alt="ブログ画像01"
+                                    class="c-card__img blog-detail__main-card__img pc">
+                            </div>
+                            <h1 class="c-card__title blog-detail__main-card__title">アルペジオが劇的に向上する3つの習慣</h1>
+                            <p class="c-card__date blog-detail__main-card__date">2022.01.01</p>
+                        </a>
+                    </div>
+                    <!-- SNSリンク -->
+                    <nav class="c-sns-nav blog-detail__sns-nav">
+                        <ul class="c-sns-inner">
+                            <li><a href="#" class="c-sns-link">
+                                    <img src="./img/icon/sp-blog-facebook.svg" alt="facebook" class="no-pc">
+                                    <img src="./img/icon/pc-blog-facebook.svg" alt="facebook" class="pc">
+                                </a>
+                            </li>
+                            <li><a href="#" class="c-sns-link">
+                                    <img src="./img/icon/sp-blog-twitter.svg" alt="twitter" class="no-pc">
+                                    <img src="./img/icon/pc-blog-twitter.svg" alt="twitter" class="pc">
+                                </a>
+                            </li>
+                            <li><a href="#" class="c-sns-link">
+                                    <img src="./img/icon/sp-blog-hatena.svg" alt="hatena" class="no-pc">
+                                    <img src="./img/icon/pc-blog-hatena.svg" alt="hatena" class="pc">
+                                </a>
+                            </li>
+                            <li><a href="#" class="c-sns-link">
+                                    <img src="./img/icon/sp-blog-line.svg" alt="line" class="no-pc">
+                                    <img src="./img/icon/pc-blog-line.svg" alt="line" class="pc">
+                                </a>
+                            </li>
+                            <li><a href="#" class="c-sns-link">
+                                    <img src="./img/icon/sp-blog-pocket.svg" alt="pocket" class="no-pc">
+                                    <img src="./img/icon/pc-blog-pocket.svg" alt="pocket" class="pc">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- 導入 -->
+                    <div class="c-detail__introduction blog-detail__introduction">
+                        <p>
+                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                        </p>
+                    </div>
+                    <!-- H2（本文） -->
+                    <div class="c-detail__main blog-detail__main">
+                        <h2>H2見出しが入ります。H2見出しが入ります。</h2>
+                        <p>
+                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                        </p>
+                        <img src="./img/SP/blog/choice01.png" class="no-pc" alt="声1"
+                            srcset="./img/SP/blog/choice01.png 1x, ./img/SP/blog/choice01@2x.png 2x">
+                        <img src="./img/PC/blog/choice01.png" class="pc" alt="声1"
+                            srcset="./img/PC/blog/choice01.png 1x, ./img/PC/blog/choice01@2x.png 2x">
+                        <ul>
+                            <li>リストが入ります</li>
+                            <li>リストが入ります</li>
+                            <li>リストが入ります</li>
+                        </ul>
+                    </div>
+                    <!-- H3（まとめ）-->
+                    <div class="c-detail__summary blog-detail__summary">
+                        <h3>H3見出しが入ります。H3見出しが入ります。</h3>
+                        <div class="c-detail__quote">
+                            <img src="./img/icon/quote.svg" alt="quote" class="c-detail__quote__icon">
+                            <p class="c-detail__quote__text">
+                                本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+                        </div>
+                        <a href="#" class="c-detail__back-link blog-detail__back-link">テキストリンク</a>
+                    </div>
+                </section>
+                <!-- 前の記事・次の記事 -->
+                <nav class="c-linear-nav blog-detail__linear-nav">
+                    <ul class="c-linear-nav__list">
+                        <li>
+                            <a href="#" class="c-linear-nav__link-item">
+                                <div class="c-linear-nav__item">
+                                    <div class="c-linear-nav__item__label c-linear-nav__prev__label">◀︎ 前の記事</div>
+                                    <div class="c-linear-nav__card">
+                                        <img class="c-linear-nav__item__img pc" src="./img/PC/blog/blog01.png"
+                                            srcset="./img/PC/blog/blog01.png 1x, ./img/PC/blog/blog01@2x.png 2x"
+                                            alt="前の記事">
+                                        <div class="c-linear-nav__item__title">タイトルが入ります。タイトルが入ります。タイトルが入</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="c-linear-nav__link-item">
+                                <div class="c-linear-nav__item">
+                                    <div class="c-linear-nav__item__label c-linear-nav__next__label">次の記事 ▶︎</div>
+                                    <div class="c-linear-nav__card">
+                                        <img class="c-linear-nav__item__img pc" src="./img/PC/blog/blog01.png"
+                                            srcset="./img/PC/blog/blog01.png 1x, ./img/PC/blog/blog01@2x.png 2x"
+                                            alt="次の記事">
+                                        <div class="c-linear-nav__item__title">タイトルが入ります。タイトルが入ります。タイトルが入</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 関連記事 -->
+                <section id="blog-detail__rel-article">
+                    <h2 class="c-section__title blog-detail__rel-article__title">
+                        関連記事
+                    </h2>
+                    <div class="c-card-list">
+                        <div class="c-card blog-detail__rel-card">
+                            <a href="#">
+                                <div class="c-card-flex blog-detail__card--flex">
+                                    <div class="c-card__img-container">
+                                        <div class="c-card__label blog-detail__card__label">ギター</div>
+                                        <img src="./img/SP/top/blog03.png"
+                                            srcset="./img/SP/top/blog03.png 1x, ./img/PC/top/blog03@2x.png 2x"
+                                            alt="ブログ画像03" class="c-card__img blog-detail__card__img no-pc">
+                                        <img src="./img/PC/top/blog03.png"
+                                            srcset="./img/PC/top/blog03.png 1x, ./img/PC/top/blog03@2x.png 2x"
+                                            alt="ブログ画像03" class="c-card__img blog-detail__card__img pc">
+                                    </div>
+                                    <div class="c-card__txt-container">
+                                        <h2 class="c-card__title blog-detail__card__title">
+                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+                                        <p class="c-card__date blog-detail__card__date">2022.01.01</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="c-card blog-detail__rel-card">
+                            <a href="#">
+                                <div class="c-card-flex blog-detail__card--flex">
+                                    <div class="c-card__img-container">
+                                        <div class="c-card__label blog-detail__card__label">ギター</div>
+                                        <img src="./img/SP/top/blog03.png"
+                                            srcset="./img/SP/top/blog03.png 1x, ./img/PC/top/blog03@2x.png 2x"
+                                            alt="ブログ画像03" class="c-card__img blog-detail__card__img no-pc">
+                                        <img src="./img/PC/top/blog03.png"
+                                            srcset="./img/PC/top/blog03.png 1x, ./img/PC/top/blog03@2x.png 2x"
+                                            alt="ブログ画像03" class="c-card__img blog-detail__card__img pc">
+                                    </div>
+                                    <div class="c-card__txt-container">
+                                        <h2 class="c-card__title blog-detail__card__title">
+                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+                                        <p class="c-card__date blog-detail__card__date">2022.01.01</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="c-card blog-detail__rel-card">
+                            <a href="#">
+                                <div class="c-card-flex blog-detail__card--flex">
+                                    <div class="c-card__img-container">
+                                        <div class="c-card__label blog-detail__card__label">ギター</div>
+                                        <img src="./img/SP/top/blog03.png"
+                                            srcset="./img/SP/top/blog03.png 1x, ./img/PC/top/blog03@2x.png 2x"
+                                            alt="ブログ画像03" class="c-card__img blog-detail__card__img no-pc">
+                                        <img src="./img/PC/top/blog03.png"
+                                            srcset="./img/PC/top/blog03.png 1x, ./img/PC/top/blog03@2x.png 2x"
+                                            alt="ブログ画像03" class="c-card__img blog-detail__card__img pc">
+                                    </div>
+                                    <div class="c-card__txt-container">
+                                        <h2 class="c-card__title blog-detail__card__title">
+                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+                                        <p class="c-card__date blog-detail__card__date">2022.01.01</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="blog-detail__right">
+                <!-- 無料メールマガジン -->
+                <section id="blog-detail__ad">
+                    <h2 class="c-section__title">
+                        無料メールマガジン
+                    </h2>
+                    <div class="blog-detail__ad__content">
+                        バナー広告
+                    </div>
+                </section>
+                <!-- ブログ内を検索 -->
+                <section id="blog-detail__search">
+                    <h2 class="c-section__title">
+                        ブログ内を検索
+                    </h2>
+                    <div class="blog-detail__search-field">
+                        <input type="text" name="blog-detail__search-input" id="blog-detail__search-input"
+                            class="blog-detail__search-input">
+                        <input type="image" src="./img/icon/search.svg" alt="search"
+                            onclick="location.href='./search.html'">
+                    </div>
+                </section>
+                <!-- おすすめの記事 -->
+                <section id="blog-detail__recommend">
+                    <h2 class="c-section__title">
+                        おすすめの記事
+                    </h2>
+                    <div class="blog-detail__recommend__articles">
+                        <div class="blog-detail__recommend__article">
+                            <div class="blog-detail__recommend__article__img"></div>
+                            <div class="blog-detail__recommend__article__title">タイトルが入ります。タイトル</div>
+                        </div>
+                        <div class="blog-detail__recommend__article">
+                            <div class="blog-detail__recommend__article__img"></div>
+                            <div class="blog-detail__recommend__article__title">タイトルが入ります。タイトル</div>
+                        </div>
+                        <div class="blog-detail__recommend__article">
+                            <div class="blog-detail__recommend__article__img"></div>
+                            <div class="blog-detail__recommend__article__title">タイトルが入ります。タイトル</div>
+                        </div>
+                    </div>
+                </section>
+                <!-- カテゴリー -->
+                <section id="blog-detail__category">
+                    <h2 class="c-section__title">
+                        カテゴリー
+                    </h2>
+                    <ul class="blog-detail__category__contents">
+                        <li>
+                            <a href="#" class="blog-detail__category__link">
+                                カテゴリー
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="blog-detail__category__link">
+                                カテゴリー
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="blog-detail__category__link">
+                                カテゴリー
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="blog-detail__category__link">
+                                カテゴリー
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="blog-detail__category__link">
+                                カテゴリー
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="u-pos-fixed u-bottom-0 u-right-0 js-fixed-btn-pc">
+                        <button class="c-button u-mr-100 u-ml-auto js-go-top">
+                            <img src="./img/icon/to-top.svg" alt="トップへ戻る">
+                        </button>
+                        <button class="c-button--red c-button--mid u-mt-30"
+                            onclick="location.href='./contact_form.html'">お問い合わせ</button>
+                    </div>
+                    <div class="u-pos-fixed u-l-50 u-bottom-0 js-fixed-btn-no-pc">
+                        <button class="c-button u-ml-auto js-go-top">
+                            <img src="./img/icon/to-top.svg" alt="トップへ戻る">
+                        </button>
+                        <button class="c-button--red c-button--mid u-mt-19"
+                            onclick="location.href='./contact_form.html'">お問い合わせ</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="main-wrapper footer-wrapper">
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="./index.html" class="u-font--white u-font--bold footer__nav__itemlink">ホーム</a></li>
+                    <li><a href="./plan.html" class="u-font--white u-font--bold footer__nav__itemlink">料金</a></li>
+                    <li><a href="./blog_list.html" class="u-font--white u-font--bold footer__nav__itemlink">ブログ</a>
+                    </li>
+                    <li><a href="./notice_list.html" class="u-font--white u-font--bold footer__nav__itemlink">お知らせ</a>
+                    </li>
+                    <li><a href="./result_list.html" class="u-font--white u-font--bold footer__nav__itemlink">卒業実績</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="./img/icon/footer-logo.svg" alt="footer-logo" class="footer__logo">
+            <small class="copyright u-font--white">
+                Copyright © 2021 KITAMURA music school Inc. All Rights
+            </small>
+            <nav class="footer__sns__nav">
+                <ul>
+                    <li><a href="#"><img src="./img/icon/twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="./img/icon/youtube.svg" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./img/icon/instagram.svg" alt="instagram"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

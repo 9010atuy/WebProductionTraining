@@ -1,0 +1,57 @@
+/* p-news
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#news{
+    background-color: v.$red;
+    padding-top: 43px;
+    padding-bottom: 46.5px;
+    @include mq(lg){
+        padding-top: 60px;
+        padding-bottom: 69px;
+    }
+}
+.news__table{
+    width: 100%;
+    margin-top: 39px;
+    @include mq(lg){
+        margin-top: 15px;
+    }
+    tbody{
+        tr{
+            td{
+                display: block;
+                @include mq(lg){
+                    display: table-cell;
+                }
+            }
+        }
+    }
+}
+.news__date{
+    @include l_height(17,25);
+    height: 25px;
+    @include mq(lg){
+        @include l_height(18,30);
+        width: 12.5%;
+        height: 37px;
+        text-decoration: underline;
+    }
+}
+.news__text{
+    @include l_height(17,30);
+    text-decoration: underline;
+    margin-bottom: 42px;
+    @include mq(lg){
+        @include l_height(18,30);
+    }
+}
+.news__forward{
+    text-align: center;
+    text-decoration: underline;
+    @include l_height(18,30);
+    @include mq(lg){
+        text-align: right;
+    }
+}

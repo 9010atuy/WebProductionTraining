@@ -1,0 +1,87 @@
+/* voice
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#voice{
+    background-color: v.$red;
+    padding-top: 43px;
+    padding-bottom: 54px;
+    @include mq(){
+        padding-top: 59px;
+        padding-bottom: 64px;
+    }
+}
+.voice__item{
+    margin: 42px 10px 0;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.voice__title{
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    @include l_height(22,33);
+    margin-top: 24px;
+    @include mq(){
+        margin-top: 13px;
+    }
+}
+.voice__text{
+    width: 100%;
+    font-weight: 100;
+    @include l_height(18,30);
+    margin-top: 9px;
+}
+.voice__img-container{
+    position: relative;
+    width: 100%;
+    &::before{
+        content: "";
+        display: block;
+        padding-top: calc(200 / 335 * 100%);
+    }
+}
+.voice__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.voice01{
+    background-image: url(../img/SP/top/voice01.png);
+    background-image: image-set(url(../img/SP/top/voice01.png) 1x, url(../img/SP/top/voice01@2x.png) 2x);
+    @include mq(){
+        background-image: url(../img/PC/top/voice01.png);
+        background-image: image-set(url(../img/PC/top/voice01.png) 1x, url(../img/PC/top/voice01@2x.png) 2x);
+    }
+}
+.voice02{
+    background-image: url(../img/SP/top/voice02.png);
+    background-image: image-set(url(../img/SP/top/voice02.png) 1x, url(../img/SP/top/voice02@2x.png) 2x);
+    @include mq(){
+        background-image: url(../img/PC/top/voice02.png);
+        background-image: image-set(url(../img/PC/top/voice02.png) 1x, url(../img/PC/top/voice02@2x.png) 2x);
+    }
+}
+.voice03{
+    background-image: url(../img/SP/top/voice03.png);
+    background-image: image-set(url(../img/SP/top/voice03.png) 1x, url(../img/SP/top/voice03@2x.png) 2x);
+    @include mq(){
+        background-image: url(../img/PC/top/voice03.png);
+        background-image: image-set(url(../img/PC/top/voice03.png) 1x, url(../img/PC/top/voice03@2x.png) 2x);
+    }
+}
+.voice04{
+    background-image: url(../img/SP/top/voice04.png);
+    background-image: image-set(url(../img/SP/top/voice04.png) 1x, url(../img/SP/top/voice04@2x.png) 2x);
+    @include mq(){
+        background-image: url(../img/PC/top/voice04.png);
+        background-image: image-set(url(../img/PC/top/voice04.png) 1x, url(../img/PC/top/voice04@2x.png) 2x);
+    }
+}

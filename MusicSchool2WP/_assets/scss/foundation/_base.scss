@@ -1,0 +1,29 @@
+/* base
+--------------------------- */
+@use "./system" as *;
+
+body{
+    font-family: "YuGothic","Yu Gothic","メイリオ","MS Pゴシック", sans-serif;
+}
+a {
+    cursor: pointer;
+    display: block;
+}
+.pc {
+    display: none;
+    @include mq(lg){
+        display:block;
+    }
+}
+.no-pc {
+    display: block;
+    @include mq(lg){
+        display: none;
+    }
+}
+li {
+    list-style: none;
+}
+button {
+    display: block;
+}

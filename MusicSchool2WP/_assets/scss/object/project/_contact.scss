@@ -1,0 +1,189 @@
+/* p-contact
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+
+.contact-form__fv-img{
+    background-image: url(../img/SP/contact/FV.png);
+    background-image: image-set(
+        url(../img/SP/contact/FV.png) 1x,
+        url(../img/SP/contact/FV@2x.png) 2x
+      );
+    height: 300px;
+    @include mq(){
+        background-image: url(../img/PC/contact/FV.png);
+        background-image: image-set(
+            url(../img/PC/contact/FV.png) 1x,
+            url(../img/PC/contact/FV@2x.png) 2x
+        );
+        height: 200px;
+    }
+    background-position: top;
+}
+#contact-form{
+    padding: {
+        top: 42px;
+        bottom: 110px;
+    }
+    @include mq(){
+        padding: {
+            top: 63px;
+            bottom: 98px;
+        }
+    }
+}
+.contact-form__message{
+    @include l_height(25,60);
+}
+.contact-form__desc{
+    @include l_height(16,30);
+    @include mq(){
+        @include l_height(18,30);
+        text-align: center;
+    }
+}
+.contact-form__main{
+    margin-top: 34px;
+    @include mq(){
+        margin-top: 70px;
+    }
+}
+.contact-form__field--text{
+    @include flex(start,flex-start);
+    flex-direction: column;
+    row-gap: 4px;
+    @include mq(){
+        @include flex(start, center);
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 27px;
+    }
+    &:not(:first-of-type){
+        margin-top: 10px;
+        @include mq(){
+            margin-top: 28.5px;
+        }
+    }
+}
+.contact-form__field--check{
+    @include flex(start,flex-start);
+    flex-direction: column;
+    row-gap: 0;
+    margin-top: 2px;
+    @include mq(){
+        flex-direction: row;
+        row-gap: 0;
+        margin-top: 25px;
+        column-gap: 27px;
+    }
+}
+.contact-form__field--textarea{
+    @include flex(start,flex-start);
+    flex-direction: column;
+    row-gap: 4px;
+    margin-top: 3px;
+    @include mq(){
+        flex-direction: row;
+        row-gap: 0;
+        margin-top: 25px;
+        column-gap: 27px;
+    }
+}
+.contact-form__label{
+    @include l_height(16,33);
+    width: 100%;
+    @include mq(){
+        @include l_height(20,33);
+        width: 20%;
+    }
+}
+.contact-form__input{
+    @include l_height(15,33);
+    padding: {
+        top: 3.5px;
+        bottom: 3.5px;
+        left: 20px;
+    }
+    @include mq(){
+        @include l_height(15,33);
+    }
+}
+.contact-form__checkbox-field{
+    @include flex();
+    &:not(:first-of-type){
+        margin-top: 9.5px;
+        @include mq(){
+            margin-top: 9.5px;   
+        }
+    }
+}
+.contact-form__button{
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    @include l_height(20,26);
+    @include mq(){
+        @include l_height(25,33);
+        margin-top: 50px;
+        width: 250px;
+    }
+}
+.contact-form__type-check{
+    margin-top: 8px;
+    @include mq(){
+        margin-top: 0;
+        @include l_height(20,30);
+        span{
+            letter-spacing: 1em;
+        }
+    }
+}
+.contact-form__field--check__inner{
+    width: 100%;
+}
+.contact-form__remark-label{
+    margin-top: 4px;
+    @include mq(){
+        margin-top: 4px;
+    }
+}
+.contact-form__remark-textarea{
+    margin-top: -1px;
+    @include mq(){
+        margin-top: 6px;
+    }
+}
+// 送信完了
+#contact-send{
+    padding-top: 42px;
+    padding-bottom: 50px;
+    @include mq(){
+        padding-top: 64px;
+        padding-bottom: 90px;
+    }
+}
+.contact-send__desc{
+    @include l_height(16,30);
+    @include mq(){
+        @include l_height(18,30);
+        text-align: center;
+    }
+}
+.contact-send__button{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 42px;
+    @include l_height(20,26);
+    @include mq(){
+        width: 250px;
+        margin-top: 44px;
+        @include l_height(25,33);
+    }
+}

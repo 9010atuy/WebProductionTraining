@@ -1,0 +1,28 @@
+/* js-slider
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.js-slick-prev{
+    cursor: pointer;
+    position: absolute;
+    top: 42.5%;
+    left:0;
+    z-index: 1;
+    @include mq(){
+        left: -5%;
+    }
+}
+.js-slick-next{
+    cursor: pointer;
+    position: absolute;
+    top: 42.5%;
+    right: 0;
+    z-index: 1;
+    @include mq(){
+        right: -5%;
+    }
+}
+.slick-slide{
+    width:270px;
+}

@@ -1,0 +1,31 @@
+@use "../../foundation/system" as *;
+@use "../../foundation/variable" as v;
+
+.c-button {
+  cursor: pointer;
+  vertical-align: middle;
+}
+.c-button--red {
+  background-color: v.$red;
+  color: #fff;
+  transition: .5s;
+  &:hover{
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,0.5),0 0 5px rgba(0,0,0,0.2);
+    transform: translateY(-4px);
+  }
+}
+.c-button--small{
+  width: 150px;
+  padding: 14.2px 30px;
+  font-size: rem(15);
+}
+.c-button--mid{
+  width: 335px;
+  @include mq(lg){
+    width: 300px;
+  }
+  height: 60px;
+  @include l_height(20,33);
+  @include l_spacing(200);
+  text-align: center;
+}

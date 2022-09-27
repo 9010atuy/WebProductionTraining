@@ -1,0 +1,87 @@
+/* about
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+#about{
+    padding-top: 42px;
+    @include mq(){
+        padding-top: 63px;
+    }
+}
+.about__message{
+    @include l_height(18,30);
+    margin-top: 7px;
+    margin-bottom: 24px;
+    @include mq(){
+        margin-top: 16px;
+        margin-bottom: 38px;
+        text-align: center;
+    }
+}
+.about__vision{
+    @include l_height(20,50);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    position: relative;
+    @include mq(){
+        @include l_height(25,50);
+        margin-top: 10px;
+        margin-bottom: 42px;
+    }
+}
+.about-semicircle-icon{
+    margin: 0 auto;
+}
+.about-table{
+    width: 100%;
+}
+.about-table-col1{
+    width: 35%;
+    text-align: right;
+    height: 72px;
+    line-height: 72px;
+}
+.about-table-col2{
+    width: 17.5%;
+}
+.about-table-col3{
+    width: 35%;
+    text-align: left;
+    height: 72px;
+    line-height: 72px;
+}
+.about-vision-icon__arrow{
+    @include center(xy);
+    top:40%;
+}
+.about-vision-icon__circle{
+    @include center(xy);
+}
+.about__declaration{
+    background-color: v.$red;
+    padding-top: 43px;
+    @include mq(){
+        padding-top: 59px;
+    }
+}
+.about__declaration__title{
+    text-align: center;
+    @include l_height(25,40);
+    @include mq(){
+        @include l_height(30,50);
+    }
+}
+.about__declaration__message{
+    text-align: center;
+    @include l_height(18,30);
+    padding-top: 16px;
+    padding-bottom: 44px;
+    @include mq(){
+        padding-top: 35px;
+        padding-bottom: 63.3px;
+    }
+}

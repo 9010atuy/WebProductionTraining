@@ -1,0 +1,206 @@
+/* p-plan
+--------------------------- */
+@use "./../../foundation/system" as *;
+@use "./../../foundation/variable" as v;
+
+.plan__fv-img{
+    background-image: url(../img/SP/plan/FV.png);
+    background-image: image-set(
+        url(../img/SP/plan/FV.png) 1x,
+        url(../img/SP/plan/FV@2x.png) 2x
+      );
+    height: 300px;
+    @include mq(){
+        background-image: url(../img/PC/plan/FV.png);
+        background-image: image-set(
+            url(../img/PC/plan/FV.png) 1x,
+            url(../img/PC/plan/FV@2x.png) 2x
+        );
+        height: 200px;
+    }
+    background-position: top;
+}
+.plan__message{
+    @include l_height(25,60);
+}
+
+#fee{
+    padding-top: 42px;
+    padding-bottom: 35px;
+    @include mq(){
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+}
+#monthly-plan{
+    padding-bottom: 190px;
+    @include mq(){
+        padding-bottom: 221px;
+    }
+}
+.plan__title{
+    text-align: center;
+    font-weight: bold;
+    @include l_height(25,40);
+    @include mq(){
+        @include l_height(25,43);
+    }
+}
+.fee__contents{
+    margin-top: 41px;
+    @include flex(space-between,center);
+    flex-direction: column;
+    row-gap: 20px;
+    @include mq(){
+        @include flex(center,center);
+        flex-direction: row;
+        column-gap: 30px;
+        margin-top: 43px;
+        margin-right: 11px;
+    }
+}
+.fee__item--red{
+    width: 210px;
+    height: 60px;
+    background-color: v.$red;
+    color: #fff;
+    @include l_height(20,33);
+    @include flex(center,center);
+}
+.fee__text{
+    margin-top: 44px;
+    @include l_height(16,30);
+    @include mq(){
+        letter-spacing: 0.12em;
+    }
+}
+.plan__table{
+    overflow: auto;
+    margin-top: 15px;
+    padding-bottom: 17px;
+    &::-webkit-scrollbar{
+      height:25px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #9B9B9B;
+      width: 20px;
+    }
+    &::-webkit-scrollbar-track-piece {
+      padding:0 50px;
+    }
+    @include mq(){
+        margin-top: 46px;
+    }
+    @include mq(lg){
+        overflow: visible;
+        width: 100%;
+    }
+    table{
+    	table-layout: fixed;
+        width: 670px;
+        thead{
+            tr{
+                th{
+                    width: 167.5px;
+                    height: auto;
+                    text-align: center;
+                    vertical-align: middle;
+                    padding: {
+                        top: 10px;
+                        bottom: 10px;
+                    }
+                    @include mq(){
+                        width: 220px;
+                        height: 40px;
+                        padding: {
+                            top: 10px;
+                            bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        tbody{
+            border-top: 0.5px solid #000;
+            border-bottom: 0.5px solid #000;
+            tr{
+                &:nth-child(odd){
+                    background-color: rgba(#505050,.15);
+                }
+                th{
+                    height: 85px;
+                    text-align: left;
+                    vertical-align: middle;
+                    padding-left:10px;
+                    border: {
+                        top: 0.5px solid #000;
+                        bottom: 0.5px solid #000;
+                    }
+                    @include mq(){
+                        padding-left: 17px;
+                        letter-spacing: 0.05em;
+                    }
+                }
+                td{
+                    text-align: center;
+                    vertical-align: middle;
+                    border: {
+                        top: 0.5px solid #000;
+                        bottom: 0.5px solid #000;
+                        left: 0.5px solid #000;
+                    }
+                }
+            }
+        }
+    }
+}
+.plan__th-black{
+    background-color: #000;
+    color: #fff;
+    @include l_height(20,25);
+    font-weight: bold;
+}
+.plan__th-red{
+    background-color: v.$red;
+    color: #fff;
+    @include l_height(20,25);
+    font-weight: bold;
+    span{
+        @include l_height(17,25);
+        @include mq(){
+            @include l_height(17,33);
+            padding: {
+                top: 5px;
+                bottom: 5px;
+            }
+            // height: 30px;
+        }
+        display: block;
+    }
+}
+.plan__th{
+    @include l_height(16,25);
+}
+.plan__td--strong{
+    @include l_height(22,33);
+}
+.plan__th-sticky{
+    position: sticky;
+    left: 0;
+    z-index:9999;
+}
+.plan__td__text{
+    @include l_height(17,25);
+    margin-top: 8px;
+}
+.plan__td__hyphen{
+    vertical-align: middle;
+}
+.plan__additional{
+    margin-top: 11px;
+    @include l_height(16,30);
+    @include mq(){
+        margin-top: 8px;
+        letter-spacing: 0.06em;
+    }
+}

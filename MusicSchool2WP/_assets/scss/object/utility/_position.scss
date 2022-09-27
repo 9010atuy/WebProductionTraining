@@ -1,0 +1,31 @@
+@use "../../foundation/system" as *;
+@use "../../foundation/variable" as v;
+.u-pos-fixed{
+    position: fixed;
+}
+.u-pos-abs{
+    position: absolute;
+}
+.u-pos-sticky{
+    position: sticky;
+    z-index: 1;
+}
+.u-pos-rel{
+    position: relative;
+}
+.u-l-0{
+    left:0;
+}
+.u-right-0{
+    right: 0;
+}
+.u-bottom-0{
+    bottom: 0;
+}
+.u-l-50{
+    left:50%;
+    transform: translateX(-50%);
+}
+.u-bottom-270{
+    bottom:270px;
+}

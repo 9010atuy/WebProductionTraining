@@ -1,0 +1,12 @@
+@use "../../foundation/system" as *;
+@use "../../foundation/variable" as v;
+
+.u-display--block{
+    display: block;
+}
+.u-display--none{
+    display: none;
+}
+.u-display--inline{
+    display: inline;
+}
