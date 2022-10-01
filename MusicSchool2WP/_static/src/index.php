@@ -1,396 +1,302 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <!-- meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=”robots” content=”noindex”>
-    <!-- ogp -->
-    <meta property="og:type" content="website">
-    <title>きたむらミュージックスクール | TOP</title>
-    <meta name="description" content="きたむらミュージックスクールのデモサイトです">
-    <meta property="og:title" content="きたむらミュージックスクール">
-    <meta property="og:description" content="きたむらミュージックスクールのデモサイトです">
-
-    <!-- ogp-image -->
-    <meta property="og:locale" content="ja_JP">
-    <meta name="twitter:card" content="summary_large_image">
-    <!-- css -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/slick.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/slick-theme.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-</head>
-
-<body>
-    <header class="header">
-        <a href="<?php echo get_template_directory_uri(); ?>/index.html">
-            <div class="header__logo-title">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/logo.svg" alt="logo" class="logo">
-                <p class="site-title">
-                    <span class="header__logo-title--text-decoration">きたむら</span>ミュージックスクール
-                </p>
-            </div>
-        </a>
-        <div class="c-hamburger hamburger-trigger no-pc">
-            <span></span>
-        </div>
-        <nav class="c-nav pc header__nav">
-            <ul class="c-nav-list">
-                <li><a href="<?php echo get_template_directory_uri(); ?>/plan.html" class="c-nav-itemlink">料金</a></li>
-                <li><a href="<?php echo get_template_directory_uri(); ?>/blog_list.html" class="c-nav-itemlink">ブログ</a></li>
-                <li><a href="<?php echo get_template_directory_uri(); ?>/notice_list.html" class="c-nav-itemlink">お知らせ</a></li>
-                <li><a href="<?php echo get_template_directory_uri(); ?>/result_list.html" class="c-nav-itemlink">卒業実績</a></li>
-            </ul>
-        </nav>
-        <button class="pc c-button c-button--red c-button--small header__button">
-            お問い合わせ
-        </button>
-    </header>
-    <div class="c-hamburger-menu">
-        <nav class="hamburger-nav">
-            <ul class="hamburger-list">
-                <li><a href="<?php echo get_template_directory_uri(); ?>/plan.html" class="c-hamburger-item hamburger-trigger">料金</a></li>
-                <li><a href="<?php echo get_template_directory_uri(); ?>/blog_list.html" class="c-hamburger-item hamburger-trigger">ブログ</a></li>
-                <li><a href="<?php echo get_template_directory_uri(); ?>/notice_list.html" class="c-hamburger-item hamburger-trigger">お知らせ</a></li>
-                <li><a href="<?php echo get_template_directory_uri(); ?>/result_list.html" class="c-hamburger-item hamburger-trigger">卒業実績</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="c-hamburger-bg hamburger-trigger">
-    </div>
-    <section id="top" class="js-fv">
-        <div class="top__fv-img">
-            <h1 class="top__message">
-                「音楽で生きる」<br class="no-pc">を叶える<br>ミュージックスクール
-            </h1>
-        </div>
-    </section>
-    <section id="about">
-        <div class="main-wrapper">
-            <h1 class="top__title u-font--red">
-                全人類、<br class="no-pc">ミュージシャン計画。
-            </h1>
-            <p class="about__message">私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。</p>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/semicircle-sp.svg" alt="半円アイコン" class="no-pc about-semicircle-icon">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/semicircle.svg" alt="半円アイコン" class="pc about-semicircle-icon">
-            <div class="about__vision">
-                <table class="about-table">
-                    <tr>
-                        <td class="about-table-col1 u-font--red u-font--bold">Enthusiasm</td>
-                        <td class="about-table-col2"></td>
-                        <td class="about-table-col3">熱狂し</td>
-                    </tr>
-                    <tr>
-                        <td class="about-table-col1 u-font--red u-font--bold">Envision</td>
-                        <td class="about-table-col2"></td>
-                        <td class="about-table-col3">想像し</td>
-                    </tr>
-                    <tr>
-                        <td class="about-table-col1 u-font--red u-font--bold">Effulgent</td>
-                        <td class="about-table-col2"></td>
-                        <td class="about-table-col3">輝く存在へ</td>
-                    </tr>
-                </table>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/up-arrow-red.svg" alt="上矢印赤" class="about-vision-icon__arrow">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/circle-red.svg" alt="上矢印赤" class="about-vision-icon__circle">
-            </div>
-        </div>
-        <div class="about__declaration">
-            <div class="main-wrapper">
-                <h1 class="c-title u-font--white">
-                    音楽業界初！<br>収益化までサポートする<br class="no-pc">ミュージックスクール
-                </h1>
-                <p class="about__declaration__message u-font--white">
-                    楽器や作詞作曲などの<br class="no-pc">技術・知識はもちろんのこと<br>自分で稼ぎつづけるための<br class="no-pc">ビジネス面もサポートします！
-                </p>
-            </div>
-        </div>
-    </section>
-    <section id="reason" class="main-wrapper">
-        <h1 class="c-title">
-            きたむらミュージック<br class="no-pc">スクールが選ばれる理由
+<?php get_header(); ?>
+<section id="top" class="js-fv">
+    <div class="top__fv-img">
+        <h1 class="top__message">
+            「音楽で生きる」<br class="no-pc">を叶える<br>ミュージックスクール
         </h1>
-        <div class="reason__item">
-            <div class="reason__img-container">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason01.png" alt="reason01" class="reason__img no-pc" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason01.png 1x,
+    </div>
+</section>
+<section id="about">
+    <div class="main-wrapper">
+        <h1 class="top__title u-font--red">
+            全人類、<br class="no-pc">ミュージシャン計画。
+        </h1>
+        <p class="about__message">私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/icon/semicircle-sp.svg" alt="半円アイコン" class="no-pc about-semicircle-icon">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/icon/semicircle.svg" alt="半円アイコン" class="pc about-semicircle-icon">
+        <div class="about__vision">
+            <table class="about-table">
+                <tr>
+                    <td class="about-table-col1 u-font--red u-font--bold">Enthusiasm</td>
+                    <td class="about-table-col2"></td>
+                    <td class="about-table-col3">熱狂し</td>
+                </tr>
+                <tr>
+                    <td class="about-table-col1 u-font--red u-font--bold">Envision</td>
+                    <td class="about-table-col2"></td>
+                    <td class="about-table-col3">想像し</td>
+                </tr>
+                <tr>
+                    <td class="about-table-col1 u-font--red u-font--bold">Effulgent</td>
+                    <td class="about-table-col2"></td>
+                    <td class="about-table-col3">輝く存在へ</td>
+                </tr>
+            </table>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/up-arrow-red.svg" alt="上矢印赤" class="about-vision-icon__arrow">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/circle-red.svg" alt="上矢印赤" class="about-vision-icon__circle">
+        </div>
+    </div>
+    <div class="about__declaration">
+        <div class="main-wrapper">
+            <h1 class="c-title u-font--white">
+                音楽業界初！<br>収益化までサポートする<br class="no-pc">ミュージックスクール
+            </h1>
+            <p class="about__declaration__message u-font--white">
+                楽器や作詞作曲などの<br class="no-pc">技術・知識はもちろんのこと<br>自分で稼ぎつづけるための<br class="no-pc">ビジネス面もサポートします！
+            </p>
+        </div>
+    </div>
+</section>
+<section id="reason" class="main-wrapper">
+    <h1 class="c-title">
+        きたむらミュージック<br class="no-pc">スクールが選ばれる理由
+    </h1>
+    <div class="reason__item">
+        <div class="reason__img-container">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason01.png" alt="reason01" class="reason__img no-pc" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason01.png 1x,
                 <?php echo get_template_directory_uri(); ?>/img/SP/top/reason01@2x.png 2x">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason01.png" alt="reason01" class="reason__img pc" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason01.png 1x,
+            <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason01.png" alt="reason01" class="reason__img pc" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason01.png 1x,
                 <?php echo get_template_directory_uri(); ?>/img/PC/top/reason01@2x.png 2x">
-            </div>
-            <div class="reason__desc-container">
-                <h2 class="reason__title">
-                    技術面はプロによるマンツーマン授業！
-                </h2>
-                <hr class="reason__hr">
-                <p class="reason__description">
-                    第一線で活躍するプロによるマンツーマン授業で、きめ細かな技術指導が受けられます。
-                </p>
-            </div>
         </div>
-        <div class="reason__item">
-            <div class="reason__img-container">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason02.png" alt="reason02" class="reason__img no-pc" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason02.png 1x,
+        <div class="reason__desc-container">
+            <h2 class="reason__title">
+                技術面はプロによるマンツーマン授業！
+            </h2>
+            <hr class="reason__hr">
+            <p class="reason__description">
+                第一線で活躍するプロによるマンツーマン授業で、きめ細かな技術指導が受けられます。
+            </p>
+        </div>
+    </div>
+    <div class="reason__item">
+        <div class="reason__img-container">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason02.png" alt="reason02" class="reason__img no-pc" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason02.png 1x,
                 <?php echo get_template_directory_uri(); ?>/img/SP/top/reason02@2x.png 2x">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason02.png" alt="reason02" class="reason__img pc" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason02.png 1x,
+            <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason02.png" alt="reason02" class="reason__img pc" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason02.png 1x,
                 <?php echo get_template_directory_uri(); ?>/img/PC/top/reason02@2x.png 2x">
-            </div>
-            <div class="reason__desc-container">
-                <h2 class="reason__title reason__not-first-title">
-                    収益化するためのビジネスサポート！
-                </h2>
-                <hr class="reason__hr">
-                <p class="reason__description">
-                    コンセプト設計や集客方法、マーケティングリサーチなど、音楽で稼ぎつづけるための方法やマインドセットをサポートするクラスをご用意。
-                </p>
-            </div>
         </div>
-        <div class="reason__item">
-            <div class="reason__img-container">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason03.png" alt="reason03" class="reason__img no-pc" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason03.png 1x,
+        <div class="reason__desc-container">
+            <h2 class="reason__title reason__not-first-title">
+                収益化するためのビジネスサポート！
+            </h2>
+            <hr class="reason__hr">
+            <p class="reason__description">
+                コンセプト設計や集客方法、マーケティングリサーチなど、音楽で稼ぎつづけるための方法やマインドセットをサポートするクラスをご用意。
+            </p>
+        </div>
+    </div>
+    <div class="reason__item">
+        <div class="reason__img-container">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason03.png" alt="reason03" class="reason__img no-pc" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/reason03.png 1x,
                 <?php echo get_template_directory_uri(); ?>/img/SP/top/reason03@2x.png 2x">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason03.png" alt="reason03" class="reason__img pc" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason03.png 1x,
+            <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason03.png" alt="reason03" class="reason__img pc" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/reason03.png 1x,
                 <?php echo get_template_directory_uri(); ?>/img/PC/top/reason03@2x.png 2x">
+        </div>
+        <div class="reason__desc-container">
+            <h2 class="reason__title reason__not-first-title">
+                24時間365日使える練習ROOMを完備！
+            </h2>
+            <hr class="reason__hr">
+            <p class="reason__description">
+                一年中使える個室の練習ROOMを完備しているため、お仕事帰りや合間の時間も自由に練習が可能です。（アプリで予約が必要です）
+            </p>
+        </div>
+    </div>
+</section>
+<section id="voice">
+    <div class="main-wrapper">
+        <h1 class="c-title u-font--white">生徒さんたちの声</h1>
+        <div class="js-slider voice__slider">
+            <div class="voice__item">
+                <a href="<?php echo get_template_directory_uri(); ?>/result_details.html">
+                    <div class="voice__img-container">
+                        <div class="voice01 voice__img"></div>
+                    </div>
+                    <h2 class="voice__title u-font--white">証券会社勤務　丸山さん</h2>
+                    <p class="voice__text u-font--white">昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。</p>
+                </a>
             </div>
-            <div class="reason__desc-container">
-                <h2 class="reason__title reason__not-first-title">
-                    24時間365日使える練習ROOMを完備！
-                </h2>
-                <hr class="reason__hr">
-                <p class="reason__description">
-                    一年中使える個室の練習ROOMを完備しているため、お仕事帰りや合間の時間も自由に練習が可能です。（アプリで予約が必要です）
-                </p>
+            <div class="voice__item">
+                <a href="<?php echo get_template_directory_uri(); ?>/result_details.html">
+                    <div class="voice__img-container">
+                        <div class="voice02 voice__img"></div>
+                    </div>
+                    <h2 class="voice__title u-font--white">IT会社勤務　S.Eさん</h2>
+                    <p class="voice__text u-font--white">プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。</p>
+                </a>
+            </div>
+            <div class="voice__item">
+                <a href="<?php echo get_template_directory_uri(); ?>/result_details.html">
+                    <div class="voice__img-container">
+                        <div class="voice03 voice__img"></div>
+                    </div>
+                    <h2 class="voice__title u-font--white">都内大学生　田森さん</h2>
+                    <p class="voice__text u-font--white">就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。</p>
+                </a>
+            </div>
+            <div class="voice__item">
+                <a href="<?php echo get_template_directory_uri(); ?>/result_details.html">
+                    <div class="voice__img-container">
+                        <div class="voice04 voice__img"></div>
+                    </div>
+                    <h2 class="voice__title u-font--white">タイトル</h2>
+                    <p class="voice__text u-font--white">テキストテキストテキストテキストテキストテキストテキスト</p>
+                </a>
             </div>
         </div>
-    </section>
-    <section id="voice">
-        <div class="main-wrapper">
-            <h1 class="c-title u-font--white">生徒さんたちの声</h1>
-            <div class="js-slider voice__slider">
-                <div class="voice__item">
-                    <a href="<?php echo get_template_directory_uri(); ?>/result_details.html">
-                        <div class="voice__img-container">
-                            <div class="voice01 voice__img"></div>
-                        </div>
-                        <h2 class="voice__title u-font--white">証券会社勤務　丸山さん</h2>
-                        <p class="voice__text u-font--white">昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。</p>
-                    </a>
-                </div>
-                <div class="voice__item">
-                    <a href="<?php echo get_template_directory_uri(); ?>/result_details.html">
-                        <div class="voice__img-container">
-                            <div class="voice02 voice__img"></div>
-                        </div>
-                        <h2 class="voice__title u-font--white">IT会社勤務　S.Eさん</h2>
-                        <p class="voice__text u-font--white">プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。</p>
-                    </a>
-                </div>
-                <div class="voice__item">
-                    <a href="<?php echo get_template_directory_uri(); ?>/result_details.html">
-                        <div class="voice__img-container">
-                            <div class="voice03 voice__img"></div>
-                        </div>
-                        <h2 class="voice__title u-font--white">都内大学生　田森さん</h2>
-                        <p class="voice__text u-font--white">就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。</p>
-                    </a>
-                </div>
-                <div class="voice__item">
-                    <a href="<?php echo get_template_directory_uri(); ?>/result_details.html">
-                        <div class="voice__img-container">
-                            <div class="voice04 voice__img"></div>
-                        </div>
-                        <h2 class="voice__title u-font--white">タイトル</h2>
-                        <p class="voice__text u-font--white">テキストテキストテキストテキストテキストテキストテキスト</p>
-                    </a>
-                </div>
+    </div>
+</section>
+<section id="introduction" class="main-wrapper">
+    <h1 class="c-title">ご利用の流れ</h1>
+    <div class="introduction__contents">
+        <div class="introduction__shape">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/down-arrow-red.svg" alt="down-arrow" class="introduction__arrow no-pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/down-arrow-red-pc.svg" alt="down-arrow" class="introduction__arrow pc">
+            <div class="introduction__circle__container">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/circle-red-single.svg" alt="circle-red-single" class="introduction__circle">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/circle-red-single.svg" alt="circle-red-single" class="introduction__circle">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/circle-red-single.svg" alt="circle-red-single" class="introduction__circle">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/circle-red-single.svg" alt="circle-red-single" class="introduction__circle">
             </div>
         </div>
-    </section>
-    <section id="introduction" class="main-wrapper">
-        <h1 class="c-title">ご利用の流れ</h1>
-        <div class="introduction__contents">
-            <div class="introduction__shape">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/down-arrow-red.svg" alt="down-arrow" class="introduction__arrow no-pc">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/down-arrow-red-pc.svg" alt="down-arrow" class="introduction__arrow pc">
-                <div class="introduction__circle__container">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/circle-red-single.svg" alt="circle-red-single" class="introduction__circle">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/circle-red-single.svg" alt="circle-red-single" class="introduction__circle">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/circle-red-single.svg" alt="circle-red-single" class="introduction__circle">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/circle-red-single.svg" alt="circle-red-single" class="introduction__circle">
-                </div>
-            </div>
-            <table class="introduction__table">
-                <tr>
-                    <td class="u-font--red u-font--bold introduction__title">お問い合わせ</td>
-                    <td class="introduction__text">まずはフォームまたはメールにてお問い合わせください。<br>ヒアリングの日程を調整します。</td>
-                </tr>
-                <tr>
-                    <td class="u-font--red u-font--bold introduction__title">ヒアリング</td>
-                    <td class="introduction__text">現在の技術面や将来の目標などをお伺いします。<br>悩みや不安な事もお気軽にご相談ください。</td>
-                </tr>
-                <tr>
-                    <td class="u-font--red u-font--bold introduction__title u-mt-30">プランのご提案</td>
-                    <td class="introduction__text">ライフスタイルや目標によって最適なプランをご提案します。<br>継続できるようサポートいたします。</td>
-                </tr>
-                <tr>
-                    <td class="u-font--red u-font--bold introduction__title">ご入学</td>
-                    <td class="introduction__text">お申し込み完了後、レッスンがスタートします。<br>マンツーマン指導なので、いつからでもスタートが可能です。</td>
-                </tr>
-            </table>
+        <table class="introduction__table">
+            <tr>
+                <td class="u-font--red u-font--bold introduction__title">お問い合わせ</td>
+                <td class="introduction__text">まずはフォームまたはメールにてお問い合わせください。<br>ヒアリングの日程を調整します。</td>
+            </tr>
+            <tr>
+                <td class="u-font--red u-font--bold introduction__title">ヒアリング</td>
+                <td class="introduction__text">現在の技術面や将来の目標などをお伺いします。<br>悩みや不安な事もお気軽にご相談ください。</td>
+            </tr>
+            <tr>
+                <td class="u-font--red u-font--bold introduction__title u-mt-30">プランのご提案</td>
+                <td class="introduction__text">ライフスタイルや目標によって最適なプランをご提案します。<br>継続できるようサポートいたします。</td>
+            </tr>
+            <tr>
+                <td class="u-font--red u-font--bold introduction__title">ご入学</td>
+                <td class="introduction__text">お申し込み完了後、レッスンがスタートします。<br>マンツーマン指導なので、いつからでもスタートが可能です。</td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="faq" class="main-wrapper">
+    <h1 class="c-title">よくあるご質問</h1>
+    <div class="faq__contents">
+        <div class="accordion__item c-accordion-toggle js-accordion-toggle accordion__flex">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/question.svg" alt="question-icon" class="accordion__question-icon">
+            <p class="accordion__item__text">どのような生徒さんがどれぐらいの期間で稼いでいますか？</p>
         </div>
-    </section>
-    <section id="faq" class="main-wrapper">
-        <h1 class="c-title">よくあるご質問</h1>
-        <div class="faq__contents">
-            <div class="accordion__item c-accordion-toggle js-accordion-toggle accordion__flex">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/question.svg" alt="question-icon" class="accordion__question-icon">
-                <p class="accordion__item__text">どのような生徒さんがどれぐらいの期間で稼いでいますか？</p>
-            </div>
-            <div class="accordion__collapse u-font--red u-font--bold">
-                <div class="accordion__collapse__inner accordion__flex">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/answer.svg" alt="answer-icon" class="accordion__answer-icon">
-                    <p class="accordion__item__text">音楽好きな方が約半年で平均月15万円稼げるようになっています。</p>
-                </div>
-            </div>
-            <div class="accordion__item c-accordion-toggle js-accordion-toggle accordion__flex">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/question.svg" alt="question-icon" class="accordion__question-icon">
-                <p class="accordion__item__text">途中でプランを変更することは可能ですか？</p>
-            </div>
-            <div class="accordion__collapse u-font--red u-font--bold ">
-                <div class="accordion__collapse__inner accordion__flex">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/answer.svg" alt="answer-icon" class="accordion__answer-icon">
-                    <p class="accordion__item__text">途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。</p>
-                </div>
-            </div>
-            <div class="accordion__item c-accordion-toggle js-accordion-toggle accordion__flex">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/question.svg" alt="question-icon" class="accordion__question-icon">
-                <p class="accordion__item__text">入学金などの分割払いはできますか？</p>
-            </div>
-            <div class="accordion__collapse u-font--red u-font--bold">
-                <div class="accordion__collapse__inner accordion__flex">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/answer.svg" alt="answer-icon" class="accordion__answer-icon">
-                    <p class="accordion__item__text">入学金はクレジットカードのみ分割払い可能です。</p>
-                </div>
-            </div>
-            <div class="accordion__item c-accordion-toggle js-accordion-toggle accordion__flex">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/question.svg" alt="question-icon" class="accordion__question-icon">
-                <p class="accordion__item__text">休学することも可能ですか？</p>
-            </div>
-            <div class="accordion__collapse u-font--red u-font--bold">
-                <div class="accordion__collapse__inner accordion__flex">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/answer.svg" alt="answer-icon" class="accordion__answer-icon">
-                    <p class="accordion__item__text">休学理由によりますが、基本的に休学することは可能です。</p>
-                </div>
+        <div class="accordion__collapse u-font--red u-font--bold">
+            <div class="accordion__collapse__inner accordion__flex">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/answer.svg" alt="answer-icon" class="accordion__answer-icon">
+                <p class="accordion__item__text">音楽好きな方が約半年で平均月15万円稼げるようになっています。</p>
             </div>
         </div>
-    </section>
-    <section id="news">
-        <div class="main-wrapper">
-            <h1 class="c-title u-font--white">お知らせ</h1>
-            <table class="news__table">
-                <tr>
-                    <td class="news__date u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">2022.01.01&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
-                    <td class="news__text u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">卒業生のケニーさんによるyoutubeサムネイル講座が始まります。</a></td>
-                </tr>
-                <tr>
-                    <td class="news__date u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">2022.01.01&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
-                    <td class="news__text u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">専用アプリから予約できるようになりました。</a></td>
-                </tr>
-                <tr>
-                    <td class="news__date u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">2022.01.01&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
-                    <td class="news__text u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">あけましておめでとうございます。</a></td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="news__forward u-font--white"><a href="<?php echo get_template_directory_uri(); ?>/notice_list.html">お知らせ一覧へ</a></td>
-                </tr>
-            </table>
+        <div class="accordion__item c-accordion-toggle js-accordion-toggle accordion__flex">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/question.svg" alt="question-icon" class="accordion__question-icon">
+            <p class="accordion__item__text">途中でプランを変更することは可能ですか？</p>
         </div>
-    </section>
-    <section id="blog">
-        <div class="main-wrapper">
-            <h1 class="blog__title">ブログ</h1>
-            <div class="blog__contents">
-                <div class="c-card blog__card">
-                    <a href="<?php echo get_template_directory_uri(); ?>/blog_details.html">
-                        <div class="c-card__img-container">
-                            <div class="c-card__label blog__card__label">SNS</div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog01.png" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog01.png 1x, <?php echo get_template_directory_uri(); ?>/img/PC/top/blog01@2x.png 2x" alt="ブログ画像01" class="c-card__img blog__card__img no-pc">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog01.png" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog01.png 1x, <?php echo get_template_directory_uri(); ?>/img/PC/top/blog01@2x.png 2x" alt="ブログ画像01" class="c-card__img blog__card__img pc">
-                        </div>
-                        <h2 class="c-card__title blog__card__title">フォロワーではなくファンを増やせとは？</h2>
-                        <p class="c-card__date blog__card__date">2022.01.01</p>
-                    </a>
-                </div>
-                <div class="c-card blog__card">
-                    <a href="<?php echo get_template_directory_uri(); ?>/blog_details.html">
-                        <div class="c-card__img-container">
-                            <div class="c-card__label blog__card__label">集客方法</div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog02.png" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog02.png 1x, <?php echo get_template_directory_uri(); ?>/img/SP/top/blog02@2x.png 2x" alt="ブログ画像02" class="c-card__img blog__card__img no-pc">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog02.png" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog02.png 1x, <?php echo get_template_directory_uri(); ?>/img/PC/top/blog02@2x.png 2x" alt="ブログ画像02" class="c-card__img blog__card__img pc">
-                        </div>
-                        <h2 class="c-card__title blog__card__title">集客してる間は売れないという法則</h2>
-                        <p class="c-card__date blog__card__date">2022.01.01</p>
-                    </a>
-                </div>
-                <div class="c-card blog__card">
-                    <a href="<?php echo get_template_directory_uri(); ?>/blog_details.html">
-                        <div class="c-card__img-container">
-                            <div class="c-card__label blog__card__label">ギター</div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog03.png" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog03.png 1x, <?php echo get_template_directory_uri(); ?>/img/SP/top/blog03@2x.png 2x" alt="ブログ画像03" class="c-card__img blog__card__img no-pc">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog03.png" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog03.png 1x, <?php echo get_template_directory_uri(); ?>/img/PC/top/blog03@2x.png 2x" alt="ブログ画像03" class="c-card__img blog__card__img pc">
-                        </div>
-                        <h2 class="c-card__title blog__card__title">アルペジオが劇的に向上する3つの習慣</h2>
-                        <p class="c-card__date blog__card__date">2022.01.01</p>
-                    </a>
-                </div>
+        <div class="accordion__collapse u-font--red u-font--bold ">
+            <div class="accordion__collapse__inner accordion__flex">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/answer.svg" alt="answer-icon" class="accordion__answer-icon">
+                <p class="accordion__item__text">途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。</p>
             </div>
-            <a href="<?php echo get_template_directory_uri(); ?>/blog_list.html" class="blog__forward">ブログ一覧へ</a>
         </div>
-        <div class="u-pos-fixed u-bottom-0 u-right-0 js-fixed-btn-pc">
-            <button class="c-button u-mr-100 u-ml-auto js-go-top">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/to-top.svg" alt="トップへ戻る">
-            </button>
-            <button class="c-button--red c-button--mid u-mt-31" onclick="location.href='<?php echo get_template_directory_uri(); ?>/contact_form.html'">お問い合わせ</button>
+        <div class="accordion__item c-accordion-toggle js-accordion-toggle accordion__flex">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/question.svg" alt="question-icon" class="accordion__question-icon">
+            <p class="accordion__item__text">入学金などの分割払いはできますか？</p>
         </div>
-        <div class="u-pos-fixed u-l-50 u-bottom-0 js-fixed-btn-no-pc">
-            <button class="c-button u-ml-auto js-go-top">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/to-top.svg" alt="トップへ戻る">
-            </button>
-            <button class="c-button--red c-button--mid u-mt-19" onclick="location.href='<?php echo get_template_directory_uri(); ?>/contact_form.html'">お問い合わせ</button>
+        <div class="accordion__collapse u-font--red u-font--bold">
+            <div class="accordion__collapse__inner accordion__flex">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/answer.svg" alt="answer-icon" class="accordion__answer-icon">
+                <p class="accordion__item__text">入学金はクレジットカードのみ分割払い可能です。</p>
+            </div>
         </div>
-    </section>
-    <footer id="footer">
-        <div class="main-wrapper footer-wrapper">
-            <nav class="footer__nav">
-                <ul>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/index.html" class="u-font--white u-font--bold footer__nav__itemlink">ホーム</a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/plan.html" class="u-font--white u-font--bold footer__nav__itemlink">料金</a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/blog_list.html" class="u-font--white u-font--bold footer__nav__itemlink">ブログ</a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/notice_list.html" class="u-font--white u-font--bold footer__nav__itemlink">お知らせ</a>
-                    </li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/result_list.html" class="u-font--white u-font--bold footer__nav__itemlink">卒業実績</a>
-                    </li>
-                </ul>
-            </nav>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/footer-logo.svg" alt="footer-logo" class="footer__logo">
-            <small class="copyright u-font--white">
-                Copyright © 2021 KITAMURA music school Inc. All Rights
-            </small>
-            <nav class="footer__sns__nav">
-                <ul>
-                    <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon/twitter.svg" alt="twitter"></a></li>
-                    <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon/facebook.svg" alt="facebook"></a></li>
-                    <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon/youtube.svg" alt="youtube"></a></li>
-                    <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon/instagram.svg" alt="instagram"></a></li>
-                </ul>
-            </nav>
+        <div class="accordion__item c-accordion-toggle js-accordion-toggle accordion__flex">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/question.svg" alt="question-icon" class="accordion__question-icon">
+            <p class="accordion__item__text">休学することも可能ですか？</p>
         </div>
-    </footer>
-    <!-- js -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.6.0.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/lib/slick.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/script.js" id="script" data-uri="<?php echo get_template_directory_uri(); ?>"></script>
-</body>
-
-</html>
+        <div class="accordion__collapse u-font--red u-font--bold">
+            <div class="accordion__collapse__inner accordion__flex">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon/answer.svg" alt="answer-icon" class="accordion__answer-icon">
+                <p class="accordion__item__text">休学理由によりますが、基本的に休学することは可能です。</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="news">
+    <div class="main-wrapper">
+        <h1 class="c-title u-font--white">お知らせ</h1>
+        <table class="news__table">
+            <tr>
+                <td class="news__date u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">2022.01.01&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+                <td class="news__text u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">卒業生のケニーさんによるyoutubeサムネイル講座が始まります。</a></td>
+            </tr>
+            <tr>
+                <td class="news__date u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">2022.01.01&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+                <td class="news__text u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">専用アプリから予約できるようになりました。</a></td>
+            </tr>
+            <tr>
+                <td class="news__date u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">2022.01.01&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+                <td class="news__text u-font--white u-font--bold"><a href="<?php echo get_template_directory_uri(); ?>/notice_details.html">あけましておめでとうございます。</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="news__forward u-font--white"><a href="<?php echo get_template_directory_uri(); ?>/notice_list.html">お知らせ一覧へ</a></td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="blog">
+    <div class="main-wrapper">
+        <h1 class="blog__title">ブログ</h1>
+        <div class="blog__contents">
+            <div class="c-card blog__card">
+                <a href="<?php echo get_template_directory_uri(); ?>/blog_details.html">
+                    <div class="c-card__img-container">
+                        <div class="c-card__label blog__card__label">SNS</div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog01.png" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog01.png 1x, <?php echo get_template_directory_uri(); ?>/img/PC/top/blog01@2x.png 2x" alt="ブログ画像01" class="c-card__img blog__card__img no-pc">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog01.png" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog01.png 1x, <?php echo get_template_directory_uri(); ?>/img/PC/top/blog01@2x.png 2x" alt="ブログ画像01" class="c-card__img blog__card__img pc">
+                    </div>
+                    <h2 class="c-card__title blog__card__title">フォロワーではなくファンを増やせとは？</h2>
+                    <p class="c-card__date blog__card__date">2022.01.01</p>
+                </a>
+            </div>
+            <div class="c-card blog__card">
+                <a href="<?php echo get_template_directory_uri(); ?>/blog_details.html">
+                    <div class="c-card__img-container">
+                        <div class="c-card__label blog__card__label">集客方法</div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog02.png" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog02.png 1x, <?php echo get_template_directory_uri(); ?>/img/SP/top/blog02@2x.png 2x" alt="ブログ画像02" class="c-card__img blog__card__img no-pc">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog02.png" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog02.png 1x, <?php echo get_template_directory_uri(); ?>/img/PC/top/blog02@2x.png 2x" alt="ブログ画像02" class="c-card__img blog__card__img pc">
+                    </div>
+                    <h2 class="c-card__title blog__card__title">集客してる間は売れないという法則</h2>
+                    <p class="c-card__date blog__card__date">2022.01.01</p>
+                </a>
+            </div>
+            <div class="c-card blog__card">
+                <a href="<?php echo get_template_directory_uri(); ?>/blog_details.html">
+                    <div class="c-card__img-container">
+                        <div class="c-card__label blog__card__label">ギター</div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog03.png" srcset="<?php echo get_template_directory_uri(); ?>/img/SP/top/blog03.png 1x, <?php echo get_template_directory_uri(); ?>/img/SP/top/blog03@2x.png 2x" alt="ブログ画像03" class="c-card__img blog__card__img no-pc">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog03.png" srcset="<?php echo get_template_directory_uri(); ?>/img/PC/top/blog03.png 1x, <?php echo get_template_directory_uri(); ?>/img/PC/top/blog03@2x.png 2x" alt="ブログ画像03" class="c-card__img blog__card__img pc">
+                    </div>
+                    <h2 class="c-card__title blog__card__title">アルペジオが劇的に向上する3つの習慣</h2>
+                    <p class="c-card__date blog__card__date">2022.01.01</p>
+                </a>
+            </div>
+        </div>
+        <a href="<?php echo get_template_directory_uri(); ?>/blog_list.html" class="blog__forward">ブログ一覧へ</a>
+    </div>
+    <div class="u-pos-fixed u-bottom-0 u-right-0 js-fixed-btn-pc">
+        <button class="c-button u-mr-100 u-ml-auto js-go-top">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/to-top.svg" alt="トップへ戻る">
+        </button>
+        <button class="c-button--red c-button--mid u-mt-31" onclick="location.href='<?php echo get_template_directory_uri(); ?>/contact_form.html'">お問い合わせ</button>
+    </div>
+    <div class="u-pos-fixed u-l-50 u-bottom-0 js-fixed-btn-no-pc">
+        <button class="c-button u-ml-auto js-go-top">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon/to-top.svg" alt="トップへ戻る">
+        </button>
+        <button class="c-button--red c-button--mid u-mt-19" onclick="location.href='<?php echo get_template_directory_uri(); ?>/contact_form.html'">お問い合わせ</button>
+    </div>
+</section>
+<?php get_footer(); ?>
