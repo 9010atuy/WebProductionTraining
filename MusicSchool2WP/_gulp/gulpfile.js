@@ -17,7 +17,7 @@ const imageminPngquant = require('imagemin-pngquant');
 const imageminSvgo = require('imagemin-svgo');
 
 // 入出力するフォルダを指定
-const srcBase = '../_src';
+const srcBase = '../_static/src';
 const assetsBase = '../_assets';
 // wordpress開発環境へ出力
 const distBase =
@@ -37,11 +37,11 @@ const srcPath = {
 const distPath = {
   css: distBase + '/css/',
   js: distBase + '/js/',
-  img: distBase + '/images/',
+  img: distBase + '/img/',
   font: distBase + '/font/',
   html: distBase + '/',
   php: distBase + '/',
-  lib: distBase + '/',
+  lib: distBase + '/lib/',
   tmpWpThm: distBase + '/',
 };
 
@@ -170,7 +170,8 @@ const browserSyncFunc = () => {
 };
 
 const browserSyncOption = {
-  proxy: 'http://localhost:10008/',
+  proxy: 'localhost:10013',
+  notify: false,
 };
 /**
  * リロード
