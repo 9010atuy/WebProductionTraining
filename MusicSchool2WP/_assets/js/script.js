@@ -9,20 +9,27 @@ $('.hamburger-trigger').on('click', () => {
 });
 
 $(document).ready(function () {
+  const temporary_uri = $('#script').data().uri;
   // スライダー
   $('.js-slider').slick({
     autoplay: false,
-    prevArrow: '<img src="./img/icon/prev-arrow.svg" class="js-slick-prev">',
-    nextArrow: '<img src="./img/icon/next-arrow.svg" class="js-slick-next">',
+    prevArrow:
+      '<img src="' +
+      temporary_uri +
+      '/img/icon/prev-arrow.svg" class="js-slick-prev">',
+    nextArrow:
+      '<img src="' +
+      temporary_uri +
+      '/img/icon/next-arrow.svg" class="js-slick-next">',
     slidesToShow: 3,
     variableWidth: false,
     responsive: [
       {
         breakpoint: 1000,
         prevArrow:
-          '<img src="./img/icon/prev-arrow-pc.svg" class="js-slick-prev">',
+          '<img src="../img/icon/prev-arrow-pc.svg" class="js-slick-prev">',
         nextArrow:
-          '<img src="./img/icon/next-arrow-pc.svg" class="js-slick-next">',
+          '<img src="../img/icon/next-arrow-pc.svg" class="js-slick-next">',
         settings: {
           slidesToShow: 1,
         },
